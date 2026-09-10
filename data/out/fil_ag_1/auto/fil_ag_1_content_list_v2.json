@@ -1,0 +1,3919 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Глава 1"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                152,
+                243,
+                179
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Метод координат"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                211,
+                443,
+                242
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.1 Величина направленного отрезка. Теорема Шаля. Декартова система координат на прямой."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                291,
+                904,
+                341
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Отрезком называется часть прямой, ограниченная двумя точками. Отрезок назы- вается направленным, если указано, какая из граничных точек является начальной и какая конечной (Обозначения: 𝐴𝐵 – направленный отрезок; "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| \\overline { { A B } } | ~ - ~ \\partial \\lambda u \\varkappa a"
+                    },
+                    {
+                        "type": "text",
+                        "content": "направленного отрезка)."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                354,
+                909,
+                422
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Отрезок называется нулевым, если его начальная и конечная точки совпадают."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                439,
+                865,
+                456
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Длина нулевого направленного отрезка равна нулю."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                474,
+                568,
+                491
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Прямая линия с указанным на ней направлением называется осью."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                508,
+                737,
+                524
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Пусть дана некоторая ось "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и на ней расположен направленный отрезок "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", ве- личиной которого на оси "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "называется число, равное:"
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                542,
+                907,
+                576
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "A B = \\left\\{ { \\begin{array} { l l } { { \\displaystyle | { \\overline { { A } } } { \\overline { { B } } } | , \\ { \\overline { { A } } } { \\overline { { B } } } \\uparrow \\uparrow \\Delta , } } \\\\ { { - | { \\overline { { A } } } { \\overline { { B } } } | , \\ { \\overline { { A } } } { \\overline { { B } } } \\uparrow \\downarrow \\Delta ; } } \\end{array} } \\right.",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/723b96d28a960240bb4d112ab0d16e1bd454638b59f70a42b80a43d8b4e2f73d.jpg"
+                }
+            },
+            "bbox": [
+                368,
+                586,
+                606,
+                630
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Свойства величины направленного отрезка:"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                639,
+                563,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Величина 𝐴𝐵 противоположна величине 𝐵𝐴."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                668,
+                564,
+                684
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Длина "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { A B } } } |"
+                    },
+                    {
+                        "type": "text",
+                        "content": "равна модулю величин 𝐴𝐵."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                696,
+                504,
+                714
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема Шаля. При любом расположении трех точек "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", 𝐵 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": "на оси справедливо равенство "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B + B C = A C"
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                725,
+                907,
+                759
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Пусть точка 𝐵 лежит между точками 𝐴 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "тогда направленные отрезки "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\overline { { A B } } } , { \\overline { { B C } } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A C } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "сонаправлены. При этом "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { A B } } } | + | { \\overline { { B C } } } | = | { \\overline { { A C } } } |"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                799,
+                907,
+                834
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(a) Если направляющие оси совпадают с направлениями отрезков, то "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { A B } } } | = A B , | { \\overline { { B C } } } | ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B C , \\ | { \\overline { { A C } } } | = A C"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B + B C = A C"
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                845,
+                952,
+                879
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(b) Если направляющие оси не совпадают с направлениями отрезков, то "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { A B } } } | ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "- A B , \\ | \\overline { { B C } } | = - B C , \\ | \\overline { { A C } } | = - A C"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "- A B + - B C = - A C \\Rightarrow"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B + B C = A C"
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                885,
+                907,
+                935
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "6"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                958,
+                505,
+                970
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Если точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": "лежит между точками 𝐴 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "то, по доказанному выше, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A C + C B ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B \\Rightarrow A C = A B - C B = A B + B C ."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                67,
+                905,
+                101
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Если точка 𝐴 лежит между точками 𝐵 и 𝐶, то "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B A + A C = B C \\Rightarrow A C = - B A + B C ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B + B C"
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                114,
+                905,
+                147
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема остается справедливой, даже если некоторые точки совпадают."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                161,
+                746,
+                177
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть на прямой "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "дана точка 𝑂, заданы единица масштаба и определенное направление."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                196,
+                904,
+                211
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Говорят, что на прямой "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "задана декартовая система координат. При этом ось "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "называется координатной осью, а точка 𝑂 – началом координат."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                230,
+                909,
+                262
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть точка 𝐴 — некоторая фиксированная точка на прямой "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                281,
+                678,
+                297
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Координатой точки 𝐴 называется число, равное величине 𝑂𝐴 направленного от- резка 𝑂𝐴. Обозначение: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { A }"
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                316,
+                907,
+                349
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Точки, расположенные по одну сторону от начала координат, имеют одинаковые по знаку координаты. Полуось, на которой все точки имеют положительные координаты, называют положительной полуосью. Аналогично с отрицательной полуосью."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                368,
+                907,
+                418
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема. Для любых двух точек 𝐴 и 𝐵 на ∆ выполняется: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B = X _ { B } - X _ { A } , | { \\overline { { A B } } } | ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| X _ { B } - X _ { A } |"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                429,
+                905,
+                463
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "♦ Рассмотрим величину направленного отрезка 𝐴𝐵. Тогда, по теореме Шаля, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A O + O B = O B - O A = X _ { B } - X _ { A }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "⊠"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                476,
+                907,
+                510
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть на оси "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Delta"
+                    },
+                    {
+                        "type": "text",
+                        "content": "заданы 2 различные точки: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A \\mathrm { ~ c ~ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "координатой "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { A }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и 𝐵 с координатой "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { B }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                527,
+                895,
+                545
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Говорят, что точка 𝐶 делит направленный отрезок 𝐴𝐵 в отношении λ, если "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda = { \\frac { A C } { C B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "При этом число λ называется простым отношением трех точек "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A , C , B"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                555,
+                904,
+                602
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Если точка 𝐶 лежит между точками 𝐴 и 𝐵, то направляющие отрезки 𝐴𝐶 и 𝐶𝐵 сонаправлены. Следовательно, знак у них одинаковый и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda > 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". При этом говорят, что точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": "делит направленный отрезок 𝐴𝐵 внутренним образом."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                615,
+                907,
+                667
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Если точка 𝐶 лежит вне отрезка 𝐴𝐵, то говорят, что она делит отрезок 𝐴𝐵 внешним образом. При этом отрезки 𝐴𝐶 и 𝐶𝐵 противоположно направлены (не сонаправлены) и, следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda < 0"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                678,
+                907,
+                728
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Если "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda = 0 ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", то "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A C = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { A C } } } | = 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и точки 𝐴 и 𝐶 совпадают."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                741,
+                821,
+                758
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. Если точка 𝐶 лежит за концом отрезка 𝐴𝐵, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathrm { \\mathop { T o } } \\left| { \\frac { A C } { C B } } \\right| = { \\frac { | A C | } { | C B | } } = { \\frac { | { \\overline { { A C } } } | } { | { \\overline { { C B } } } | } } < 1 \\Rightarrow \\lambda <"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "- 1 \\ ( | \\overline { { A C } } | > | \\overline { { B C } } | )"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                770,
+                905,
+                826
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5. Если точка 𝐶 лежит перед началом отрезка 𝐴𝐵, то "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { A C } } } | < | { \\overline { { B C } } } |"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", тогда "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "- 1 < \\lambda < 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Заметим, что "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda \\neq - 1"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", так как в этом случае "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\textstyle - 1 = { \\frac { A C } { C B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A C = - C B \\Rightarrow"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A C = C B \\Rightarrow A"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и 𝐵 совпадают, что противоречит выбору 𝐴 и 𝐵."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                838,
+                905,
+                901
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "7"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                958,
+                505,
+                970
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема. Координата точки "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "делящей направленный отрезок 𝐴𝐵 в отношении λ рав- на"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                67,
+                907,
+                101
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "X _ { C } = \\frac { X _ { A } + \\lambda X _ { B } } { 1 + \\lambda }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/ddf574b626d49eb5b7e5c23e93dee4c18cfa0665a7eaccf8636a29f5a201fccf.jpg"
+                }
+            },
+            "bbox": [
+                418,
+                96,
+                576,
+                130
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "♦ Из определения деления отрезка в данном отношении следует:"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                140,
+                685,
+                156
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\begin{array} { r l r } {  { \\lambda = \\frac { A C } { C B } = \\frac { X _ { C } - X _ { A } } { X _ { B } - X _ { C } } \\Rightarrow \\big ( X _ { B } - X _ { C } \\big ) \\cdot \\lambda = X _ { C } - X _ { A } \\Rightarrow \\lambda X _ { B } + X _ { A } = X _ { C } + \\lambda X _ { C } = X _ { C } ( 1 + \\lambda ) \\Rightarrow } } \\\\ & { X _ { C } = \\frac { X _ { A } + \\lambda X _ { B } } { 1 + \\lambda } } & { \\infty } \\end{array}",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/7ef8185eadd4b72db9c8a791cc9bc736e6ef6008a906d58843938a564e99b65d.jpg"
+                }
+            },
+            "bbox": [
+                87,
+                167,
+                904,
+                240
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.2 Декартова прямоугольная система координат на плос- кости, в пространстве (ДПСК)."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                259,
+                929,
+                307
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Декартовой прямоугольной системой координат на плоскости называются две взаимно перпендикулярные координатные оси с общим началом координат. Ось 𝑂𝑥 называется осью абсцисс, 𝑂𝑦 — осью ординат."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                321,
+                909,
+                372
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Система координат называется правой, если кратчайший поворот от оси 𝑋 к оси 𝑌 против часовой стрелки, иначе левой."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                388,
+                905,
+                423
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4158814e155f2c765d84fb9978bf29e5c28c7740cbecc2847b9d93d50f649c5e.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Правая ДПСК"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                102,
+                431,
+                349,
+                556
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e42068ba8e3dc093953e275aedc753ac820ec16e66546fb6c51dbe514e079715.jpg"
+                },
+                "image_caption": [
+                    {
+                        "type": "text",
+                        "content": "Левая ДПСК"
+                    }
+                ],
+                "image_footnote": []
+            },
+            "bbox": [
+                583,
+                429,
+                830,
+                556
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть 𝑀 — некоторая точка плоскости, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M _ { y }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— проекции на оси 𝑂𝑥 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O y"
+                    },
+                    {
+                        "type": "text",
+                        "content": "соответ- ственно."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                601,
+                905,
+                636
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Декартовыми прямоугольными координатами точки "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M ( X _ { M } , Y _ { M } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "называются величины направленных отрезков "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { O M _ { x } } } \\ u \\overline { { O M _ { y } } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "на координатных осях, то есть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { M } ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O M _ { x } , \\ Y _ { M } = O M _ { y }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                655,
+                907,
+                706
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A ( X _ { A } , Y _ { A } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B ( X _ { B } , Y _ { B } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— две различные точки на плоскости."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                722,
+                712,
+                740
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема. Длина направленного отрезка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "равна:"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                752,
+                569,
+                769
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "| \\overline { { { A B } } } | = \\sqrt { ( X _ { A } - X _ { B } ) ^ { 2 } + ( Y _ { A } - Y _ { B } ) ^ { 2 } }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/4f9b104ff6bea2be5958813a1d2ad059a61fa21194aca3eeb7888c2962e266df.jpg"
+                }
+            },
+            "bbox": [
+                339,
+                782,
+                658,
+                801
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "♦ Построим проекции точек 𝐴 и 𝐵 на координатные оси. Обозначим через 𝐶 точку пере- сечения проекций."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                815,
+                907,
+                848
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "8"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                957,
+                505,
+                970
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/489c3dd56563cd7cbce04f239126efe9afbc79601addb5f4c6a0083dc49349d9.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                363,
+                67,
+                623,
+                198
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "По теореме Пифагора "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| A B | ^ { 2 } = | A C | ^ { 2 } + | B C | ^ { 2 }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Тогда "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| \\overline { { A B } } | = \\sqrt { | \\overline { { A _ { x } B _ { x } } } | ^ { 2 } + | \\overline { { A _ { y } B _ { y } } } | ^ { 2 } } ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "= { \\sqrt { ( X _ { A } - X _ { B } ) ^ { 2 } + ( Y _ { A } - Y _ { B } ) ^ { 2 } } } ."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                216,
+                836,
+                260
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Рассмотрим случай, когда отрезок "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A B"
+                    },
+                    {
+                        "type": "text",
+                        "content": "параллелен 𝑂𝑥 (или 𝐴𝐵 параллелен "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O y )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Тогда "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "Y _ { A } = Y _ { B } \\textrm { n } \\sqrt { ( X _ { A } - X _ { B } ) ^ { 2 } + \\underbrace { ( Y _ { A } - Y _ { B } ) ^ { 2 } } _ { = 0 } } = | X _ { A } - X _ { B } | = | \\overline { { A B } } | = | \\overline { { A _ { x } B _ { x } } } | ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "⊠"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                275,
+                907,
+                336
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Проведем через точки 𝐴 и 𝐵 некоторую ось. Тогда имеет смысл понятие «деление от- резка в данном отношении»."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                343,
+                907,
+                376
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема. Координаты точки "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", делящей "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "в отношении λ, равны:"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                385,
+                741,
+                403
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "X _ { C } = \\frac { X _ { A } + \\lambda X _ { B } } { 1 + \\lambda } , ~ Y _ { C } = \\frac { Y _ { A } + \\lambda Y _ { B } } { 1 + \\lambda }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/24f04d3253852fce32f7c752330399b9d5b568ff82c83ca24978151e74f93db0.jpg"
+                }
+            },
+            "bbox": [
+                344,
+                409,
+                652,
+                445
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "♦ Построим проекции точек 𝐴, 𝐵 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": "на ось "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O x"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Заметим, что при любом расположении точки "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": "точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "будет иметь такой же характер расположения, как и точка 𝐶 (если 𝐶 лежит между 𝐴 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B _ { ; }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", то и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "будет лежать между "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B _ { x } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\frac { | \\overline { { A C } } | } { | \\overline { { C B } } | } \\sp { \\frac { 1 } { A _ { x } C _ { x } } } \\frac { \\overline { { A _ { x } C _ { x } } } } { \\overline { { C _ { x } B _ { x } } } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "имеют один знак."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                450,
+                905,
+                535
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "По теореме Фалеса длина "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\frac { | { \\overline { { A _ { x } C _ { x } } } } | } { | { \\overline { { C _ { x } B _ { x } } } } | } } = { \\frac { | { \\overline { { A C } } } | } { | { \\overline { { C B } } } | } } \\Rightarrow \\left| { \\frac { A _ { x } C _ { x } } { C _ { x } B _ { x } } } \\right| = \\left| { \\frac { A C } { C B } } \\right|"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\frac { A _ { x } C _ { x } } { C _ { x } B _ { x } } ="
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\frac { A C } { C B } } = \\lambda"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C _ { x }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "делит направленный отрезок "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A _ { x } B _ { x } } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "также в отношении λ. Следова- тельно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { C } = \\frac { X _ { A } + \\lambda X _ { B } } { 1 + \\lambda }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                545,
+                907,
+                649
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Для ординаты точки 𝐶 равенство доказывается аналогично при рассмотрении случая, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "C"
+                    },
+                    {
+                        "type": "text",
+                        "content": "когда прямая 𝐴𝐵 параллельна одной из осей. ⊠"
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                658,
+                907,
+                692
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ ДПСК в пространстве образуют три взаимно перпендикулярные координатные оси с общим началом координат. Треться ось "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "называется осью аппликатой."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                709,
+                905,
+                744
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Система координат называется правой, если, глядя со стороны направления "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O z"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", крат- чайший поворот от оси 𝑂𝑥 к оси 𝑂𝑦 осуществляется против часовой стрелки, иначе — левой."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                760,
+                907,
+                810
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A ( X _ { A } , Y _ { A } , Z _ { A } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B ( X _ { B } , Y _ { B } , Z _ { B } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— две различные точки пространства. Тогда"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                828,
+                842,
+                847
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "1 . \\ | { \\overline { { A B } } } | = { \\sqrt { ( X _ { A } - X _ { B } ) ^ { 2 } + ( Y _ { A } - Y _ { B } ) ^ { 2 } + ( Z _ { A } - Z _ { B } ) ^ { 2 } } }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/adf2104aae82f86e4f3cc5010a0e25b176b5f189f6bbd2d1944e7b30140963f5.jpg"
+                }
+            },
+            "bbox": [
+                114,
+                853,
+                579,
+                872
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Если 𝐶 делит 𝐴𝐵 в отношении "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\lambda _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "то"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                882,
+                478,
+                898
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "X _ { C } = \\frac { X _ { A } + \\lambda X _ { B } } { 1 + \\lambda } , Y _ { C } = \\frac { Y _ { A } + \\lambda Y _ { B } } { 1 + \\lambda } , Z _ { C } = \\frac { Z _ { A } + \\lambda Z _ { B } } { 1 + \\lambda } .",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/444d8f0fb75868e8d39fd9144703c480db074b30466016a138377b24c676580b.jpg"
+                }
+            },
+            "bbox": [
+                287,
+                906,
+                756,
+                942
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "9"
+                    }
+                ]
+            },
+            "bbox": [
+                492,
+                957,
+                505,
+                970
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "1.3 Полярные, цилиндрические и сферические коорди- наты. Общая декартова система координат."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                90,
+                64,
+                905,
+                112
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Полярную систему координат образуют точка, выходящий из неё луч и единичный отрезок. При этом точка 𝑂 называется полюсом, а луч "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O x \\mathrm { ~ - ~ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "полярной осью."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                126,
+                907,
+                160
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d2f7f7dcfacaec742b1a784c4ed81502e022d5a0f46d1f11f743d979e766681e.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                292,
+                175,
+                710,
+                272
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть 𝑀 — произвольная точка плоскости."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                287,
+                489,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Полярными координатами точки 𝑀 называются два числа "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho , \\varphi ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "где "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho \\mathrm { ~ - ~ } \\partial \\mathscr { n } u \\cdot"
+                    },
+                    {
+                        "type": "text",
+                        "content": "на 𝑂𝑀 "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( \\rho = | \\overline { { O M } } | )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а угол φ равен углу, на который необходимо повернуть полярную ось вокруг точки 𝑂 против часовой стрелки до совмещения ее с отрезком 𝑂𝑀."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                322,
+                907,
+                373
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Число ρ называется полярным радиусом точки. Число φ — полярным углом точ- ки."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                391,
+                907,
+                423
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Заметим, что "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho \\geqslant 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а φ определён с точностью до "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "2 \\pi k ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", где "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "k \\in \\mathbb { Z }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O"
+                    },
+                    {
+                        "type": "text",
+                        "content": "имеет "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho = 0 ."
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а φ для неё не определён (ему можно приписать любое направление)."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                441,
+                907,
+                476
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Значение "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\varphi ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "принадлежащее "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "[ 0 ; 2 \\pi )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", называется главным значением "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol { \\varphi }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Полярной осью называют точку и выходящий из неё луч."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                493,
+                737,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Покажем связь между декартовой и полярной системами координат."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                545,
+                721,
+                562
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Расположим ДПСК и ПСК следующим образом: полюс поместим в начало координат, а полярную ось совместим с положительной полуосью "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O x"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Расположенные таким образом ДПСК и ПСК называют соответствующими друг другу."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                562,
+                907,
+                613
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d1a6738cca431e61807eec22ca40fa0a2caf66fb51bb091cf61b8c2a7ac6328c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                352,
+                626,
+                645,
+                756
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть 𝑀 произвольная точка плоскости. Тогда полярные координаты точки 𝑀 равны: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "X _ { M } = O M _ { x } = \\left| O M \\right| \\cdot \\cos \\varphi = \\rho \\cdot \\cos \\varphi ."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                780,
+                887,
+                813
+            ]
+        },
+        {
+            "type": "list",
+            "content": {
+                "list_type": "text_list",
+                "attribute": "unordered",
+                "list_items": [
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "equation_inline",
+                                "content": "Y _ { M } = O M _ { y } = | O M | \\cdot \\sin \\varphi = \\rho \\cdot \\sin \\varphi"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", где "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\rho = \\sqrt { X _ { M } ^ { 2 } + Y _ { M } ^ { 2 } }"
+                            },
+                            {
+                                "type": "text",
+                                "content": ", а угол φ можно найти, решив "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\Bigg ( \\cos { \\varphi } = \\frac { X _ { M } } { \\rho } = \\frac { X _ { M } } { \\sqrt { X _ { M } ^ { 2 } + Y _ { M } ^ { 2 } } } ,"
+                            }
+                        ]
+                    },
+                    {
+                        "item_type": "text",
+                        "item_content": [
+                            {
+                                "type": "text",
+                                "content": "следующую систему:⎨ "
+                            },
+                            {
+                                "type": "equation_inline",
+                                "content": "\\sin \\varphi = \\frac { Y _ { M } } { \\rho } = \\frac { Y _ { M } } { \\sqrt { X _ { M } ^ { 2 } + Y _ { M } ^ { 2 } } } ;"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                812,
+                907,
+                927
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "10"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                957,
+                510,
+                971
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Цилиндрическая и сферическая системы координат в пространстве вводятся следующим образом: в пространстве зафиксируем некоторую плоскость П. Построим на ней полярную систему координат, а так же координатную ось "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O z { \\mathrm { ~ c ~ } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "началом в точке "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и перпендикуляр- ную плоскости П."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                68,
+                907,
+                136
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/3bb3fe7dd475073ef90ce0810ab624987e95bf0208deada404d6fb6f64376ebf.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                346,
+                148,
+                650,
+                286
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "И пусть точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "M"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— произвольная точка пространства, а точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "N - \\mathrm { e } \\ddot { \\mathrm { e } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "проекция на плос- кость П."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                304,
+                904,
+                337
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Цилиндрическими координатами точки 𝑀 называются числа "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\boldsymbol \\rho , \\boldsymbol \\varphi , z ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "где ρ и φ — полярные координаты точки 𝑁 относительно построенной полярной системы коор- динат, а 𝑧 — величина направленного отрезка 𝑂𝑀<sub>𝑧</sub> "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( z = O M _ { z } )"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                355,
+                907,
+                407
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Сферическими координатами точки 𝑀 называются три числа "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho , \\varphi , \\Theta"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", где "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho \\textrm { -- }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "длина отрезка |𝑂𝑀|, φ — полярный радиус точки 𝑁 относительно построенной поляр- ной системы координат, а Θ — угол между направленным отрезком "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { O M } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и осью "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O z"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                424,
+                907,
+                475
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Из определений следует, что "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\rho \\geqslant \\mathrm { ~ 0 ~ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и для цилиндрических, и для сферических коорди- нат, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Theta \\in [ 0 ; \\pi ]"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а φ определён с точностью до 2𝜋𝑛, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "n \\in \\mathbb { Z }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                493,
+                905,
+                527
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Построим в пространстве ДПСК следующим образом: начало координат совпадает с точ- кой "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O ,"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ось "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O z"
+                    },
+                    {
+                        "type": "text",
+                        "content": "совместим с построенной ранее осью "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O z"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а положительное направление оси "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O x - \\mathrm { c }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "полярной осью."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                545,
+                907,
+                595
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/4c00b88e8983fa679e8ff53f94843a9428f1532b05273bc06b5f9940b9cf31ce.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                344,
+                604,
+                650,
+                739
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Тогда точка 𝑀 имеет следующие координаты в системах:"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                757,
+                620,
+                772
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "цилиндрическая: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left\\{ \\begin{array} { l l } { X _ { M } = \\rho \\cdot \\\\cos { \\varphi } . } \\\\ { Y _ { M } = \\rho \\cdot \\sin { \\varphi } , } \\\\ { Z _ { M } = z ; } \\end{array} \\right."
+                    },
+                    {
+                        "type": "text",
+                        "content": "сферическая: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\left\\{ \\begin{array} { l l } { X _ { M } = \\rho \\cdot \\cos \\varphi \\cdot \\sin \\theta , } \\\\ { Y _ { M } = \\rho \\cdot \\sin \\varphi \\cdot \\sin \\theta , } \\\\ { Z _ { M } = \\rho \\cdot \\cos \\theta . } \\end{array} \\right."
+                    }
+                ]
+            },
+            "bbox": [
+                146,
+                781,
+                826,
+                843
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Общую декартову систему координат (аффинную систему координат) на плоскости образуют две пересекающие координатные оси с общим началом координат."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                851,
+                907,
+                885
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть точка 𝑀 — произвольная точка плоскости. Построим через точку 𝑀 прямые, па- раллельные координатным осям."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                902,
+                907,
+                936
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "11"
+                    }
+                ]
+            },
+            "bbox": [
+                489,
+                957,
+                510,
+                970
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/e91dab404099f16c581f60b95726ab118528ef19c0cf649a0a16d4d29cefa50a.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                359,
+                64,
+                620,
+                161
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Общими декартовыми координатами точки 𝑀 называются величины направ- ленных отрезков "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { O M _ { x } } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { O M _ { y } } }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                177,
+                907,
+                212
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "12"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                957,
+                510,
+                971
+            ]
+        }
+    ],
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Глава 2"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                152,
+                245,
+                179
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Векторы"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                211,
+                270,
+                242
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.1 Понятие вектора. Линейные операции "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\mathbf { H a } \\mathbf { \\varDelta }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "вектора- ми."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                87,
+                291,
+                905,
+                338
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Вектором называется множество всех одинаково направленных отрезков равной дли- ны. Обозначение: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a , b , c \\ u a u \\ a , \\vec { b } , \\vec { c } ."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                354,
+                907,
+                387
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— направленный отрезок. Тогда существует единственный вектор, которому принадлежит этот отрезок. То есть любой направленный отрезок "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "однозначно опреде- ляет вектор, который обозначается как "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { A B }"
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                404,
+                907,
+                458
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть заданы вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\vec { a }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и некоторая точка 𝐴. Тогда существует единственная точка "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "B _ { : }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "такая, что "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = { \\overrightarrow { A B } }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                474,
+                907,
+                510
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Операция построения такой точки 𝐵 называется откладыванием вектора "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\vec { a }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "от точки 𝐴."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                529,
+                909,
+                561
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Длиной вектора ⃗𝑎 называется длина любого из направленных отрезков среди его образующих. Обозначение: |⃗𝑎|."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                580,
+                909,
+                615
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Вектор длины 0 называется нулевым. Обозначение: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\vec { 0 } } ."
+                    },
+                    {
+                        "type": "text",
+                        "content": "Вектор длины 1 называет- ся единичным или ортом."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                631,
+                907,
+                665
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Векторы называются коллинеарными, если образующие их отрезки параллельны неко- торой прямой."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                684,
+                909,
+                718
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Векторы называются компланарными, если образующие их отрезки параллельны некоторой плоскости."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                736,
+                909,
+                769
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Заметим, что нулевой вектор и коллинеарен любому вектору, и компланарен любым двум другим векторам."
+                    }
+                ]
+            },
+            "bbox": [
+                87,
+                787,
+                907,
+                821
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть 𝑎 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b - 2"
+                    },
+                    {
+                        "type": "text",
+                        "content": "ненулевых вектора, отложенных от некоторой точки 𝑂. То есть най- дём такие точки 𝐴, и 𝐵, что "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = \\overrightarrow { O A } , b = \\overrightarrow { O B }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                838,
+                907,
+                873
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Углом между векторами 𝑎 и 𝑏 называертся угол между направленными отрез- ками "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { O A } } \\ u \\overline { { O B } }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                890,
+                907,
+                923
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "13"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                957,
+                510,
+                971
+            ]
+        }
+    ],
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/c74238426b03f0eea8ef0fee1577131bcfc79827f0e4b4a71368bec14a0b869d.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                403,
+                66,
+                596,
+                131
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Из определения следует, что угол между двумя векторами "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\in [ 0 ; \\pi ]"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                151,
+                699,
+                167
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Линейные операции над векторами:"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                185,
+                473,
+                200
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• сложение;"
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                216,
+                236,
+                230
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "• умножение на число."
+                    }
+                ]
+            },
+            "bbox": [
+                119,
+                246,
+                334,
+                259
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть 𝑎 и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b - \\mathbb { \\pi } \\mathrm { { B a } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "вектора. Возьмем некоторую точку "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и отложим от нее вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = { \\overrightarrow { O A } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "Затем от точки 𝐴 отложим вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "b = \\overrightarrow { A B }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                269,
+                904,
+                310
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/cc0740ccd66c584c1fbf71b2dfc60872a86f002c0059824cb5d92772b5e64a3f.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                373,
+                322,
+                608,
+                394
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Суммой векторов 𝑎 и 𝑏 будет называться вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { O B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Обозначение: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a + b"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                419,
+                823,
+                438
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Произведением вектора 𝑎 на действительное число 𝐴 называется вектор, длина которого равна "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| A | \\cdot | a |"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а направление совпадает с направлением вектора "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a _ { i }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", если "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A > 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и противоположно направлению вектора "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "^ { a , }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "если "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A < 0"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Обозначение: "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "A \\cdot a"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                456,
+                905,
+                507
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Свойства линейных операций:"
+                    }
+                ]
+            },
+            "bbox": [
+                92,
+                525,
+                416,
+                541
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a + b = b + a ."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                554,
+                262,
+                569
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "♦ Пусть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a = { \\overrightarrow { O A } } , \\ b = { \\overrightarrow { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". На направленных отрезках "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { O A } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overline { { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "построим паралле- лограмм "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "O A B C"
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                571,
+                905,
+                611
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/483990ed0656c32686f3ee7ea9254d7427c6a0854a732f30ff20d6f05ed7fb2c.jpg"
+                },
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                384,
+                630,
+                645,
+                717
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Заметим, что векторы "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { C B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { O A }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "сонаправлены и "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "| { \\overline { { C B } } } | = { \\underline { { | } } } { \\overline { { O A } } } |"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следовательно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\overrightarrow { C B } } = { \\overrightarrow { O A } } = a"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Путем аналогичных рассуждений получим "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { O C } = \\overrightarrow { A B } = b"
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                738,
+                904,
+                777
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "По определению суммы векторов, вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { O B }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "можно, с одной стороны, рассматривать как сумму векторов "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\overrightarrow { O A } } + { \\overrightarrow { A B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", а с другой стороны, как сумму "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "{ \\overrightarrow { O C } } + { \\overrightarrow { C B } }"
+                    },
+                    {
+                        "type": "text",
+                        "content": ". Следова-"
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                781,
+                905,
+                816
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "тельно, "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\overrightarrow { O B } = \\left\\{ \\overrightarrow { O A } + \\overrightarrow { A B } = a + b , \\right.  \\\\  \\overrightarrow { O C } + \\overrightarrow { C B } = \\overrightarrow { A B } + \\overrightarrow { O A } = b + a ;"
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\Rightarrow a + b = b + a ."
+                    }
+                ]
+            },
+            "bbox": [
+                137,
+                814,
+                736,
+                858
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "( a + b ) + c = a + ( b + c )"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                869,
+                357,
+                885
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\vec { a } + \\vec { 0 } = \\vec { a } , \\quad \\forall \\vec { a } ."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                896,
+                282,
+                914
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "14"
+                    }
+                ]
+            },
+            "bbox": [
+                489,
+                957,
+                510,
+                971
+            ]
+        }
+    ],
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha ( a + b ) = \\alpha a + \\alpha b ,"
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                68,
+                319,
+                84
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "( \\alpha + \\beta ) a = \\alpha a + \\beta a ,",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/94cc82b398a8b6f0fb6b3455843e48d5b942e157f733270fcbed9678e11575ea.jpg"
+                }
+            },
+            "bbox": [
+                141,
+                86,
+                326,
+                102
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\alpha ( \\beta a ) = ( \\alpha \\beta ) a , \\mathrm { { r } \\mathrm { { J } \\mathrm { { r } \\it { ~ a } , \\ b - \\delta \\mathrm { { e } \\mathrm { { K } \\mathrm { { r } \\mathrm { { o p } \\mathrm { { b } \\mathrm { { I } , \\ \\ \\alpha \\alpha \\beta } \\alpha \\beta - \\mathrm { { q \\mathrm { _ { H C } \\mathrm { { J } \\mathrm { { a } . } } } } } } } } } } } } }",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/79460b8227c5f5b3a30c7e1eb6dbb1860bb8d6b0cd68b8ec55952ac6a131dce0.jpg"
+                }
+            },
+            "bbox": [
+                139,
+                103,
+                586,
+                120
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Вектор 𝑏 называется противоположным вектору 𝑎, если его длина совпадает с дли- ной вектора 𝑎, а направление противоположно."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                131,
+                907,
+                166
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Из определения следует, что"
+                    }
+                ]
+            },
+            "bbox": [
+                90,
+                184,
+                356,
+                199
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. −1 · 𝑎 = −𝑎, где вектор (−𝑎) — противоположный вектору 𝑎;"
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                214,
+                697,
+                228
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "1 \\cdot a = a ."
+                    }
+                ]
+            },
+            "bbox": [
+                114,
+                242,
+                221,
+                256
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Разностью векторов 𝑎 и 𝑏 называется вектор, прибавив который к вектору 𝑏, по- лучим вектор 𝑎, то есть вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c = a - b"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", где "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "c + b = a"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                271,
+                907,
+                305
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Правило вычитания: Чтобы из вектора 𝑎 вычесть вектор 𝑏, необходимо к вектору 𝑎 прибавить вектор, противоположный вектору 𝑏, то есть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a - b = a + ( - b )"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                322,
+                909,
+                356
+            ]
+        },
+        {
+            "type": "equation_interline",
+            "content": {
+                "math_content": "\\bullet \\ ( a + ( - b ) ) + b = a + ( b + ( - b ) ) = a + { \\vec { 0 } } = a .",
+                "math_type": "latex",
+                "image_source": {
+                    "path": "images/1f87d9606bc9576204d31a2e1c229e0e32edcd149b489ae108f3826bb3614e7e.jpg"
+                }
+            },
+            "bbox": [
+                89,
+                372,
+                500,
+                391
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "2.2 Координаты вектора."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                89,
+                417,
+                472,
+                438
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Пусть "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a _ { 1 } , \\ldots , a _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "— произвольная система векторов. "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { 1 } , \\ldots , \\alpha _ { k } \\mathrm { ~ - ~ }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "некоторые действитель- ные числа."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                453,
+                907,
+                485
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Вектор "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { 1 } a _ { 1 } + \\ldots + \\alpha _ { k } a _ { k }"
+                    },
+                    {
+                        "type": "text",
+                        "content": "называется линейной комбинацией векторов "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "a _ { 1 } , \\ldots , a _ { k } \\ c \\ \\kappa o { \\scriptscriptstyle \\partial } \\phi -"
+                    },
+                    {
+                        "type": "text",
+                        "content": "фициентами "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { 1 } , \\ldots , \\alpha _ { k }"
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                505,
+                907,
+                538
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Если вектор представлен в виде линейной комбинации системы векторов (то есть 𝑏 = "
+                    },
+                    {
+                        "type": "equation_inline",
+                        "content": "\\alpha _ { 1 } a _ { 1 } + \\ldots + \\alpha _ { k } a _ { k } )"
+                    },
+                    {
+                        "type": "text",
+                        "content": ", то говорят, что данный вектор разложим по этим векторам системы."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                556,
+                905,
+                589
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Базисом на прямой называется любой ненулевой вектор, параллельный этой пря- мой."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                607,
+                907,
+                639
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Базисом на плоскости называется упорядоченная пара неколлинеарных векторов."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                659,
+                892,
+                675
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "∙ Базисом в пространстве называется упорядоченная тройка некомпланарных век- торов."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                693,
+                907,
+                726
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Нулевой вектор не может быть элементом базиса."
+                    }
+                ]
+            },
+            "bbox": [
+                89,
+                745,
+                547,
+                760
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "Теорема."
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                90,
+                774,
+                186,
+                790
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1. Любой вектор, параллельный прямой, может быть единственным образом разло- жен по базису этой прямой."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                806,
+                907,
+                839
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "2. Любой вектор, параллельный плоскости, может быть единственным образом раз- ложен по базису на этой плоскости."
+                    }
+                ]
+            },
+            "bbox": [
+                110,
+                852,
+                905,
+                885
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3. Любой вектор в пространстве может быть единственным образом по базису в пространстве."
+                    }
+                ]
+            },
+            "bbox": [
+                112,
+                898,
+                907,
+                932
+            ]
+        },
+        {
+            "type": "page_number",
+            "content": {
+                "page_number_content": [
+                    {
+                        "type": "text",
+                        "content": "15"
+                    }
+                ]
+            },
+            "bbox": [
+                487,
+                957,
+                510,
+                970
+            ]
+        }
+    ]
+]
