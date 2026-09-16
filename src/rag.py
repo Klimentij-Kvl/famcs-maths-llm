@@ -1,17 +1,22 @@
+import logging
+
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 from langchain_qdrant import QdrantVectorStore
 
-from build_index import (
-    FastEmbLangChainAdapter,
+from fastemb_langchain_adapter import FastEmbLangChainAdapter
+from config import (
     QDRANT_URL,
     COLLECTION_NAME,
     EMBEDDING_MODEL,
+    LOG_DIR,
+    LLM_MODEL,
+    TOP_K,
 )
 
-LLM_MODEL = "qwen2.5:7b"
-TOP_K = 5
+
+logger = logging.getLogger(__name__)
 
 embeddings = FastEmbLangChainAdapter(EMBEDDING_MODEL)
 
@@ -47,6 +52,7 @@ prompt = ChatPromptTemplate.from_messages([
    используй его как основу объяснения.
 6. Не утверждай, что в конспекте сказано то, чего там нет.
 7. Не добавляй никаких источников в ответ.
+8. Отвечай только на русском языке.
 
 Контекст:
 
@@ -105,3 +111,33 @@ def answer(question: str):
 
     return response, docs
 
+def main():
+    logging.basicConfig(
+        filename=LOG_DIR / "rag.log",
+        level=logging.INFO,
+        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        encoding="utf-8"
+    )
+
+    print("\n" + 
+          "=" * 60 + 
+          "\nMATH RAG\n" + 
+          "=" * 60 + 
+          "\nВведите запрос. \nДля выхода: exit\n")
+
+    while True:
+        question = input(">>> ").strip()
+
+        if question.lower() in("exit", "quit", "q"):
+            break
+
+        if not question:
+            continue
+
+        response, docs = answer(question)
+
+        print()
+        print(response)
+
+if __name__ == "__main__":
+    main()
