@@ -3,7 +3,7 @@ from pathlib import Path
 LOG_DIR = Path("logs")
 LOG_DIR.mkdir(exist_ok=True)
 
-KNOWLEDGE_FILE = "data/processed/fil_ag.jsonl"
+KNOWLEDGE_FILE = "data/processed/fil.semantic.jsonl"
 QDRANT_URL = "http://localhost:6333"
 COLLECTION_NAME = "math_notes"
 EMBEDDING_MODEL = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"

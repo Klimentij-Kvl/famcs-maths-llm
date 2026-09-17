@@ -136,6 +136,8 @@ def main():
 
         response, docs = answer(question)
 
+        logger.info(docs)
+
         print()
         print(response)
 

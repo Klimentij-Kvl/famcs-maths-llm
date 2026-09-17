@@ -35,3 +35,53 @@
 2026-09-17 15:10:32,725 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
 2026-09-17 15:10:33,283 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
 2026-09-17 15:10:33,284 [INFO] __main__: Vector store created
+2026-09-17 15:14:23,195 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-17 15:14:23,215 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-17 15:14:23,215 [INFO] __main__: Loaded 575 documents
+2026-09-17 15:14:23,215 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-17 15:14:23,871 [INFO] __main__: Embedding model loaded
+2026-09-17 15:14:23,872 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-17 15:14:23,891 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-17 15:14:23,892 [INFO] __main__: Found collection with same name
+2026-09-17 15:14:23,897 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-17 15:14:23,898 [INFO] __main__: Old version collection math_notes deleted
+2026-09-17 15:14:23,898 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-17 15:14:23,899 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-17 15:14:23,914 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-17 15:14:23,927 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-17 15:14:24,007 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-17 15:14:24,324 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:24,684 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:25,087 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:25,493 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:25,808 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:26,076 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:26,358 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:26,659 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:26,947 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:14:26,948 [INFO] __main__: Vector store created
+2026-09-17 15:17:58,732 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-17 15:17:58,754 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-17 15:17:58,755 [INFO] __main__: Loaded 575 documents
+2026-09-17 15:17:58,755 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-17 15:17:59,486 [INFO] __main__: Embedding model loaded
+2026-09-17 15:17:59,486 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-17 15:17:59,501 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-17 15:17:59,502 [INFO] __main__: Found collection with same name
+2026-09-17 15:17:59,505 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-17 15:17:59,511 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-17 15:17:59,512 [INFO] __main__: Old version collection math_notes deleted
+2026-09-17 15:17:59,512 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-17 15:17:59,528 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-17 15:17:59,541 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-17 15:17:59,646 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-17 15:18:01,841 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:04,257 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:06,286 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:08,193 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:10,240 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:12,159 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:13,984 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:15,928 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:17,824 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-17 15:18:17,824 [INFO] __main__: Vector store created
