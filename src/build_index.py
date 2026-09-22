@@ -1,7 +1,7 @@
 from pathlib import Path
 import logging
 
-from langchain_qdrant import QdrantVectorStore
+from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 from qdrant_client import QdrantClient
 
 from fastemb_langchain_adapter import FastEmbLangChainAdapter
@@ -15,6 +15,9 @@ from config import (
     COLLECTION_NAME
 )
 
+from dotenv import load_dotenv
+
+
 logger = logging.getLogger(__name__)
 
 def build_index():
@@ -26,6 +29,8 @@ def build_index():
     embeddings = FastEmbLangChainAdapter(EMBEDDING_MODEL)
     logger.info("Embedding model loaded")
 
+    sparse_embeddings = FastEmbedSparse(model_name="Qdrant/bm25")
+
     logger.info(f"Connecting to Qdrant database on url {QDRANT_URL}")
     client = QdrantClient(QDRANT_URL)
 
@@ -35,10 +40,18 @@ def build_index():
         logger.info(f"Old version collection {COLLECTION_NAME} deleted")
 
     logger.info(f"Creating collection {COLLECTION_NAME} with embeddings")
-    vector_store = QdrantVectorStore.from_documents(documents, embedding=embeddings, url=QDRANT_URL, collection_name=COLLECTION_NAME)
+    vector_store = QdrantVectorStore.from_documents(
+        documents, 
+        embedding=embeddings, 
+    #    sparse_embedding=sparse_embeddings,
+    #    retrieval_mode=RetrievalMode.HYBRID,
+        url=QDRANT_URL, 
+        collection_name=COLLECTION_NAME,
+    )
     logger.info("Vector store created")
 
 if __name__ == "__main__":
+    load_dotenv()
     logging.basicConfig(
         filename=LOG_DIR / "build_index.log",
         level=logging.INFO,

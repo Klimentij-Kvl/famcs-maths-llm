@@ -2,8 +2,6 @@ from __future__ import annotations
 
 import json
 import logging
-import re
-from collections.abc import Iterable
 from pathlib import Path
 from typing import Any
 
@@ -12,368 +10,317 @@ from langchain_core.documents import Document
 logger = logging.getLogger(__name__)
 
 
-_SECTION_RE = re.compile(r"^\s*(\d+(?:\.\d+)*)\s*[.]?\s*(.*?)\s*$")
-_CHAPTER_NUMBER_RE = re.compile(r"^\s*(?:Глава|Chapter)\s+(\d+)\s*$", re.IGNORECASE)
+_ALLOWED_TYPES = {
+    "definition",
+    "remark",
+    "properties",
+    "theorem",
+    "lemma",
+    "corollary",
+}
 
 _TYPE_LABELS = {
-    "theorem": "теорема",
-    "definition": "определение",
-    "lemma": "лемма",
-    "corollary": "следствие",
-    "property": "свойство",
-    "remark": "замечание",
-    "example": "пример",
-    "rule": "правило",
-    "scheme": "схема",
-    "bullet": "утверждение",
-    "text": "текст",
+    "definition": "Определение",
+    "remark": "Замечание",
+    "properties": "Свойства",
+    "theorem": "Теорема",
+    "lemma": "Лемма",
+    "corollary": "Следствие",
 }
 
 
 def _clean_text(value: Any) -> str:
-    """Convert a value to a trimmed string without touching math notation."""
+    """Return a stripped string; preserve LaTeX/math notation as-is."""
     if value is None:
         return ""
     return str(value).strip()
 
 
-def _parse_section(section: str, section_title: str | None = None) -> tuple[str, str]:
-    """
-    Normalize section metadata.
-
-    New parser schema:
-        section = "8.2"
-        section_title = "Деление с остатком в кольце многочленов"
-
-    Legacy schema:
-        section = "8.2 Деление с остатком в кольце многочленов."
-    """
-    section_raw = _clean_text(section)
-    explicit_title = _clean_text(section_title)
-
-    if not section_raw:
-        return "", explicit_title
-
-    match = _SECTION_RE.match(section_raw)
-    if not match:
-        return section_raw, explicit_title or section_raw
-
-    number = match.group(1)
-    parsed_title = match.group(2).strip().rstrip(".")
-    return number, explicit_title or parsed_title
-
-
-def _parse_chapter(
-    chapter: str,
-    chapter_number: str | None = None,
-    chapter_name: str | None = None,
-) -> tuple[str, str]:
-    """
-    Normalize chapter metadata for both the new and legacy JSONL schemas.
-
-    New schema:
-        chapter = "Кольцо многочленов"
-        chapter_number = "8"
-
-    Legacy schema:
-        chapter = "Глава 8"
-        chapter_name = "Кольцо многочленов"
-    """
-    chapter_raw = _clean_text(chapter)
-    explicit_number = _clean_text(chapter_number)
-    explicit_name = _clean_text(chapter_name)
-
-    if explicit_number:
-        number = explicit_number
-    else:
-        match = _CHAPTER_NUMBER_RE.match(chapter_raw)
-        number = match.group(1) if match else chapter_raw
-
-    if explicit_name:
-        name = explicit_name
-    elif _CHAPTER_NUMBER_RE.match(chapter_raw):
-        # Legacy form: chapter="Глава 8", chapter_name may be absent.
-        name = ""
-    else:
-        # New form: chapter already contains the human-readable title.
-        name = chapter_raw
-
-    return number, name
-
-
-def _iter_elements(item: dict[str, Any]) -> Iterable[dict[str, Any]]:
-    """Yield structured elements in their semantic order."""
-    for key in ("statement", "content", "proof"):
-        value = item.get(key)
-        if isinstance(value, list):
-            for element in value:
-                if isinstance(element, dict):
-                    yield element
-
-
-def element_to_text(element: dict[str, Any]) -> str:
-    """Convert one structured element into embedding text."""
-    element_type = _clean_text(element.get("type")) or "text"
-
-    if element_type == "image":
-        path = _clean_text(element.get("path"))
-        return f"IMAGE: {path}" if path else "IMAGE"
-
-    text = _clean_text(element.get("text"))
-    if not text:
-        return ""
-
-    if element_type == "formula":
-        return f"FORMULA:\n{text}"
-
-    if element_type == "text":
-        return text
-
-    return f"{element_type.upper()}:\n{text}"
-
-
-def _elements_to_text(elements: Any) -> list[str]:
-    """Render a structured element list; tolerate malformed entries."""
-    if not isinstance(elements, list):
+def _normalize_string_list(value: Any) -> list[str]:
+    """Normalize a JSON array of strings."""
+    if not isinstance(value, list):
         return []
 
-    result: list[str] = []
-    for element in elements:
-        if not isinstance(element, dict):
-            continue
-        rendered = element_to_text(element)
-        if rendered:
-            result.append(rendered)
-    return result
+    return [
+        str(item).strip()
+        for item in value
+        if str(item).strip()
+    ]
 
 
-def _content_to_text(item: dict[str, Any]) -> str:
-    """
-    Read semantic content from either schema:
+def _normalize_source(value: Any) -> dict[str, Any]:
+    """Normalize source metadata from the new JSONL schema."""
+    if not isinstance(value, dict):
+        return {}
 
-    New schema:
-        content = "..."
+    source: dict[str, Any] = {}
 
-    Legacy schema:
-        content = [{"type": "text", "text": "..."}, ...]
-    """
+    file_name = _clean_text(value.get("file"))
+    if file_name:
+        source["file"] = file_name
+
+    start_line = value.get("start_line")
+    if isinstance(start_line, int) and not isinstance(start_line, bool):
+        source["start_line"] = start_line
+    elif isinstance(start_line, str) and start_line.strip().isdigit():
+        source["start_line"] = int(start_line.strip())
+
+    end_line = value.get("end_line")
+    if isinstance(end_line, int) and not isinstance(end_line, bool):
+        source["end_line"] = end_line
+    elif isinstance(end_line, str) and end_line.strip().isdigit():
+        source["end_line"] = int(end_line.strip())
+
+    return source
+
+
+def _validate_item(item: dict[str, Any], line_number: int) -> None:
+    """Validate one record of the new semantic JSONL schema."""
+    chunk_id = _clean_text(item.get("chunk_id"))
+    if not chunk_id:
+        raise ValueError(
+            f"Missing 'chunk_id' at JSONL line {line_number}"
+        )
+
     content = item.get("content")
+    if not isinstance(content, str) or not content.strip():
+        raise ValueError(
+            f"Missing/empty 'content' for chunk {chunk_id}"
+        )
 
-    if isinstance(content, str):
-        return content.strip()
+    item_type = _clean_text(item.get("type"))
+    if item_type not in _ALLOWED_TYPES:
+        raise ValueError(
+            f"Unsupported type {item_type!r} for chunk {chunk_id}; "
+            f"expected one of {sorted(_ALLOWED_TYPES)}"
+        )
 
-    if isinstance(content, list):
-        return "\n\n".join(_elements_to_text(content)).strip()
+    chapter = _clean_text(item.get("chapter"))
+    if not chapter:
+        raise ValueError(
+            f"Missing 'chapter' for chunk {chunk_id}"
+        )
 
-    # Extra backward-compatible fallback for legacy theorem representation.
-    sections: list[str] = []
+    section = _clean_text(item.get("section"))
+    if not section:
+        raise ValueError(
+            f"Missing 'section' for chunk {chunk_id}"
+        )
 
-    statement = _elements_to_text(item.get("statement"))
-    proof = _elements_to_text(item.get("proof"))
-
-    if statement:
-        sections.append("\n\n".join(statement))
-    if proof:
-        sections.append("\n\n".join(proof))
-
-    return "\n\n".join(sections).strip()
-
-
-def _extract_equations(item: dict[str, Any]) -> list[str]:
-    """Extract equations from explicit metadata or structured elements."""
-    equations = item.get("equations")
-    if isinstance(equations, list):
-        normalized = [_clean_text(eq) for eq in equations if _clean_text(eq)]
-        if normalized:
-            return normalized
-
-    result: list[str] = []
-    for element in _iter_elements(item):
-        if _clean_text(element.get("type")) == "formula":
-            formula = _clean_text(element.get("text"))
-            if formula:
-                result.append(formula)
-    return result
+    section_num = _clean_text(item.get("section_num"))
+    if not section_num:
+        raise ValueError(
+            f"Missing 'section_num' for chunk {chunk_id}"
+        )
 
 
-def _extract_images(item: dict[str, Any]) -> list[str]:
-    """Extract image paths from explicit metadata or structured elements."""
-    images = item.get("images")
-    if isinstance(images, list):
-        normalized = [_clean_text(path) for path in images if _clean_text(path)]
-        if normalized:
-            return normalized
-
-    result: list[str] = []
-    for element in _iter_elements(item):
-        if _clean_text(element.get("type")) == "image":
-            path = _clean_text(element.get("path"))
-            if path:
-                result.append(path)
-    return result
-
-
-def _build_page_content(
-    item: dict[str, Any],
-    *,
-    part_name: str,
-    chapter_name: str,
-    section_number: str,
-    section_title: str,
-) -> str:
+def _build_page_content(item: dict[str, Any]) -> str:
     """
-    Prefer parser-produced retrieval_text because it already contains the
-    intended semantic context. Fall back to reconstructing it for legacy JSONL.
+    Build embedding text.
+
+    `content` is already a complete semantic mathematical unit.
+    It is never split or reconstructed from separate pieces.
     """
-    retrieval_text = _clean_text(item.get("retrieval_text"))
-    if retrieval_text:
-        return retrieval_text
 
-    item_type = _clean_text(item.get("type")) or "text"
-    label = _TYPE_LABELS.get(item_type, item_type)
+    chunk_type = _clean_text(item.get("type"))
+    type_label = _TYPE_LABELS.get(chunk_type, chunk_type)
 
-    parts: list[str] = [f"Тип знания: {label}"]
+    chapter = _clean_text(item.get("chapter"))
+    chapter_num = item.get("chapter_num")
 
-    if part_name:
-        parts.append(f"Часть: {part_name}")
+    section = _clean_text(item.get("section"))
+    section_num = _clean_text(item.get("section_num"))
 
-    if chapter_name:
-        parts.append(f"Глава: {chapter_name}")
+    content = _clean_text(item.get("content"))
 
-    if section_number and section_title:
-        parts.append(f"Раздел: {section_number} — {section_title}")
-    elif section_number:
-        parts.append(f"Раздел: {section_number}")
-    elif section_title:
-        parts.append(f"Раздел: {section_title}")
+    context: list[str] = []
 
-    # New semantic JSONL keeps the complete semantic unit in `content`.
-    content_text = _content_to_text(item)
-    if content_text:
-        parts.append(content_text)
+    if chapter_num is not None and str(chapter_num).strip():
+        context.append(
+            f"Глава {chapter_num}: {chapter}"
+        )
+    elif chapter:
+        context.append(
+            f"Глава: {chapter}"
+        )
 
-    return "\n\n".join(part for part in parts if part).strip()
+    if section_num and section:
+        context.append(
+            f"§ {section_num}. {section}"
+        )
+    elif section:
+        context.append(
+            f"Раздел: {section}"
+        )
+
+    if type_label:
+        context.append(
+            f"Тип: {type_label}"
+        )
+
+    if not context:
+        return content
+
+    return "\n".join(context) + "\n\n" + content
 
 
-def item_to_document(item: dict[str, Any], document_name: str | None = None) -> Document:
-    """Convert one semantic JSONL record into a LangChain Document."""
-    item_type = _clean_text(item.get("type")) or "text"
+def item_to_document(item: dict[str, Any]) -> Document:
+    """Convert one new JSONL record into a LangChain Document."""
 
-    part_name = _clean_text(item.get("part")) or _clean_text(item.get("part_name"))
-    part_number = _clean_text(item.get("part_number"))
+    chunk_id = _clean_text(item.get("chunk_id"))
+    file_name = _clean_text(item.get("file"))
+    chapter = _clean_text(item.get("chapter"))
+    section = _clean_text(item.get("section"))
+    section_num = _clean_text(item.get("section_num"))
+    item_type = _clean_text(item.get("type"))
 
-    chapter_number, chapter_name = _parse_chapter(
-        _clean_text(item.get("chapter")),
-        _clean_text(item.get("chapter_number")),
-        _clean_text(item.get("chapter_name")),
+    equations = _normalize_string_list(
+        item.get("equations")
+    )
+    images = _normalize_string_list(
+        item.get("images")
     )
 
-    section_number, section_title = _parse_section(
-        _clean_text(item.get("section")),
-        _clean_text(item.get("section_title")),
+    source = _normalize_source(
+        item.get("source")
     )
 
-    section_raw = _clean_text(item.get("section_raw")) or _clean_text(item.get("section"))
-    parent_section = _clean_text(item.get("parent_section")) or section_number or section_raw
-
-    equations = _extract_equations(item)
-    images = _extract_images(item)
-
-    source = item.get("source") if isinstance(item.get("source"), dict) else {}
-    source_file = _clean_text(source.get("file"))
-
-    record_document = _clean_text(item.get("document"))
-    inferred_document = (
-        record_document
-        or document_name
-        or (Path(source_file).stem if source_file else "")
+    # Intentionally preserve the spelling from the JSONL schema.
+    contains_proof = item.get(
+        "contatins_proof",
+        False,
     )
+
+    if not isinstance(contains_proof, bool):
+        contains_proof = (
+            str(contains_proof).strip().lower()
+            in {"true", "1", "yes"}
+        )
+
+    proof_value = item.get("proof")
+
+    if isinstance(proof_value, str):
+        proof = proof_value.strip()
+    else:
+        proof = None
 
     metadata: dict[str, Any] = {
-        "knowledge_id": _clean_text(item.get("id")) or None,
-        "document": inferred_document or None,
-        "part": part_name or None,
-        "part_number": part_number or None,
+        "chunk_id": chunk_id,
+        "file": file_name or None,
+        "chapter": chapter or None,
+        "chapter_num": item.get("chapter_num"),
+        "section": section or None,
+        "section_num": section_num or None,
         "type": item_type,
-        "title": _clean_text(item.get("title")) or None,
-        "chapter": chapter_name or None,
-        "chapter_number": chapter_number or None,
-        "chapter_name": chapter_name or None,
-        "section": section_number or section_raw or None,
-        "section_raw": section_raw or None,
-        "section_title": section_title or None,
-        "parent_section": parent_section or None,
-        "source_file": source_file or None,
-        "start_line": source.get("start_line"),
-        "end_line": source.get("end_line"),
-        "page": item.get("page"),
         "equations": equations,
-        "equation_count": len(equations),
         "images": images,
-        "image_count": len(images),
-        "has_proof": bool(item.get("contains_proof", item.get("proof"))),
+        "contatins_proof": contains_proof,
+        "proof": proof,
+        "source": source or None,
     }
 
-    # Qdrant metadata should contain only supported scalar/list values.
+    # Also store source line numbers flat for convenient Qdrant filtering.
+    if "start_line" in source:
+        metadata["source_start_line"] = source["start_line"]
+
+    if "end_line" in source:
+        metadata["source_end_line"] = source["end_line"]
+
     metadata = {
         key: value
         for key, value in metadata.items()
         if value is not None
     }
 
-    page_content = _build_page_content(
-        item,
-        part_name=part_name,
-        chapter_name=chapter_name,
-        section_number=section_number,
-        section_title=section_title,
-    )
-
     return Document(
-        page_content=page_content,
+        page_content=_build_page_content(item),
         metadata=metadata,
     )
 
 
-def load_documents(path: str | Path, document: str | None = None) -> list[Document]:
-    """Load semantic JSONL records into LangChain Documents."""
+def load_documents(path: str | Path) -> list[Document]:
+    """Load the new semantic JSONL file into LangChain Documents."""
+
     path = Path(path)
+
     documents: list[Document] = []
+    seen_chunk_ids: set[str] = set()
+    invalid_count = 0
 
     with path.open("r", encoding="utf-8") as f:
         for line_number, raw_line in enumerate(f, start=1):
             line = raw_line.strip()
+
             if not line:
                 continue
 
             try:
                 item = json.loads(line)
             except json.JSONDecodeError as exc:
-                logger.warning("Invalid JSON at %s:%d: %s", path, line_number, exc)
+                invalid_count += 1
+
+                logger.warning(
+                    "Invalid JSON at %s:%d: %s",
+                    path,
+                    line_number,
+                    exc,
+                )
+
                 continue
 
             if not isinstance(item, dict):
-                logger.warning("Skipping non-object JSON at %s:%d", path, line_number)
+                invalid_count += 1
+
+                logger.warning(
+                    "Skipping non-object JSON at %s:%d",
+                    path,
+                    line_number,
+                )
+
                 continue
 
             try:
-                document_obj = item_to_document(item, document_name=document)
+                _validate_item(
+                    item,
+                    line_number,
+                )
+
+                chunk_id = _clean_text(
+                    item["chunk_id"]
+                )
+
+                if chunk_id in seen_chunk_ids:
+                    raise ValueError(
+                        f"Duplicate chunk_id {chunk_id!r}"
+                    )
+
+                document_obj = item_to_document(item)
+
             except Exception:
-                logger.exception("Failed to convert record at %s:%d", path, line_number)
+                invalid_count += 1
+
+                logger.exception(
+                    "Failed to convert semantic record at %s:%d",
+                    path,
+                    line_number,
+                )
+
                 continue
 
-            if not document_obj.page_content.strip():
-                logger.warning("Skipping empty semantic record at %s:%d", path, line_number)
-                continue
-
+            seen_chunk_ids.add(chunk_id)
             documents.append(document_obj)
 
-    logger.info("Loaded %d semantic documents from %s", len(documents), path)
+    logger.info(
+        "Loaded %d documents from %s; skipped %d records",
+        len(documents),
+        path,
+        invalid_count,
+    )
+
     return documents
 
 
 __all__ = [
-    "element_to_text",
     "item_to_document",
     "load_documents",
 ]

@@ -1,3 +1,4 @@
 qdrant_storage
 .venv/
 .venv3-12/
+.env

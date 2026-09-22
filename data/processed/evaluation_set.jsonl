@@ -1,0 +1,32 @@
+{
+  "id": "q_0001",
+  "query": "Что такое матрица?",
+  "answerable": true,
+  "query_type": "direct",
+  "difficulty": "easy",
+  "relevant_chunk_ids": ["304e1cc54ec17c82af49"],
+  "ground_truth_answer": ""
+}
+
+{
+  "id": "q_0042",
+  "query": "",
+  "answerable": true,
+  "query_type": "multi_chunk",
+  "difficulty": "hard",
+  "relevant_chunk_ids": [
+    "",
+    ""
+  ],
+  "ground_truth_answer": ""
+}
+
+{
+  "id": "",
+  "query": "",
+  "answerable": false,
+  "query_type": "unanswerable",
+  "difficulty": "medium",
+  "relevant_chunk_ids": [],
+  "ground_truth_answer": null
+}

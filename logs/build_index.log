@@ -85,3 +85,325 @@
 2026-09-17 15:18:15,928 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
 2026-09-17 15:18:17,824 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
 2026-09-17 15:18:17,824 [INFO] __main__: Vector store created
+2026-09-20 23:11:30,830 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-20 23:11:30,851 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-20 23:11:30,852 [INFO] __main__: Loaded 575 documents
+2026-09-20 23:11:30,852 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-20 23:11:31,133 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-09-20 23:11:31,265 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:31,400 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q "HTTP/1.1 200 OK"
+2026-09-20 23:11:31,568 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:31,710 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-09-20 23:11:31,858 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/revision/main "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,008 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/revision/main "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,139 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,279 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,412 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,515 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,571 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,573 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,572 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/xet-read-token/faf4aa4225822f3bc6376869cb1164e8e3feedd0 "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,601 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fconfig.json=&etag=%225b496dbbbe502a10e2d64525481c6f444d125403%22 "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,651 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,651 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-20 23:11:32,660 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fconfig.json=&etag=%225b496dbbbe502a10e2d64525481c6f444d125403%22 "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,678 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fspecial_tokens_map.json=&etag=%22b1879d702821e753ffe4245048eee415d54a9385%22 "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,700 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:11:32,705 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/xet-read-token/faf4aa4225822f3bc6376869cb1164e8e3feedd0 "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,722 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fspecial_tokens_map.json=&etag=%22b1879d702821e753ffe4245048eee415d54a9385%22 "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,728 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Ftokenizer_config.json=&etag=%226af3e8bba20e4425103afb1ae3dee3cacdbe7afb%22 "HTTP/1.1 200 OK"
+2026-09-20 23:11:32,762 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Ftokenizer_config.json=&etag=%226af3e8bba20e4425103afb1ae3dee3cacdbe7afb%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:05,358 [INFO] __main__: Embedding model loaded
+2026-09-20 23:12:05,564 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25 "HTTP/1.1 200 OK"
+2026-09-20 23:12:05,699 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25/tree/22b8d2af71a76161e18dd432d2cee0eefa66e412?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-09-20 23:12:05,838 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25/revision/main "HTTP/1.1 200 OK"
+2026-09-20 23:12:05,970 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25/tree/22b8d2af71a76161e18dd432d2cee0eefa66e412?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,102 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/arabic.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,131 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/arabic.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Farabic.txt=&etag=%22ee3a26e793f8ab69a44b30332708cc122b258b51%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,161 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/arabic.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Farabic.txt=&etag=%22ee3a26e793f8ab69a44b30332708cc122b258b51%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,179 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/danish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,180 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/english.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,180 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/french.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,183 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/german.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,183 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,184 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/finnish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,186 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/dutch.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,208 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/danish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdanish.txt=&etag=%22d3edc6757912e3d83acfa241859c4a1bdb6005ad%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,213 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/french.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffrench.txt=&etag=%2200af58791541ed63f33c98207199f6b32727f571%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,213 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/english.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fenglish.txt=&etag=%221280aa3b08d64b846272b2d23314377200db36e9%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,215 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/german.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgerman.txt=&etag=%22c2241d0ee7bbc192abe3b56efffb75f29a29e185%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,216 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/config.json?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fconfig.json=&etag=%229e26dfeeb6e641a33dae4961196235bdb965b21b%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,218 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/dutch.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdutch.txt=&etag=%22cafa0324b53763f7efadda5b0f3d0321ffa7ab38%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,218 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/finnish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffinnish.txt=&etag=%2247ee200f6781ddfdb31af37e317e1f05d10a04ff%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,237 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/danish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdanish.txt=&etag=%22d3edc6757912e3d83acfa241859c4a1bdb6005ad%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,248 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/french.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffrench.txt=&etag=%2200af58791541ed63f33c98207199f6b32727f571%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,248 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/finnish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffinnish.txt=&etag=%2247ee200f6781ddfdb31af37e317e1f05d10a04ff%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,249 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/german.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgerman.txt=&etag=%22c2241d0ee7bbc192abe3b56efffb75f29a29e185%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,248 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/config.json?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fconfig.json=&etag=%229e26dfeeb6e641a33dae4961196235bdb965b21b%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,249 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/english.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fenglish.txt=&etag=%221280aa3b08d64b846272b2d23314377200db36e9%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,251 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/dutch.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdutch.txt=&etag=%22cafa0324b53763f7efadda5b0f3d0321ffa7ab38%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,300 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/greek.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,341 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/greek.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgreek.txt=&etag=%229d08b144659c4ae804bb84a624e1248bb2b90e40%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,366 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/hungarian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,376 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/greek.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgreek.txt=&etag=%229d08b144659c4ae804bb84a624e1248bb2b90e40%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,383 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/portuguese.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,384 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/romanian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,385 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/norwegian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,386 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/spanish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,389 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/russian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,394 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/italian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,395 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/hungarian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fhungarian.txt=&etag=%2294e9f9a0b07a68aeff30605fc445db71f63be630%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,410 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/portuguese.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fportuguese.txt=&etag=%22eb53a8fc2544b16d2a849d98e26c6e34bf07bdb0%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,412 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/romanian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fromanian.txt=&etag=%2245651c90ec7ea5b26c51ea9a11fddafb00652190%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,416 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/norwegian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fnorwegian.txt=&etag=%229ac1abbb6cba1fb3159caa6d88b25543b9080031%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,416 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/spanish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fspanish.txt=&etag=%226a7d50cc633609c8bc2da53c3dac9a015c248b62%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,419 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/russian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Frussian.txt=&etag=%22ecb83d4a7f393b67b054b44e337d683b2ff2d973%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,427 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/hungarian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fhungarian.txt=&etag=%2294e9f9a0b07a68aeff30605fc445db71f63be630%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,428 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/italian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fitalian.txt=&etag=%226ee02b51fb1711625c1de28595615cdecba4de7c%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,437 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/portuguese.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fportuguese.txt=&etag=%22eb53a8fc2544b16d2a849d98e26c6e34bf07bdb0%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,440 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/romanian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fromanian.txt=&etag=%2245651c90ec7ea5b26c51ea9a11fddafb00652190%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,454 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/spanish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fspanish.txt=&etag=%226a7d50cc633609c8bc2da53c3dac9a015c248b62%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,454 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/norwegian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fnorwegian.txt=&etag=%229ac1abbb6cba1fb3159caa6d88b25543b9080031%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,455 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/russian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Frussian.txt=&etag=%22ecb83d4a7f393b67b054b44e337d683b2ff2d973%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,458 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/italian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fitalian.txt=&etag=%226ee02b51fb1711625c1de28595615cdecba4de7c%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,513 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/swedish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,544 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/swedish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fswedish.txt=&etag=%22742bb6263b99fb2ea6e1e3624a65eb2799a1e24c%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,561 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/turkish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-20 23:12:06,572 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/swedish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fswedish.txt=&etag=%22742bb6263b99fb2ea6e1e3624a65eb2799a1e24c%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,591 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/turkish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fturkish.txt=&etag=%225a48ccce0737bb38cb99cafa1f8d3d0ce34e7488%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,620 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/turkish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fturkish.txt=&etag=%225a48ccce0737bb38cb99cafa1f8d3d0ce34e7488%22 "HTTP/1.1 200 OK"
+2026-09-20 23:12:06,761 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-20 23:12:25,822 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-20 23:12:25,843 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-20 23:12:25,843 [INFO] __main__: Loaded 575 documents
+2026-09-20 23:12:25,843 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-20 23:12:26,682 [INFO] __main__: Embedding model loaded
+2026-09-20 23:12:26,834 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-20 23:12:26,856 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:12:26,857 [INFO] __main__: Found collection with same name
+2026-09-20 23:12:26,857 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:12:26,873 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:12:26,874 [INFO] __main__: Old version collection math_notes deleted
+2026-09-20 23:12:26,874 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-20 23:12:26,891 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:12:26,899 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:12:27,081 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:12:29,203 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:31,442 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:33,789 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:35,682 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:37,683 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:39,624 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:41,684 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:43,990 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:45,847 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:12:45,848 [INFO] __main__: Vector store created
+2026-09-20 23:13:19,507 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-20 23:13:19,527 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-20 23:13:19,527 [INFO] __main__: Loaded 575 documents
+2026-09-20 23:13:19,527 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-20 23:13:20,304 [INFO] __main__: Embedding model loaded
+2026-09-20 23:13:20,448 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-20 23:13:20,464 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:13:20,465 [INFO] __main__: Found collection with same name
+2026-09-20 23:13:20,469 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:13:20,475 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:13:20,475 [INFO] __main__: Old version collection math_notes deleted
+2026-09-20 23:13:20,475 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-20 23:13:20,491 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:13:20,505 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:13:20,645 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:13:23,092 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:25,395 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:27,623 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:29,750 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:31,673 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:33,777 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:35,932 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:37,970 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:39,889 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:13:39,890 [INFO] __main__: Vector store created
+2026-09-20 23:15:21,371 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-20 23:15:21,392 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-20 23:15:21,393 [INFO] __main__: Loaded 575 documents
+2026-09-20 23:15:21,393 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-20 23:15:22,111 [INFO] __main__: Embedding model loaded
+2026-09-20 23:15:22,270 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-20 23:15:22,286 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:15:22,287 [INFO] __main__: Found collection with same name
+2026-09-20 23:15:22,292 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:15:22,296 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:15:22,297 [INFO] __main__: Old version collection math_notes deleted
+2026-09-20 23:15:22,297 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-20 23:15:22,315 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:15:22,325 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:15:22,474 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:15:24,489 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:26,337 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:28,286 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:30,070 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:31,819 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:33,745 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:35,522 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:37,303 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:39,364 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:15:39,364 [INFO] __main__: Vector store created
+2026-09-20 23:17:08,312 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-20 23:17:08,333 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-20 23:17:08,333 [INFO] __main__: Loaded 575 documents
+2026-09-20 23:17:08,333 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-20 23:17:09,056 [INFO] __main__: Embedding model loaded
+2026-09-20 23:17:09,203 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-20 23:17:09,221 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:17:09,222 [INFO] __main__: Found collection with same name
+2026-09-20 23:17:09,226 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:17:09,233 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:17:09,234 [INFO] __main__: Old version collection math_notes deleted
+2026-09-20 23:17:09,234 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-20 23:17:09,253 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:17:09,267 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:17:09,418 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:17:11,553 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:14,090 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:16,205 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:18,350 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:20,320 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:22,202 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:24,354 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:26,301 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:28,183 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:17:28,183 [INFO] __main__: Vector store created
+2026-09-20 23:18:06,275 [INFO] __main__: Loading documents form data/processed/fil.semantic.jsonl
+2026-09-20 23:18:06,296 [INFO] json_notes_loader: Loaded 575 semantic documents from data/processed/fil.semantic.jsonl
+2026-09-20 23:18:06,296 [INFO] __main__: Loaded 575 documents
+2026-09-20 23:18:06,296 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-20 23:18:07,060 [INFO] __main__: Embedding model loaded
+2026-09-20 23:18:07,203 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-20 23:18:07,225 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:18:07,226 [INFO] __main__: Found collection with same name
+2026-09-20 23:18:07,227 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:18:07,234 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:18:07,236 [INFO] __main__: Old version collection math_notes deleted
+2026-09-20 23:18:07,236 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-20 23:18:07,253 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-20 23:18:07,264 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-20 23:18:07,432 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-20 23:18:09,933 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:12,161 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:14,218 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:16,075 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:18,073 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:20,030 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:21,897 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:23,924 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:25,733 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-20 23:18:25,733 [INFO] __main__: Vector store created
+2026-09-22 14:08:39,212 [INFO] __main__: Loading documents form data/processed/fil_chunks.jsonl
+2026-09-22 14:08:39,229 [INFO] json_notes_loader: Loaded 676 documents from data/processed/fil_chunks.jsonl; skipped 0 records
+2026-09-22 14:08:39,229 [INFO] __main__: Loaded 676 documents
+2026-09-22 14:08:39,229 [INFO] __main__: Loading embedding model sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-09-22 14:08:39,431 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-09-22 14:08:39,562 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:39,697 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q "HTTP/1.1 200 OK"
+2026-09-22 14:08:39,830 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=false&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:39,962 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,095 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/revision/main "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,225 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/revision/main "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,356 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=true&expand=false "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,493 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/tree/faf4aa4225822f3bc6376869cb1164e8e3feedd0?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,629 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,685 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,686 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,706 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/xet-read-token/faf4aa4225822f3bc6376869cb1164e8e3feedd0 "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,759 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,760 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-22 14:08:40,790 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fconfig.json=&etag=%225b496dbbbe502a10e2d64525481c6f444d125403%22 "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,824 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,825 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/resolve/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:08:40,826 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fconfig.json=&etag=%225b496dbbbe502a10e2d64525481c6f444d125403%22 "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,836 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/xet-read-token/faf4aa4225822f3bc6376869cb1164e8e3feedd0 "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,855 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fspecial_tokens_map.json=&etag=%22b1879d702821e753ffe4245048eee415d54a9385%22 "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,856 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Ftokenizer_config.json=&etag=%226af3e8bba20e4425103afb1ae3dee3cacdbe7afb%22 "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,886 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/special_tokens_map.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Fspecial_tokens_map.json=&etag=%22b1879d702821e753ffe4245048eee415d54a9385%22 "HTTP/1.1 200 OK"
+2026-09-22 14:08:40,890 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/paraphrase-multilingual-MiniLM-L12-v2-onnx-Q/faf4aa4225822f3bc6376869cb1164e8e3feedd0/tokenizer_config.json?%2FQdrant%2Fparaphrase-multilingual-MiniLM-L12-v2-onnx-Q%2Fresolve%2Ffaf4aa4225822f3bc6376869cb1164e8e3feedd0%2Ftokenizer_config.json=&etag=%226af3e8bba20e4425103afb1ae3dee3cacdbe7afb%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:12,828 [INFO] __main__: Embedding model loaded
+2026-09-22 14:09:13,066 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,204 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25/tree/22b8d2af71a76161e18dd432d2cee0eefa66e412?recursive=false&expand=false "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,339 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25/revision/main "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,478 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/Qdrant/bm25/tree/22b8d2af71a76161e18dd432d2cee0eefa66e412?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,621 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/arabic.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,651 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/arabic.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Farabic.txt=&etag=%22ee3a26e793f8ab69a44b30332708cc122b258b51%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,671 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/french.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,678 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,679 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/danish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,680 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/dutch.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,680 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/english.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,680 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/finnish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,681 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/german.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,684 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/arabic.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Farabic.txt=&etag=%22ee3a26e793f8ab69a44b30332708cc122b258b51%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,706 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/french.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffrench.txt=&etag=%2200af58791541ed63f33c98207199f6b32727f571%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,707 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/config.json?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fconfig.json=&etag=%229e26dfeeb6e641a33dae4961196235bdb965b21b%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,709 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/danish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdanish.txt=&etag=%22d3edc6757912e3d83acfa241859c4a1bdb6005ad%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,711 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/english.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fenglish.txt=&etag=%221280aa3b08d64b846272b2d23314377200db36e9%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,712 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/dutch.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdutch.txt=&etag=%22cafa0324b53763f7efadda5b0f3d0321ffa7ab38%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,713 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/finnish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffinnish.txt=&etag=%2247ee200f6781ddfdb31af37e317e1f05d10a04ff%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,714 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/german.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgerman.txt=&etag=%22c2241d0ee7bbc192abe3b56efffb75f29a29e185%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,735 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/config.json?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fconfig.json=&etag=%229e26dfeeb6e641a33dae4961196235bdb965b21b%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,736 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/french.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffrench.txt=&etag=%2200af58791541ed63f33c98207199f6b32727f571%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,737 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/danish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdanish.txt=&etag=%22d3edc6757912e3d83acfa241859c4a1bdb6005ad%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,739 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/english.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fenglish.txt=&etag=%221280aa3b08d64b846272b2d23314377200db36e9%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,743 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/finnish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Ffinnish.txt=&etag=%2247ee200f6781ddfdb31af37e317e1f05d10a04ff%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,744 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/german.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgerman.txt=&etag=%22c2241d0ee7bbc192abe3b56efffb75f29a29e185%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,746 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/dutch.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fdutch.txt=&etag=%22cafa0324b53763f7efadda5b0f3d0321ffa7ab38%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,819 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/greek.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,850 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/greek.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgreek.txt=&etag=%229d08b144659c4ae804bb84a624e1248bb2b90e40%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,866 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/italian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,868 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/hungarian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,868 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/norwegian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,868 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/portuguese.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,874 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/romanian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,882 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/greek.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fgreek.txt=&etag=%229d08b144659c4ae804bb84a624e1248bb2b90e40%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,884 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/spanish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,889 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/russian.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:13,900 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/italian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fitalian.txt=&etag=%226ee02b51fb1711625c1de28595615cdecba4de7c%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,901 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/hungarian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fhungarian.txt=&etag=%2294e9f9a0b07a68aeff30605fc445db71f63be630%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,901 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/portuguese.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fportuguese.txt=&etag=%22eb53a8fc2544b16d2a849d98e26c6e34bf07bdb0%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,902 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/norwegian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fnorwegian.txt=&etag=%229ac1abbb6cba1fb3159caa6d88b25543b9080031%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,903 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/romanian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fromanian.txt=&etag=%2245651c90ec7ea5b26c51ea9a11fddafb00652190%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,916 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/spanish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fspanish.txt=&etag=%226a7d50cc633609c8bc2da53c3dac9a015c248b62%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,922 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/russian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Frussian.txt=&etag=%22ecb83d4a7f393b67b054b44e337d683b2ff2d973%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,935 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/hungarian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fhungarian.txt=&etag=%2294e9f9a0b07a68aeff30605fc445db71f63be630%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,935 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/italian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fitalian.txt=&etag=%226ee02b51fb1711625c1de28595615cdecba4de7c%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,936 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/norwegian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fnorwegian.txt=&etag=%229ac1abbb6cba1fb3159caa6d88b25543b9080031%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,936 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/romanian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fromanian.txt=&etag=%2245651c90ec7ea5b26c51ea9a11fddafb00652190%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,936 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/portuguese.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fportuguese.txt=&etag=%22eb53a8fc2544b16d2a849d98e26c6e34bf07bdb0%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,948 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/spanish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fspanish.txt=&etag=%226a7d50cc633609c8bc2da53c3dac9a015c248b62%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:13,952 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/russian.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Frussian.txt=&etag=%22ecb83d4a7f393b67b054b44e337d683b2ff2d973%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,011 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/swedish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:14,041 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/swedish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fswedish.txt=&etag=%22742bb6263b99fb2ea6e1e3624a65eb2799a1e24c%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,074 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/Qdrant/bm25/resolve/22b8d2af71a76161e18dd432d2cee0eefa66e412/turkish.txt "HTTP/1.1 307 Temporary Redirect"
+2026-09-22 14:09:14,074 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/swedish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fswedish.txt=&etag=%22742bb6263b99fb2ea6e1e3624a65eb2799a1e24c%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,105 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/turkish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fturkish.txt=&etag=%225a48ccce0737bb38cb99cafa1f8d3d0ce34e7488%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,135 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Qdrant/bm25/22b8d2af71a76161e18dd432d2cee0eefa66e412/turkish.txt?%2FQdrant%2Fbm25%2Fresolve%2F22b8d2af71a76161e18dd432d2cee0eefa66e412%2Fturkish.txt=&etag=%225a48ccce0737bb38cb99cafa1f8d3d0ce34e7488%22 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,273 [INFO] __main__: Connecting to Qdrant database on url http://localhost:6333
+2026-09-22 14:09:14,296 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,298 [INFO] __main__: Found collection with same name
+2026-09-22 14:09:14,298 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,315 [INFO] httpx: HTTP Request: DELETE http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,316 [INFO] __main__: Old version collection math_notes deleted
+2026-09-22 14:09:14,316 [INFO] __main__: Creating collection math_notes with embeddings
+2026-09-22 14:09:14,332 [INFO] httpx: HTTP Request: GET http://localhost:6333/collections/math_notes/exists "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,337 [INFO] httpx: HTTP Request: GET http://localhost:6333 "HTTP/1.1 200 OK"
+2026-09-22 14:09:14,435 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes "HTTP/1.1 200 OK"
+2026-09-22 14:09:17,143 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:19,568 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:21,732 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:23,850 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:25,893 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:28,055 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:30,126 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:32,248 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:34,306 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:36,407 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:37,655 [INFO] httpx: HTTP Request: PUT http://localhost:6333/collections/math_notes/points?wait=true "HTTP/1.1 200 OK"
+2026-09-22 14:09:37,656 [INFO] __main__: Vector store created

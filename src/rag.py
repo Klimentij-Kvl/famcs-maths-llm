@@ -1,9 +1,12 @@
 import logging
+from dotenv import load_dotenv
 
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 from langchain_qdrant import QdrantVectorStore
+
+from langsmith import traceable
 
 from fastemb_langchain_adapter import FastEmbLangChainAdapter
 from config import (
@@ -15,6 +18,7 @@ from config import (
     TOP_K,
 )
 
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
@@ -31,6 +35,9 @@ retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})
 llm = ChatOllama(
     model=LLM_MODEL, 
     temperature=0,
+    metadata={
+        "ls_model_name": LLM_MODEL,
+    }
 )
 
 prompt = ChatPromptTemplate.from_messages([
@@ -66,13 +73,10 @@ prompt = ChatPromptTemplate.from_messages([
 ])
 
 def format_docs(docs):
-
     formatted = []
 
     for i, doc in enumerate(docs, start=1):
-
         metadata = doc.metadata
-
         header = (
             f"[Источник {i}]\n"
             f"Тип: {metadata.get('type')}\n"
@@ -82,17 +86,16 @@ def format_docs(docs):
             f"{metadata.get('start_line')}-"
             f"{metadata.get('end_line')}"
         )
-
         formatted.append(
             header
             + "\n\n"
             + doc.page_content
         )
-
     return "\n\n---\n\n".join(
         formatted
     )
 
+@traceable(name="math_rag")
 def answer(question: str):
     docs = retriever.invoke(question)
 
@@ -136,7 +139,8 @@ def main():
 
         response, docs = answer(question)
 
-        logger.info(docs)
+        for doc in docs:
+            logger.info(doc)
 
         print()
         print(response)
