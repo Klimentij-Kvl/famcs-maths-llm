@@ -1,32 +1,300 @@
-{
-  "id": "q_0001",
-  "query": "Что такое матрица?",
-  "answerable": true,
-  "query_type": "direct",
-  "difficulty": "easy",
-  "relevant_chunk_ids": ["304e1cc54ec17c82af49"],
-  "ground_truth_answer": ""
-}
-
-{
-  "id": "q_0042",
-  "query": "",
-  "answerable": true,
-  "query_type": "multi_chunk",
-  "difficulty": "hard",
-  "relevant_chunk_ids": [
-    "",
-    ""
-  ],
-  "ground_truth_answer": ""
-}
-
-{
-  "id": "",
-  "query": "",
-  "answerable": false,
-  "query_type": "unanswerable",
-  "difficulty": "medium",
-  "relevant_chunk_ids": [],
-  "ground_truth_answer": null
-}
+{"id": "eval_0001", "query": "Что называется направленным отрезком и чем он отличается от обычного отрезка?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0002", "query": "В чём состоит теорема Шаля для трёх точек на оси?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0003", "query": "Что называется декартовой системой координат на прямой?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0004", "query": "Как определяется координата точки на координатной прямой?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0005", "query": "Что называют положительной и отрицательной полуосью?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0006", "query": "Как связаны величина направленного отрезка и координаты его концов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0007", "query": "Что означает внутреннее и внешнее деление направленного отрезка?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0008", "query": "Почему отношение, задающее деление двух различных точек, не может быть равно −1?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0009", "query": "Как определяется декартова прямоугольная система координат на плоскости?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0010", "query": "По какому признаку ДПСК называется правой или левой?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0011", "query": "Как определяются координаты точки на плоскости через её проекции на оси?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0012", "query": "Как определяется расстояние между двумя точками плоскости в декартовой системе координат?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0013", "query": "Как находится точка, делящая отрезок на плоскости в заданном отношении?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0014", "query": "Как устроена ДПСК в пространстве и чем отличается третья ось?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0015", "query": "Что такое полярная система координат?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0016", "query": "Что называют полярным радиусом и полярным углом?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0017", "query": "Какие ограничения имеют полярные координаты ρ и φ?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0018", "query": "Как связаны декартовы и полярные координаты точки на плоскости?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0019", "query": "Что называется цилиндрическими координатами точки?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0020", "query": "Что называется сферическими координатами точки?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0021", "query": "Как связаны сферические, цилиндрические и декартовы координаты в пространстве?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0022", "query": "Что называется вектором в конспекте?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0023", "query": "Как любой направленный отрезок связан с единственным вектором?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0024", "query": "Что называется откладыванием вектора от точки?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0025", "query": "Что называется длиной вектора?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0026", "query": "Какие векторы называются коллинеарными и компланарными?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0027", "query": "Как определяется угол между двумя ненулевыми векторами?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0028", "query": "Какие линейные операции над векторами рассматриваются?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0029", "query": "Как определяется произведение вектора на действительное число?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0030", "query": "Что называется разностью двух векторов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0031", "query": "Что такое линейная комбинация системы векторов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0032", "query": "Что называется базисом на прямой, плоскости и в пространстве?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0033", "query": "Что называется координатами вектора в заданном базисе?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0034", "query": "Что называют декартовыми координатами вектора?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0035", "query": "Что называется проекцией вектора на ось и величиной его проекции?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0036", "query": "Как определяются направляющие косинусы вектора?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0037", "query": "Что называется радиус-вектором точки?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0038", "query": "Как определяется скалярное произведение двух векторов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0039", "query": "Как по скалярному произведению определить перпендикулярность двух ненулевых векторов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0040", "query": "Что называется векторным произведением двух векторов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0041", "query": "Какие три свойства задают векторное произведение в его определении?", "answerable": true, "query_type": "direct_qustion", "difficulty": "medium"}
+{"id": "eval_0042", "query": "Что называется нормальным вектором прямой на плоскости?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0043", "query": "Что называется направляющим вектором прямой в пространстве?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0044", "query": "Что называется эллипсом?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0045", "query": "Что называется гиперболой?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0046", "query": "Что называется параболой?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0047", "query": "Что называется комплексным числом?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0048", "query": "Что такое линейно независимая система векторов?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0049", "query": "Что называется собственным вектором и собственным значением линейного оператора?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0050", "query": "Что называется характеристическим многочленом матрицы?", "answerable": true, "query_type": "direct_qustion", "difficulty": "easy"}
+{"id": "eval_0051", "query": "Дайте определение нулевого направленного отрезка.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0052", "query": "Дайте определение оси.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0053", "query": "Дайте определение простого отношения трёх точек через деление направленного отрезка.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0054", "query": "Дайте определение декартовой прямоугольной системы координат в пространстве.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0055", "query": "Дайте определение общей декартовой (аффинной) системы координат на плоскости.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0056", "query": "Дайте определение цилиндрических координат точки.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0057", "query": "Дайте определение сферических координат точки.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0058", "query": "Дайте определение длины вектора и обозначение этой величины.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0059", "query": "Дайте определение единичного вектора (орта).", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0060", "query": "Дайте определение угла между ненулевыми векторами.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0061", "query": "Дайте определение противоположного вектора.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0062", "query": "Дайте определение разности векторов.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0063", "query": "Дайте определение базиса в пространстве.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0064", "query": "Дайте определение координатного столбца вектора.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0065", "query": "Дайте определение скалярного произведения векторов.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0066", "query": "Дайте определение ориентации упорядоченной тройки некомпланарных векторов.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0067", "query": "Дайте определение векторного произведения векторов.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0068", "query": "Дайте определение алгебраической линии второго порядка.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0069", "query": "Дайте определение поверхности второго порядка.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0070", "query": "Дайте определение цилиндрической поверхности.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0071", "query": "Дайте определение конической поверхности.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0072", "query": "Дайте определение комплексного числа и назовите его действительную и мнимую части.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0073", "query": "Дайте определение однозначного отображения между множествами.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0074", "query": "Дайте определение группы как алгебраической структуры.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0075", "query": "Дайте определение кольца.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0076", "query": "Дайте определение поля.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0077", "query": "Дайте определение многочлена над полем.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0078", "query": "Дайте определение неприводимого многочлена над полем.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0079", "query": "Дайте определение определителя квадратной матрицы через перестановки.", "answerable": true, "query_type": "definition", "difficulty": "medium"}
+{"id": "eval_0080", "query": "Дайте определение обратной матрицы.", "answerable": true, "query_type": "definition", "difficulty": "easy"}
+{"id": "eval_0081", "query": "Какова формула величины направленного отрезка AB на оси в зависимости от его направления относительно оси?", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0082", "query": "Какова формула связи величины AB с координатами концов A и B на прямой?", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0083", "query": "Какова формула координаты точки C, делящей направленный отрезок AB в отношении λ?", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0084", "query": "Какова формула расстояния между двумя точками на плоскости в ДПСК?", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0085", "query": "Запишите формулы декартовых координат точки через её цилиндрические координаты ρ, φ, z.", "answerable": true, "query_type": "equation", "difficulty": "medium"}
+{"id": "eval_0086", "query": "Запишите формулы декартовых координат точки через её сферические координаты ρ, φ, Θ.", "answerable": true, "query_type": "equation", "difficulty": "medium"}
+{"id": "eval_0087", "query": "Запишите формулу длины вектора с декартовыми координатами (x,y,z).", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0088", "query": "Запишите формулу скалярного произведения векторов с координатами (x1,y1,z1) и (x2,y2,z2).", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0089", "query": "Запишите формулу величины проекции вектора на ось через его длину и угол.", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0090", "query": "Запишите формулу теоремы Шаля для направленных отрезков.", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0091", "query": "Запишите каноническое уравнение гиперболы из конспекта.", "answerable": true, "query_type": "equation", "difficulty": "medium"}
+{"id": "eval_0092", "query": "Запишите уравнение корней n-й степени комплексного числа из теоремы об извлечении корня.", "answerable": true, "query_type": "equation", "difficulty": "medium"}
+{"id": "eval_0093", "query": "Запишите характеристическое уравнение матрицы через характеристический многочлен.", "answerable": true, "query_type": "equation", "difficulty": "easy"}
+{"id": "eval_0094", "query": "Запишите критерий Сильвестра для положительной определённости действительной квадратичной формы.", "answerable": true, "query_type": "equation", "difficulty": "medium"}
+{"id": "eval_0095", "query": "Запишите уравнение нормального псевдорешения через псевдообратную матрицу.", "answerable": true, "query_type": "equation", "difficulty": "medium"}
+{"id": "eval_0096", "query": "Сформулируйте теорему Шаля.", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0097", "query": "Сформулируйте теорему о связи величины направленного отрезка с координатами его концов.", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0098", "query": "Сформулируйте теорему о координате точки, делящей направленный отрезок в отношении λ.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0099", "query": "Сформулируйте теорему о разложении вектора по базису на прямой, плоскости и в пространстве.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0100", "query": "Сформулируйте теорему о координатах суммы и произведения вектора на число.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0101", "query": "Сформулируйте теорему о скалярном произведении через декартовы координаты.", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0102", "query": "Сформулируйте теорему о существовании пространственной ДПСК, в которой поверхность второго порядка имеет канонический вид.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0103", "query": "Сформулируйте теорему о корнях многочлена положительной степени: сколько различных корней он может иметь?", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0104", "query": "Сформулируйте Основную теорему алгебры.", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0105", "query": "Сформулируйте теорему о существовании обратной матрицы через невырожденность.", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0106", "query": "Сформулируйте теорему о критерии собственного значения линейного оператора через определитель характеристической матрицы.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0107", "query": "Сформулируйте теорему о диагонализации действительной симметрической матрицы ортогональным преобразованием.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0108", "query": "Сформулируйте критерий Сильвестра.", "answerable": true, "query_type": "theorem", "difficulty": "easy"}
+{"id": "eval_0109", "query": "Сформулируйте теорему о единственности нормального псевдорешения несовместной системы.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0110", "query": "Сформулируйте теорему о том, чему равно нормальное псевдорешение через псевдообратную матрицу.", "answerable": true, "query_type": "theorem", "difficulty": "medium"}
+{"id": "eval_0111", "query": "На координатной прямой XA=2 и XB=7. Найдите величину направленного отрезка AB и его длину.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0112", "query": "На координатной прямой XA=−3 и XB=4. Найдите AB и |AB|.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0113", "query": "Даны XA=5, XB=1. Найдите AB по формуле разности координат.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0114", "query": "Точка C делит AB в отношении λ=2, XA=1, XB=7. Найдите XC.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0115", "query": "Точка C делит AB в отношении λ=1/2, XA=0, XB=6. Найдите XC.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0116", "query": "Точка C делит AB внутренним образом пополам: XA=−2, XB=8. Найдите XC.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0117", "query": "Для точек A(1,2) и B(4,6) найдите |AB|.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0118", "query": "Для точек A(−1,3) и B(2,−1) найдите расстояние между ними.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0119", "query": "Для точек A(0,0,0) и B(1,2,2) найдите |AB| в пространстве.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0120", "query": "Точка C делит AB в отношении λ=2 на плоскости, A(0,2), B(3,8). Найдите координаты C.", "answerable": true, "query_type": "simple_task", "difficulty": "medium"}
+{"id": "eval_0121", "query": "Точка C делит AB в отношении λ=−1/2, A(2,4), B(8,10). Найдите координаты C.", "answerable": true, "query_type": "simple_task", "difficulty": "medium"}
+{"id": "eval_0122", "query": "Для точки M в полярных координатах ρ=5, φ=0 вычислите X_M и Y_M.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0123", "query": "Для точки M в полярных координатах ρ=2, φ=π/2 вычислите X_M и Y_M.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0124", "query": "В цилиндрических координатах ρ=3, φ=0, z=−2. Найдите декартовы координаты точки.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0125", "query": "В сферических координатах ρ=4, φ=0, Θ=π/2. Найдите декартовы координаты точки.", "answerable": true, "query_type": "simple_task", "difficulty": "medium"}
+{"id": "eval_0126", "query": "Вектор имеет координаты (3,4,0). Найдите его длину.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0127", "query": "Вектор имеет координаты (1,2,2). Найдите его длину.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0128", "query": "Вектор a=(1,−2,3), b=(4,0,−1). Найдите координаты 2a+b.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0129", "query": "Вектор a=(3,1,−2), b=(1,4,2). Найдите a−b.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0130", "query": "Найдите скалярное произведение a=(1,2,3) и b=(4,−1,2).", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0131", "query": "Найдите скалярное произведение a=(2,0,1) и b=(1,3,−2).", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0132", "query": "Проверьте по скалярному произведению, перпендикулярны ли a=(1,2,−1) и b=(2,−1,0).", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0133", "query": "Для вектора a=(3,4,0) найдите косинус угла между a и осью Ox.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0134", "query": "Для вектора a=(0,2,−1) найдите величину его проекции на Oy.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0135", "query": "Найдите координаты вектора M1M2 для M1=(1,−2,3), M2=(5,1,−1).", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0136", "query": "Вычислите определитель матрицы [[1,2],[3,4]].", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0137", "query": "Вычислите определитель матрицы [[2,1],[5,3]].", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0138", "query": "Найдите сумму матриц [[1,2],[3,4]] и [[4,3],[2,1]].", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0139", "query": "Умножьте матрицу [[1,−1],[2,0]] на число 3.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0140", "query": "Для многочлена f(x)=x^3−2x+1 и точки x=1 вычислите f(1), а затем назовите остаток при делении f(x) на x−1.", "answerable": true, "query_type": "simple_task", "difficulty": "medium"}
+{"id": "eval_0141", "query": "Проверьте, делится ли x^2−1 на x−1.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0142", "query": "Сколько различных корней может иметь многочлен x^4+1 по теореме о числе корней?", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0143", "query": "Для z=3+4i найдите модуль ρ комплексного числа.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0144", "query": "Для комплексного числа z=−1+i найдите ρ.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0145", "query": "Найдите сумму комплексных чисел (2+3i)+(4−i).", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0146", "query": "Найдите произведение комплексных чисел (1+i)(1−i).", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0147", "query": "Для квадратичной формы f(x,y)=2x^2+3xy+y^2 найдите её значение в точке (1,2).", "answerable": true, "query_type": "simple_task", "difficulty": "medium"}
+{"id": "eval_0148", "query": "Проверьте по критерию Сильвестра положительную определённость формы с матрицей diag(2,3).", "answerable": true, "query_type": "simple_task", "difficulty": "medium"}
+{"id": "eval_0149", "query": "Для ортогональной матрицы A, удовлетворяющей A^TA=E, чему равна длина f(x) относительно длины x для соответствующего ортогонального оператора?", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0150", "query": "Для векторов a=(1,0,0), b=(0,1,0) найдите длину их векторного произведения по определению.", "answerable": true, "query_type": "simple_task", "difficulty": "easy"}
+{"id": "eval_0151", "query": "На координатной прямой точки имеют координаты XA=−4 и XB=8. Точка C делит AB в отношении λ=−2. Найдите XC, определите, внешним или внутренним является деление, и проверьте результат через направленные отрезки.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0152", "query": "Даны A(−2,1) и B(4,7). Точка C делит AB в отношении λ=3. Найдите C и расстояния AC и CB.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0153", "query": "Даны три точки на оси с координатами XA=−5, XB=2, XC=9. Проверьте теорему Шаля численно и объясните знаки AB, BC и AC.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0154", "query": "Для A(1,−2) и B(5,4) найдите |AB|, затем точку C, делящую AB пополам, и |AC|.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0155", "query": "Точка M задана полярными координатами ρ=6, φ=π/3. Найдите её декартовы координаты и восстановите ρ из них.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0156", "query": "Точка M имеет цилиндрические координаты (2,π/4,3). Найдите декартовы координаты и проверьте восстановлением ρ из X_M,Y_M.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0157", "query": "Точка M имеет сферические координаты (4,π/2,π/3). Найдите X_M,Y_M,Z_M и проверьте, что |OM|=4.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0158", "query": "Для a=(2,−1,2) и b=(1,3,−2) найдите a+b, 2a−b, (a,b) и длины обоих векторов.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0159", "query": "Для вектора a=(1,−2,2) найдите длину, направляющие косинусы и координаты его орта.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0160", "query": "Даны M1=(−1,2,3) и M2=(4,−2,5). Найдите координаты M1M2, его длину и скалярное произведение с a=(1,1,−1).", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0161", "query": "Для a=(1,2,3), b=(2,−1,1) найдите a×b, его длину и проверьте перпендикулярность полученного вектора к a и b.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0162", "query": "Проверьте коллинеарность a=(2,−4,6) и b=(−1,2,−3) по пропорциональности координат и по векторному произведению.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0163", "query": "Для A=(1,2,3), B=(4,−1,2) найдите AB и его проекции на Ox, Oy, Oz; сопоставьте их с координатами AB.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0164", "query": "Дана матрица [[2,1],[4,3]]. Вычислите определитель, проверьте невырожденность и сделайте вывод о существовании обратной.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0165", "query": "Для матрицы [[1,2],[2,4]] определите, является ли она невырожденной, и сделайте вывод о существовании обратной.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0166", "query": "Найдите след и определитель матрицы [[2,1],[3,4]], а затем выпишите её характеристический многочлен, используя свойства из конспекта.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0167", "query": "Для A=[[1,1],[0,2]] проверьте, является ли λ=2 собственным значением, используя характеристическое уравнение.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0168", "query": "Для A=diag(2,3) найдите характеристический многочлен и все собственные значения.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0169", "query": "Для A=[[1,2],[2,1]] найдите собственные значения из det(A−λE)=0.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0170", "query": "Для A=[[1,2],[3,4]] определите ранг по определителю.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0171", "query": "Для A=[[1,2],[2,4]] определите ранг с опорой на критерий det A=0 и свойство базисного минора.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0172", "query": "Пусть ранг A равен 3. Что можно сказать о порядке её базисного минора и о максимальном числе линейно независимых столбцов?", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0173", "query": "Для f(x)=x^3−4x+1 найдите f(2), а затем остаток при делении f(x) на x−2 через свойство значения многочлена.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0174", "query": "Для f(x)=x^3−3x^2+2x определите, делится ли f(x) на x, и объясните через f(0).", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0175", "query": "Пусть многочлен имеет степень 5. Какое максимальное число различных корней утверждается теоремой о числе корней и что даёт Основная теорема алгебры над C?", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0176", "query": "Для x^2−5x+6 найдите корни и разложение на линейные множители над C.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0177", "query": "Для z=2(cos(π/3)+i sin(π/3)) найдите декартову форму.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0178", "query": "Для z=1+i найдите модуль и одно главное значение аргумента.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0179", "query": "Для z=8(cos(π/2)+i sin(π/2)) найдите все корни третьей степени.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0180", "query": "Для f(x)=x^2+1 найдите f(1), f(i) и укажите корни над C.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0181", "query": "Для A=[[1,2],[3,4]] и B=[[2,0],[1,−1]] вычислите A+B, A−B и 2A.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0182", "query": "Для квадратной A известно det A=−3. Что можно заключить об A^{-1}?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0183", "query": "Пусть A=S^{-1}BS. Что говорит конспект о следах и определителях A и B?", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0184", "query": "Для оператора с M=[[2,1],[0,2]] найдите характеристический многочлен и его корень.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0185", "query": "Для оператора с матрицей diag(2,3,4) укажите собственные значения и их алгебраические кратности.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0186", "query": "Два ненулевых собственных вектора соответствуют различным собственным значениям. Что можно заключить об их линейной зависимости?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0187", "query": "Для действительной квадратичной формы с матрицей diag(1,−2,3) определите, может ли она быть положительно определённой.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0188", "query": "Для формы с матрицей diag(2,3) проверьте положительную определённость по собственным значениям и по критерию Сильвестра.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0189", "query": "Для A=[[2,1],[1,2]] найдите собственные значения и запишите канонический вид соответствующей квадратичной формы.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0190", "query": "Для f(x,y)=2x^2+2xy+2y^2 найдите симметрическую матрицу формы и её собственные значения.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0191", "query": "Для ортогонального оператора f(x)=λx при x≠0 найдите возможные значения |λ| и обоснуйте.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0192", "query": "Для A=[[0,−1],[1,0]] проверьте A^TA=E и сделайте вывод об ортогональности соответствующего оператора.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0193", "query": "Для x=(1,2,2), y=(2,−1,0) вычислите длины и скалярное произведение и проверьте неравенство Коши–Буняковского из конспекта.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0194", "query": "Для ортогональной системы ненулевых векторов объясните линейную независимость и примените к (1,0),(0,1).", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0195", "query": "Пусть U — подпространство евклидова пространства V. Объясните, что представляет собой U^⊥ и как связаны U и U^⊥ с разложением вектора.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0196", "query": "Для несовместной AX=B известно, что B1 — ортогональная проекция B на L(A1,...,An). Запишите систему, решения которой совпадают с псевдорешениями.", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0197", "query": "Для несовместной AX=B объясните, почему решения A^TAX=A^TB являются псевдорешениями.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0198", "query": "Пусть A^+ — псевдообратная матрица. Как получить нормальное псевдорешение AX=B?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0199", "query": "Для невырожденной квадратной A сравните A^+ и A^{-1}.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0200", "query": "Если A∈R_{m,n}, какие размеры имеет A^+?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0201", "query": "Проверьте, унимодулярна ли полиномиальная матрица, если det A(λ)=1.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0202", "query": "Для f(λ)=λ^3+2λ−1 постройте сопровождающую матрицу.", "answerable": true, "query_type": "hard_task", "difficulty": "hard"}
+{"id": "eval_0203", "query": "Выпишите жорданову клетку J_2(λ0) и укажите её диагональные и наддиагональные элементы.", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0204", "query": "Если A имеет порядок 4, какой старший коэффициент имеет det(A−λE)?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0205", "query": "Для матрицы порядка 3 с det A=5 чему равен свободный член характеристического многочлена?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0206", "query": "Если коэффициент при λ^2 характеристического многочлена матрицы порядка 3 равен 5, чему равен её след?", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0207", "query": "Для действительной квадратичной формы с двумя положительными и одним отрицательным собственным значением может ли форма быть положительно определённой?", "answerable": true, "query_type": "hard_task", "difficulty": "easy"}
+{"id": "eval_0208", "query": "Для отрицательно определённой формы каких знаков должны быть угловые миноры чётного и нечётного порядка?", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0209", "query": "Используя определение координаты точки на прямой и теорему о координатах направленного отрезка, выразите AB через XA и XB и объясните знак результата.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0210", "query": "Используя теорему Шаля и формулу координат направленного отрезка, проверьте для XA=−2, XB=3, XC=7, что AB+BC=AC.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0211", "query": "Используя определение отношения λ и теорему о координате делящей точки, объясните, почему при λ>0 деление внутреннее, а при λ<0 — внешнее.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0212", "query": "Свяжите определение ДПСК на плоскости, проекции точки и формулу расстояния, чтобы объяснить происхождение формулы |AB|.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0213", "query": "Используя формулы цилиндрических и декартовых координат, найдите декартовы координаты точки с ρ=2, φ=π/6, z=1.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0214", "query": "Используя сферические координаты и формулу длины вектора, проверьте для ρ=5, φ=π/4, Θ=π/3, что |OM|=5.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0215", "query": "Используя определение координат вектора и теорему о координатах радиус-вектора, найдите координаты M1M2 через координаты M1 и M2.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0216", "query": "Используя свойства проекции и определение декартовых координат вектора, объясните, почему координаты вектора равны его проекциям на Ox, Oy, Oz.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0217", "query": "Используя формулу скалярного произведения через координаты и критерий перпендикулярности, проверьте, перпендикулярны ли a=(2,−1,0) и b=(1,2,0).", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0218", "query": "Используя длину векторного произведения и критерий коллинеарности через векторное произведение, объясните, что происходит с |a×b| при параллельных a и b.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0219", "query": "Используя определение группы и свойства алгебраической операции, перечислите, какие условия нужно проверить, чтобы данное множество с операцией было группой.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0220", "query": "Используя определение поля и свойство отсутствия делителей нуля, объясните, почему из ab=0 в поле следует a=0 или b=0.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0221", "query": "Используя теорему о делении многочленов с остатком и определение делимости, объясните, когда остаток при делении f на g равен нулю.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0222", "query": "Используя свойство значения многочлена и делимость на x−c, найдите остаток f(x)=x^3−2x+5 при делении на x−2.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0223", "query": "Используя теорему о числе корней и Основную теорему алгебры, сравните верхнюю границу числа различных корней многочлена степени n над полем и число корней с кратностями над C.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0224", "query": "Используя определение определителя через перестановки и теорему о числе перестановок, объясните, сколько слагаемых входит в формулу det A порядка n.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0225", "query": "Используя критерий det A=0 и связь ранга с базисным минором, объясните, когда столбцы квадратной матрицы линейно зависимы.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0226", "query": "Используя теорему о существовании обратной матрицы и определение невырожденной матрицы, решите вопрос о наличии обратной для det A=0 и det A≠0.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0227", "query": "Используя определение подобия матриц и лемму о характеристических многочленах, объясните, почему след и определитель подобных матриц совпадают.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0228", "query": "Используя определение собственного значения и критерий det(M_f−λE)=0, объясните, как по матрице оператора находят собственные значения.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0229", "query": "Используя лемму о линейной независимости собственных векторов для разных собственных значений и определение базиса, объясните, почему такие собственные векторы образуют линейно независимую систему.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0230", "query": "Используя определение характеристического многочлена и его свойства, найдите след матрицы порядка 3, если коэффициент при λ^2 равен 5.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0231", "query": "Используя определение матричного многочлена и теорему Гамильтона–Кэли, объясните, какое равенство выполняет матрица относительно своего характеристического многочлена.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0232", "query": "Используя определение жордановой клетки и систему элементарных делителей, объясните связь между размером клетки и соответствующим элементарным делителем.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0233", "query": "Используя определение квадратичной формы и матрицу коэффициентов, запишите f(x,y)=3x^2+4xy+5y^2 в виде X^TAX и найдите A.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0234", "query": "Используя лемму о диагонализации симметричной матрицы и ортогональное преобразование переменных, получите канонический вид формы с матрицей [[2,1],[1,2]].", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0235", "query": "Используя критерий Сильвестра и определение угловых миноров, проверьте положительную определённость формы с матрицей [[2,1],[1,2]].", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0236", "query": "Используя критерий по собственным значениям и критерий Сильвестра, сравните два способа проверки положительной определённости формы diag(2,3).", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0237", "query": "Используя определение ортогонального оператора и свойство сохранения длины, докажите, что для его собственного значения λ выполняется |λ|=1.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0238", "query": "Используя матрицу оператора в ортонормированном базисе и условие A^TA=E, объясните связь между ортогональностью оператора и матрицы.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0239", "query": "Используя определение ортогонального дополнения и теорему об ортогональном дополнении, объясните, почему U^⊥ является подпространством.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0240", "query": "Используя определение псевдорешения и ортогональную проекцию B на L, объясните, почему псевдорешения совпадают с решениями A1x1+...+Anxn=B1.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0241", "query": "Используя теорему о псевдорешениях и нормальном псевдорешении, объясните, почему нормальное псевдорешение единственно.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0242", "query": "Используя определение псевдообратной матрицы и теорему о нормальном псевдорешении, объясните, почему x=A^+B является нормальным псевдорешением.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0243", "query": "Используя определение унимодулярной полиномиальной матрицы и свойство её инвариантных множителей, сформулируйте критерий унимодулярности.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0244", "query": "Используя сопровождающую матрицу и теорему о её инвариантных множителях, свяжите многочлен f(λ) с матрицей F−λE.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
+{"id": "eval_0245", "query": "Используя определение жордановой цепочки и собственное значение, объясните роль первого вектора цепочки.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0246", "query": "Используя определение нормированного пространства и аксиомы нормы, перечислите требования к функции ||x||.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0247", "query": "Используя определение полярных координат и формулы связи с ДПСК, объясните, почему ρ=|OM| и как φ влияет на знаки X_M,Y_M.", "answerable": true, "query_type": "multichunk_task", "difficulty": "medium"}
+{"id": "eval_0248", "query": "Докажите теорему Шаля для случая, когда B лежит между A и C.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0249", "query": "Докажите формулу AB=XB−XA для величины направленного отрезка через теорему Шаля.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0250", "query": "Докажите формулу координаты XC точки, делящей AB в отношении λ.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0251", "query": "Докажите формулу расстояния между двумя точками на плоскости в ДПСК с помощью теоремы Пифагора.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0252", "query": "Докажите формулу координат точки C, делящей AB в отношении λ, на плоскости через проекции на ось Ox.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0253", "query": "Докажите существование разложения вектора по базису на прямой.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0254", "query": "Докажите единственность разложения вектора по базису в пространстве.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0255", "query": "Докажите критерий коллинеарности двух ненулевых векторов через пропорциональность их координат.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0256", "query": "Докажите формулу Пр_Δ a=|a|cosφ.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0257", "query": "Докажите линейность проекции вектора при умножении на число.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0258", "query": "Докажите аддитивность величины проекции: Пр_Δ(a+b)=Пр_Δa+Пр_Δb.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0259", "query": "Докажите критерий перпендикулярности ненулевых векторов через скалярное произведение.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0260", "query": "Докажите равенство [a,b]=−[b,a].", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0261", "query": "Докажите критерий коллинеарности через векторное произведение.", "answerable": true, "query_type": "proof", "difficulty": "medium"}
+{"id": "eval_0262", "query": "Докажите теорему: квадратная матрица имеет обратную тогда и только тогда, когда det A≠0.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0263", "query": "Докажите критерий собственного значения линейного оператора через det(M_f−λE)=0.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0264", "query": "Докажите, что характеристические многочлены подобных матриц совпадают.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0265", "query": "Докажите критерий Сильвестра для положительной определённости действительной квадратичной формы.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0266", "query": "Докажите, что ортогональный оператор сохраняет длины и скалярные произведения.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0267", "query": "Докажите, что нормальное псевдорешение несовместной системы равно A^+B.", "answerable": true, "query_type": "proof", "difficulty": "hard"}
+{"id": "eval_0268", "query": "Два ненулевых вектора перпендикулярны тогда и только тогда, когда их скалярное произведение равно нулю. Как отличить этот критерий от похожего утверждения для векторного произведения?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0269", "query": "Квадратная матрица невырожденна тогда и только тогда, когда она имеет обратную. Как по определителю отличить условие обратимости от одного из свойств ранга матрицы?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0270", "query": "Для собственного значения λ0 линейного оператора в конспекте встречаются два похожих условия: det(M_f−λ0E)=0 и (M_f−λ0E)X=0. Какое из них характеризует само собственное значение, а какое — соответствующий собственный вектор?", "answerable": true, "query_type": "tricky", "difficulty": "hard"}
+{"id": "eval_0271", "query": "В характеристическом многочлене матрицы порядка n коэффициент при λ^{n−1} связан со следом. Как восстановить след, не перепутав этот коэффициент со свободным членом det A?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0272", "query": "Определение полярного радиуса точки M использует |OM|, а определение сферических координат использует угол Θ между OM и Oz. Как по данным ρ,φ,Θ не перепутать радиус ρ с углом Θ?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0273", "query": "Вектор a×b и скалярное произведение (a,b) оба используются для критериев взаимного расположения векторов. Какой из них обращается в нулевой вектор при коллинеарности, а какой — в ноль при перпендикулярности?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0274", "query": "Псевдорешение и нормальное псевдорешение относятся к одной несовместной системе. Как отличить условие минимальности невязки от дополнительного условия принадлежности L0^⊥?", "answerable": true, "query_type": "tricky", "difficulty": "hard"}
+{"id": "eval_0275", "query": "Обратная матрица A^{-1} и псевдообратная A^+ встречаются в конспекте в близком контексте. Когда для невырожденной квадратной матрицы они совпадают и что определяет A^+ в общем случае?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0276", "query": "Для квадратичной формы встречаются матрица коэффициентов A и матрица перехода S. Какая матрица определяет саму форму в X^TAX, а какая используется для ортогонального преобразования к каноническому виду?", "answerable": true, "query_type": "tricky", "difficulty": "medium"}
+{"id": "eval_0277", "query": "Система собственных векторов для разных собственных значений и произвольная линейно независимая система обе связаны с базисом. Какое дополнительное условие делает собственные векторы линейно независимыми автоматически?", "answerable": true, "query_type": "tricky", "difficulty": "hard"}
+{"id": "eval_0278", "query": "Чему равна производная функции sin x в точке x=0?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0279", "query": "Вычислите неопределённый интеграл ∫x^2 dx.", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0280", "query": "Каково точное значение предела lim_{x→0}(sin x)/x?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0281", "query": "Разложите функцию e^x в ряд Тейлора до членов третьего порядка.", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0282", "query": "Какова дисперсия стандартной нормальной случайной величины?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0283", "query": "Какова вероятность выпадения суммы 7 при броске двух стандартных игральных кубиков?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0284", "query": "Как вычисляется преобразование Фурье функции e^{−x^2}?", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0285", "query": "Какова формула объёма шара радиуса R?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0286", "query": "Сколько простых чисел существует между 1 и 100?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0287", "query": "Кто впервые сформулировал Основную теорему алгебры и в каком году?", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0288", "query": "Каков радиус сходимости степенного ряда Σx^n/n!?", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0289", "query": "Найдите градиент функции f(x,y)=x^2+y^2 в точке (1,2).", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0290", "query": "Какова производная многочлена x^5−3x+1?", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0291", "query": "Найдите определённый интеграл ∫_0^1(1+x)dx.", "answerable": false, "query_type": "unanswerable", "difficulty": "easy"}
+{"id": "eval_0292", "query": "Каков общий вид уравнения касательной к кривой y=f(x) в точке x0?", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0293", "query": "Какова вероятность того, что случайно выбранное действительное число из [0,1] рационально?", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0294", "query": "Вычислите собственное значение дифференциального оператора d/dx на пространстве всех гладких функций.", "answerable": false, "query_type": "unanswerable", "difficulty": "hard"}
+{"id": "eval_0295", "query": "Какова фундаментальная группа окружности S^1?", "answerable": false, "query_type": "unanswerable", "difficulty": "hard"}
+{"id": "eval_0296", "query": "Как связана энтропия Шеннона с вероятностями исходов?", "answerable": false, "query_type": "unanswerable", "difficulty": "medium"}
+{"id": "eval_0297", "query": "Как доказать теорему о существовании и единственности решения задачи Коши для ОДУ?", "answerable": false, "query_type": "unanswerable", "difficulty": "hard"}
+{"id": "eval_0298", "query": "Пусть матрицы A и B подобны. Что можно утверждать о характеристическом многочлене и следе этих матриц?", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0299", "query": "Пусть действительная симметрическая матрица имеет собственные значения 1, 2 и −1. Какой канонический вид соответствующей квадратичной формы следует из теоремы об ортогональном преобразовании?", "answerable": true, "query_type": "hard_task", "difficulty": "medium"}
+{"id": "eval_0300", "query": "Используя определение собственных значений, характеристический многочлен и лемму о подобных матрицах, объясните, почему собственные значения не зависят от выбора базиса линейного оператора.", "answerable": true, "query_type": "multichunk_task", "difficulty": "hard"}
