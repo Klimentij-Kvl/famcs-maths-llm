@@ -1,0 +1,900 @@
+  {
+    "id": "eval_0001",
+    "query": "Что называется направленным отрезком и чем он отличается от обычного отрезка?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["bb41d6349476389d516e"],
+    "ground_truth_answer": "- **Отрезком** называется часть прямой, ограниченная двумя точками. Отрезок называется **направленным**, если указано, какая из граничных точек является начальной и какая конечной (Обозначения: $AB$ – направленный отрезок; $|AB|$ – длина направленного отрезка)."
+  },
+  {
+    "id": "eval_0004",
+    "query": "Как определяется координата точки на координатной прямой?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["bcf981b5192b42049c33"],
+    "ground_truth_answer": "Пусть точка $A$ — некоторая фиксированная точка на прямой $\\Delta$.\n\n- **Координатой точки** $A$ называется число, равное величине $OA$ направленного отрезка $OA$. Обозначение: $X_A$."
+  },
+  {
+    "id": "eval_0007",
+    "query": "Что означает внутреннее и внешнее деление направленного отрезка?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "medium",
+    "chunks": ["f7ccdafd77f284464319"],
+    "ground_truth_answer": "Пусть на оси $\\Delta$ заданы 2 различные точки: $A$ с координатой $X_A$ и $B$ с координатой $X_B$.\n\n- Говорят, что точка $C$ **делит направленный отрезок** $AB$ **в отношении** $\\lambda$, если $\\lambda = \\frac{AC}{CB}$. При этом число $\\lambda$ называется **простым отношением трех точек** $A$, $C$, $B$.\n\n1. Если точка $C$ лежит между точками $A$ и $B$, то направляющие отрезки $AC$ и $CB$ сонаправлены. Следовательно, знак у них одинаковый и $\\lambda > 0$. При этом говорят, что точка $C$ делит направленный отрезок $AB$ **внутренним образом**.\n2. Если точка $C$ лежит вне отрезка $AB$, то говорят, что она делит отрезок $AB$ **внешним образом**. При этом отрезки $AC$ и $CB$ противоположно направлены (не сонаправлены) и, следовательно, $\\lambda < 0$.\n3. Если $\\lambda = 0$, то $AC = 0$, следовательно, $|AC| = 0$ и точки $A$ и $C$ совпадают.\n4. Если точка $C$ лежит за концом отрезка $AB$, то $|AC| > |BC| \\Rightarrow \\lambda < -1$.\n5. Если точка $C$ лежит перед началом отрезка $AB$, то $|AC| < |BC|$, тогда $-1 < \\lambda < 0$."
+  },
+  {
+    "id": "eval_0010",
+    "query": "По какому признаку ДПСК называется правой или левой?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["5f5708dd48656a321080"],
+    "ground_truth_answer": "- Система координат называется **правой**, если кратчайший поворот от оси $X$ к оси $Y$ против часовой стрелки, иначе **левой**.\n\n![Правая ДПСК](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian_coordinate_system_2D.svg/200px-Cartesian_coordinate_system_2D.svg.png) ![Левая ДПСК](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian_coordinate_system_2D.svg/200px-Cartesian_coordinate_system_2D.svg.png)\n\n*Правая ДПСК* | *Левая ДПСК*"
+  },
+  {
+    "id": "eval_0013",
+    "query": "Как находится точка, делящая отрезок на плоскости в заданном отношении?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "medium",
+    "chunks": ["943b5df205a8f07847c9"],
+    "ground_truth_answer": "Проведем через точки $A$ и $B$ некоторую ось. Тогда имеет смысл понятие «деление отрезка в данном отношении».\n\n**Теорема.** Координаты точки $C$, делящей $AB$ в отношении $\\lambda$, равны:\n\n$$X_C = \\frac{X_A + \\lambda X_B}{1 + \\lambda}, \\quad Y_C = \\frac{Y_A + \\lambda Y_B}{1 + \\lambda}.$$"
+  },
+  {
+    "id": "eval_0016",
+    "query": "Что называют полярным радиусом и полярным углом?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["295e1826694d9ee663fe"],
+    "ground_truth_answer": "- Число $\\rho$ называется **полярным радиусом** точки. Число $\\varphi$ — **полярным углом** точки."
+  },
+  {
+    "id": "eval_0019",
+    "query": "Что называется цилиндрическими координатами точки?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["17dd877cf006e60a91d3"],
+    "ground_truth_answer": "Пусть точка $M$ — произвольная точка пространства, а точка $N$ — её проекция на плоскость $\\Pi$.\n\n- **Цилиндрическими координатами точки** $M$ называются числа $\\rho$, $\\varphi$, $z$, где $\\rho$ и $\\varphi$ — полярные координаты точки $N$ относительно построенной полярной системы координат, а $z$ — величина направленного отрезка $OM_z$ ($z = OM_z$)."
+  },
+  {
+    "id": "eval_0022",
+    "query": "Что называется вектором в конспекте?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["7e81209951cd8843d28c"],
+    "ground_truth_answer": "- **Вектором** называется множество всех одинаково направленных отрезков равной длины. Обозначение: $\\vec{a}$, $\\vec{b}$, $\\vec{c}$ или $\\mathbf{a}$, $\\mathbf{b}$, $\\mathbf{c}$.\n\nПусть $AB$ — направленный отрезок. Тогда существует единственный вектор, которому принадлежит этот отрезок. То есть любой направленный отрезок $AB$ однозначно определяет вектор, который обозначается как $\\overrightarrow{AB}$."
+  },
+  {
+    "id": "eval_0025",
+    "query": "Что называется длиной вектора?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["0aa7296c9592bef42a5c"],
+    "ground_truth_answer": "- **Длиной вектора** $\\vec{a}$ называется длина любого из направленных отрезков среди его образующих. Обозначение: $|\\vec{a}|$."
+  },
+  {
+    "id": "eval_0028",
+    "query": "Какие линейные операции над векторами рассматриваются?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["cb532b232610e07a8f74"],
+    "ground_truth_answer": "**Линейные операции над векторами:**\n\n- сложение;\n- умножение на число."
+  },
+  {
+    "id": "eval_0031",
+    "query": "Что такое линейная комбинация системы векторов?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["c4ded269072b8f7e8368"],
+    "ground_truth_answer": "Пусть $\\vec{a}_1, \\ldots, \\vec{a}_k$ — произвольная система векторов, $\\alpha_1, \\ldots, \\alpha_k$ — некоторые действительные числа.\n\n- Вектор $\\alpha_1\\vec{a}_1 + \\ldots + \\alpha_k\\vec{a}_k$ называется **линейной комбинацией векторов** $\\vec{a}_1, \\ldots, \\vec{a}_k$ с коэффициентами $\\alpha_1, \\ldots, \\alpha_k$.\n\nЕсли вектор представлен в виде линейной комбинации системы векторов (то есть $\\vec{b} = \\alpha_1\\vec{a}_1 + \\ldots + \\alpha_k\\vec{a}_k$), то говорят, что данный вектор **разложим** по этим векторам системы."
+  },
+  {
+    "id": "eval_0034",
+    "query": "Что называют декартовыми координатами вектора?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["55abfc1b1e59ff2a0583"],
+    "ground_truth_answer": "- Векторы $\\vec{i}, \\vec{j}, \\vec{k}$ некомпланарны, следовательно, они образуют базис в пространстве. Данный базис является **ортонормированным базисом**.\n\nПусть $\\vec{a}$ — произвольный вектор пространства. Тогда по первой теореме из предыдущего параграфа $\\vec{a} = x \\cdot \\vec{i} + y \\cdot \\vec{j} + z \\cdot \\vec{k}$, где $(x, y, z)$ — декартовы координаты вектора $\\vec{a}$. То есть декартовы координаты вектора — это коэффициенты при разложении этого вектора по ортонормированному базису."
+  },
+  {
+    "id": "eval_0037",
+    "query": "Что называется радиус-вектором точки?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["c94b92c90a6e78d2e24c"],
+    "ground_truth_answer": "- Пусть $M$ — некоторая точка пространства. Вектор $\\overrightarrow{OM}$ называется **радиус-вектором точки** $M$. Обозначение: $\\vec{r}_M$."
+  },
+  {
+    "id": "eval_0040",
+    "query": "Что называется векторным произведением двух векторов?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "medium",
+    "chunks": ["dc92bb9902fa47338e36"],
+    "ground_truth_answer": "- **Векторным произведением** вектора $\\vec{a}$ на вектор $\\vec{b}$ называется вектор, обозначаемый $\\vec{a} \\times \\vec{b}$ или $[\\vec{a}, \\vec{b}]$, который удовлетворяет следующим условиям:\n\n1. $|[\\vec{a}, \\vec{b}]| = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\sin(\\vec{a}, \\vec{b})$;\n2. $[\\vec{a}, \\vec{b}] \\perp \\vec{a}$, $[\\vec{a}, \\vec{b}] \\perp \\vec{b}$;\n3. упорядоченная тройка $\\vec{a}, \\vec{b}, [\\vec{a}, \\vec{b}]$ является правой."
+  },
+  {
+    "id": "eval_0043",
+    "query": "Что называется направляющим вектором прямой в пространстве?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["c996c708044e5be80206"],
+    "ground_truth_answer": "- **Ненулевой вектор**, параллельный прямой, называется **направляющим вектором** прямой."
+  },
+  {
+    "id": "eval_0046",
+    "query": "Что называется параболой?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["2fce6add11525df8b51e"],
+    "ground_truth_answer": "- **Параболой** называется множество точек плоскости, каждая из которых равноудалена от точки, называемой **фокусом**, и от прямой, называемой **директрисой**.\n\nВыведем уравнение параболы. Построим ДПСК так, чтобы ось $Ox$ проходила через фокус $F$ перпендикулярно прямой $\\Delta$. И пусть $D$ — точка пересечения прямой $\\Delta$ и оси $Ox$. Направление $Ox$ выберем так, чтобы оно совпадало с направлением вектора $\\overrightarrow{DF}$. Начало координат будет располагаться в центре между точками $D$ и $F$.\n\n![Парабола](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Parabola.svg/200px-Parabola.svg.png)"
+  },
+  {
+    "id": "eval_0049",
+    "query": "Что называется собственным вектором и собственным значением линейного оператора?",
+    "answerable": true,
+    "query_type": "direct_qustion",
+    "difficulty": "easy",
+    "chunks": ["5739f7c4cfaded475809"],
+    "ground_truth_answer": "Пусть $f$ — линейный оператор векторного пространства $V$ над полем $P$.\n\n- Если для некоторого ненулевого вектора $a \\in V$ справедливо равенство $f(a) = \\lambda_0a$, где $\\lambda_0 \\in P$, то скаляр $\\lambda_0$ называется **собственным значением** оператора $f$, а вектор $a$ — **собственным вектором** оператора $f$, соответствующим собственному значению $\\lambda_0$."
+  },
+  {
+    "id": "eval_0051",
+    "query": "Дайте определение нулевого направленного отрезка.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["e69e84c3766c8ac0d522"],
+    "ground_truth_answer": "- Отрезок называется **нулевым**, если его начальная и конечная точки совпадают. Длина нулевого направленного отрезка равна нулю."
+  },
+  {
+    "id": "eval_0054",
+    "query": "Дайте определение декартовой прямоугольной системы координат в пространстве.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["66adde39ac9dbd67e65f"],
+    "ground_truth_answer": "- **ДПСК в пространстве** образуют три взаимно перпендикулярные координатные оси с общим началом координат. Третья ось $Oz$ называется **осью аппликат**."
+  },
+  {
+    "id": "eval_0057",
+    "query": "Дайте определение сферических координат точки.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["12a074c20f4a3f9e855d"],
+    "ground_truth_answer": "- **Сферическими координатами точки** $M$ называются три числа $\\rho$, $\\varphi$, $\\Theta$, где $\\rho$ — длина отрезка $|OM|$, $\\varphi$ — полярный радиус точки $N$ относительно построенной полярной системы координат, а $\\Theta$ — угол между направленным отрезком $OM$ и осью $Oz$.\n\nИз определений следует, что $\\rho \\geq 0$ и для цилиндрических, и для сферических координат, $\\Theta \\in [0; \\pi]$, а $\\varphi$ определён с точностью до $2\\pi n$, $n \\in \\mathbb{Z}$.\n\nПостроим в пространстве ДПСК следующим образом: начало координат совпадает с точкой $O$, ось $Oz$ совместим с построенной ранее осью $Oz$, а положительное направление оси $Ox$ — с полярной осью.\n\n![Сферические координаты](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Cylindrical_coordinates.svg/200px-Cylindrical_coordinates.svg.png)\n\nТогда точка $M$ имеет следующие координаты в системах:\n\n$$\\text{цилиндрическая: } \\begin{cases} X_M = \\rho \\cdot \\cos \\varphi, \\\\ Y_M = \\rho \\cdot \\sin \\varphi, \\\\ Z_M = z; \\end{cases} \\quad \\text{сферическая: } \\begin{cases} X_M = \\rho \\cdot \\cos \\varphi \\cdot \\sin \\Theta, \\\\ Y_M = \\rho \\cdot \\sin \\varphi \\cdot \\sin \\Theta, \\\\ Z_M = \\rho \\cdot \\cos \\Theta. \\end{cases}$$"
+  },
+  {
+    "id": "eval_0060",
+    "query": "Дайте определение угла между ненулевыми векторами.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["a5ce164add17f41e4f40"],
+    "ground_truth_answer": "Пусть $\\vec{a}$ и $\\vec{b}$ — 2 ненулевых вектора, отложенных от некоторой точки $O$. То есть найдём такие точки $A$ и $B$, что $\\vec{a} = \\overrightarrow{OA}$, $\\vec{b} = \\overrightarrow{OB}$.\n\n- **Углом между векторами** $\\vec{a}$ и $\\vec{b}$ называется угол между направленными отрезками $OA$ и $OB$.\n\n![Угол между векторами](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vector_angle.svg/200px-Vector_angle.svg.png)"
+  },
+  {
+    "id": "eval_0063",
+    "query": "Дайте определение базиса в пространстве.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "medium",
+    "chunks": ["0ef1447509511890fb73"],
+    "ground_truth_answer": "- **Базисом в пространстве** называется упорядоченная тройка некомпланарных векторов.\n\nНулевой вектор не может быть элементом базиса."
+  },
+  {
+    "id": "eval_0066",
+    "query": "Дайте определение ориентации упорядоченной тройки некомпланарных векторов.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "medium",
+    "chunks": ["5d57ac7c79171e50cd9a"],
+    "ground_truth_answer": "Рассмотрим упорядоченную тройку некомпланарных векторов $\\vec{e}_1, \\vec{e}_2, \\vec{e}_3$, отложим их от некоторой точки $O$ и пусть $\\vec{e}_1 = \\overrightarrow{OE_1}$, $\\vec{e}_2 = \\overrightarrow{OE_2}$, $\\vec{e}_3 = \\overrightarrow{OE_3}$.\n\n- Если при наблюдении с конца направленного отрезка $OE_3$ кратчайший поворот от $OE_1$ к $OE_2$ осуществляется против часовой стрелки, то тройка векторов $\\vec{e}_1, \\vec{e}_2, \\vec{e}_3$ называется **правой**, в противном случае **левой**. Данное свойство также называется **ориентацией векторов**.\n\n![Правая и левая тройка векторов](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vector_angle.svg/200px-Vector_angle.svg.png)\n\nИз векторов $\\vec{a}, \\vec{b}, \\vec{c}$ можно составить 6 упорядоченных троек:\n\n$\\vec{a}, \\vec{b}, \\vec{c}$; $\\vec{b}, \\vec{c}, \\vec{a}$; $\\vec{c}, \\vec{a}, \\vec{b}$ — правая тройка;\n$\\vec{a}, \\vec{c}, \\vec{b}$; $\\vec{b}, \\vec{a}, \\vec{c}$; $\\vec{c}, \\vec{b}, \\vec{a}$ — левая тройка.\n\nИз определения ориентации тройки векторов следует, что первые три тройки имеют одну ориентацию, а вторые три противоположную им ориентацию."
+  },
+  {
+    "id": "eval_0069",
+    "query": "Дайте определение поверхности второго порядка.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["d06132c565648de4c02c"],
+    "ground_truth_answer": "- **Поверхностью второго порядка** называется множество точек пространства, декартовые координаты которых удовлетворяют уравнению следующего вида:\n\n$$a_{11}x^2 + a_{22}y^2 + a_{33}z^2 + 2a_{12}xy + 2a_{13}xz + 2a_{23}yz + 2b_1x + 2b_2y + 2b_3z + c = 0. \\tag{5.6.1}$$\n\nЕсли уравнению (5.6.1) не удовлетворяет ни одна точка, то поверхность мнимая."
+  },
+  {
+    "id": "eval_0072",
+    "query": "Дайте определение комплексного числа и назовите его действительную и мнимую части.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["4f6b3579bb532c7a4952"],
+    "ground_truth_answer": "- **Комплексным числом** называется выражение вида $z = a + bi$, где $a, b \\in \\mathbb{R}$ (действительные числа), а $i$ — символ, называемый **мнимой единицей**. При этом число $a$ называется **действительной частью** $z$ (Обозначение: $a = \\text{Re}(z)$), а число $b$ — **мнимой частью** $z$ (Обозначение: $b = \\text{Im}(z)$).\n\nМножество комплексных чисел обозначается символом $\\mathbb{C}$.\n\nЕсли $b = 0$, $a \\neq 0$, то число $a + 0 \\cdot i$ считается совпадающим с действительным числом $a$, то есть $a + 0 \\cdot i = a$."
+  },
+  {
+    "id": "eval_0075",
+    "query": "Дайте определение кольца.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "easy",
+    "chunks": ["0a322d388bac686c3119"],
+    "ground_truth_answer": "- Непустое множество $K$ с определенными на нем операциями сложения и умножения называется **кольцом**, если\n  1. $(K, +)$ — абелева группа;\n  2. операция умножения дистрибутивна относительно операции сложения, то есть $\\forall a, b, c \\in K$\n     $$a \\cdot (b + c) = a \\cdot b + a \\cdot c;$$\n     $$(b + c) \\cdot a = b \\cdot a + c \\cdot a.$$"
+  },
+  {
+    "id": "eval_0078",
+    "query": "Дайте определение неприводимого многочлена над полем.",
+    "answerable": true,
+    "query_type": "definition",
+    "difficulty": "medium",
+    "chunks": ["f0ef3d20bdee9622cbf6"],
+    "ground_truth_answer": "- Многочлен $f(x) \\in P[x]$ положительной степени называется **неприводимым** над полем $P$, если его нельзя представить в виде произведения многочленов из $P[x]$, степень которых меньше, чем $\\deg(f(x))$. В противном случае многочлен называется **приводимым**."
+  },
+  {
+    "id": "eval_0081",
+    "query": "Какова формула величины направленного отрезка AB на оси в зависимости от его направления относительно оси?",
+    "answerable": true,
+    "query_type": "equation",
+    "difficulty": "easy",
+    "chunks": ["c01a125a393f573b34b8"],
+    "ground_truth_answer": "$AB = \\begin{cases} |AB|, & AB\\ \\uparrow\\uparrow\\ \\Delta, \\\\ -|AB|, & AB\\ \\uparrow\\downarrow\\ \\Delta. \\end{cases}$"
+  },
+  {
+    "id": "eval_0084",
+    "query": "Какова формула расстояния между двумя точками на плоскости в ДПСК?",
+    "answerable": true,
+    "query_type": "equation",
+    "difficulty": "easy",
+    "chunks": ["2b389b06412f97a6de84"],
+    "ground_truth_answer": "$|AB|=\\sqrt{(X_A-X_B)^2+(Y_A-Y_B)^2}$."
+  },
+  {
+    "id": "eval_0087",
+    "query": "Запишите формулу длины вектора с декартовыми координатами (x,y,z).",
+    "answerable": true,
+    "query_type": "equation",
+    "difficulty": "easy",
+    "chunks": ["a542c4aff05b055509c8"],
+    "ground_truth_answer": "$|\\vec a|=\\sqrt{x^2+y^2+z^2}$."
+  },
+  {
+    "id": "eval_0090",
+    "query": "Запишите формулу теоремы Шаля для направленных отрезков.",
+    "answerable": true,
+    "query_type": "equation",
+    "difficulty": "easy",
+    "chunks": ["ad4731a23dcbfc37c358"],
+    "ground_truth_answer": "$AB+BC=AC$."
+  },
+  {
+    "id": "eval_0093",
+    "query": "Запишите характеристическое уравнение матрицы через характеристический многочлен.",
+    "answerable": true,
+    "query_type": "equation",
+    "difficulty": "easy",
+    "chunks": ["0129d8f8462b8ef2686c"],
+    "ground_truth_answer": "$f_A(\\lambda)=\\det(A-\\lambda E)$, а характеристическое уравнение имеет вид $f_A(\\lambda)=0$, то есть $\\det(A-\\lambda E)=0$."
+  },
+  {
+    "id": "eval_0096",
+    "query": "Сформулируйте теорему Шаля.",
+    "answerable": true,
+    "query_type": "theorem",
+    "difficulty": "easy",
+    "chunks": ["ad4731a23dcbfc37c358"],
+    "ground_truth_answer": "**Теорема.** Для любых двух точек $A$ и $B$ на $\\Delta$ выполняется: $AB = X_B - X_A$, $|AB| = |X_B - X_A|$."
+  },
+  {
+    "id": "eval_0099",
+    "query": "Сформулируйте теорему о разложении вектора по базису на прямой, плоскости и в пространстве.",
+    "answerable": true,
+    "query_type": "theorem",
+    "difficulty": "medium",
+    "chunks": ["eeb044750d76733c8cf1"],
+    "ground_truth_answer": "**Теорема.**\n\n1. Любой вектор, параллельный прямой, может быть единственным образом разложен по базису этой прямой.\n2. Любой вектор, параллельный плоскости, может быть единственным образом разложен по базису на этой плоскости.\n3. Любой вектор в пространстве может быть единственным образом разложен по базису в пространстве."
+  },
+  {
+    "id": "eval_0102",
+    "query": "Сформулируйте теорему о существовании пространственной ДПСК, в которой поверхность второго порядка имеет канонический вид.",
+    "answerable": true,
+    "query_type": "theorem",
+    "difficulty": "medium",
+    "chunks": ["68ea76d2d9cb7ed4eccd"],
+    "ground_truth_answer": "**Теорема.** Для любой поверхности второго порядка существует пространственная ДПСК, в которой эта поверхность определена одним из следующих канонических уравнений:\n\n1. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = 1$ – эллипсоид;\n2. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = -1$ – мнимый эллипсоид;\n3. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} - \\frac{z^2}{c^2} = 1$ – однополостной гиперболоид;\n4. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} - \\frac{z^2}{c^2} = -1$ – двуполостной гиперболоид;\n5. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} - \\frac{z^2}{c^2} = 0$ – конус второго порядка;\n6. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = 0$ – мнимый конус второго порядка;\n7. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 2z$ – эллиптический параболоид;\n8. $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 2z$ – гиперболический параболоид;\n9. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$ – эллиптический цилиндр;\n10. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = -1$ – мнимый эллиптический цилиндр;\n11. $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$ – гиперболический цилиндр;\n12. $y^2 = 2px$ – параболический цилиндр;\n13. $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 0$ – пара пересекающихся плоскостей;\n14. $\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 0$ – пара мнимых пересекающихся плоскостей;\n15. $x^2 - a^2 = 0$ – пара параллельных плоскостей;\n16. $x^2 + a^2 = 0$ – пара мнимых параллельных плоскостей;\n17. $x^2 = 0$ – пара совпадающих плоскостей.\n\n![Поверхности второго порядка](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Ellipsoid.svg/200px-Ellipsoid.svg.png)"
+  },
+  {
+    "id": "eval_0105",
+    "query": "Сформулируйте теорему о существовании обратной матрицы через невырожденность.",
+    "answerable": true,
+    "query_type": "theorem",
+    "difficulty": "easy",
+    "chunks": ["f1bd1db4db041a43e64d"],
+    "ground_truth_answer": "**Теорема.** Квадратная матрица имеет обратную $\\iff$ она невырожденная."
+  },
+  {
+    "id": "eval_0108",
+    "query": "Сформулируйте критерий Сильвестра.",
+    "answerable": true,
+    "query_type": "theorem",
+    "difficulty": "easy",
+    "chunks": ["8190ca5665710e3e08e4"],
+    "ground_truth_answer": "**Критерий Сильвестра.** Действительная квадратичная форма является положительно определенной $\\iff$ все угловые миноры ее матрицы положительны."
+  },
+  {
+    "id": "eval_0111",
+    "query": "На координатной прямой XA=2 и XB=7. Найдите величину направленного отрезка AB и его длину.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["80e6fd9a2f9d52b4531e"],
+    "ground_truth_answer": "AB = 7-2 = 5, поэтому |AB| = 5."
+  },
+  {
+    "id": "eval_0114",
+    "query": "Точка C делит AB в отношении λ=2, XA=1, XB=7. Найдите XC.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["da1aafdbc945fed14639"],
+    "ground_truth_answer": "X_C=(1+2*7)/(1+2)=5."
+  },
+  {
+    "id": "eval_0117",
+    "query": "Для точек A(1,2) и B(4,6) найдите |AB|.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["2b389b06412f97a6de84"],
+    "ground_truth_answer": "|AB|=sqrt((1-4)^2+(2-6)^2)=5."
+  },
+  {
+    "id": "eval_0120",
+    "query": "Точка C делит AB в отношении λ=2 на плоскости, A(0,2), B(3,8). Найдите координаты C.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "medium",
+    "chunks": ["6e7f13c6c043c68444ad"],
+    "ground_truth_answer": "C=((0+2*3)/3,(2+2*8)/3)=(2,6)."
+  },
+  {
+    "id": "eval_0123",
+    "query": "Для точки M в полярных координатах ρ=2, φ=π/2 вычислите X_M и Y_M.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["8dbc931ff6d3ba806ecb"],
+    "ground_truth_answer": "X_M=2 cos(pi/2)=0, Y_M=2 sin(pi/2)=2."
+  },
+  {
+    "id": "eval_0126",
+    "query": "Вектор имеет координаты (3,4,0). Найдите его длину.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["a542c4aff05b055509c8"],
+    "ground_truth_answer": "|a|=sqrt(3^2+4^2)=5."
+  },
+  {
+    "id": "eval_0129",
+    "query": "Вектор a=(3,1,−2), b=(1,4,2). Найдите a−b.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["c6578dda3868b9c496de"],
+    "ground_truth_answer": "a-b=(3,1,-2)-(1,4,2)=(2,-3,-4)."
+  },
+  {
+    "id": "eval_0132",
+    "query": "Проверьте по скалярному произведению, перпендикулярны ли a=(1,2,−1) и b=(2,−1,0).",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["50c9aada540db000b3a9"],
+    "ground_truth_answer": "Скалярное произведение равно 1*2+2*(-1)+(-1)*0=0, поэтому векторы перпендикулярны."
+  },
+  {
+    "id": "eval_0135",
+    "query": "Найдите координаты вектора M1M2 для M1=(1,−2,3), M2=(5,1,−1).",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["98a8a1bebd505096ad59"],
+    "ground_truth_answer": "M1M2=(5-1,1-(-2),-1-3)=(4,3,-4)."
+  },
+  {
+    "id": "eval_0138",
+    "query": "Найдите сумму матриц [[1,2],[3,4]] и [[4,3],[2,1]].",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["43e7e789666017f5e699"],
+    "ground_truth_answer": "A+B=[[5,5],[5,5]]."
+  },
+  {
+    "id": "eval_0141",
+    "query": "Проверьте, делится ли x^2−1 на x−1.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["f41631ddba1dd417c7c2"],
+    "ground_truth_answer": "Да: x^2-1=(x-1)(x+1), поэтому делится на x-1."
+  },
+  {
+    "id": "eval_0144",
+    "query": "Для комплексного числа z=−1+i найдите ρ.",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "easy",
+    "chunks": ["8e50f01607e10b1e0a90"],
+    "ground_truth_answer": "rho=sqrt((-1)^2+1^2)=sqrt(2)."
+  },
+  {
+    "id": "eval_0147",
+    "query": "Для квадратичной формы f(x,y)=2x^2+3xy+y^2 найдите её значение в точке (1,2).",
+    "answerable": true,
+    "query_type": "simple_task",
+    "difficulty": "medium",
+    "chunks": ["25c92ec10056d98870f0"],
+    "ground_truth_answer": "f(1,2)=2+6+4=12."
+  },
+  {
+    "id": "eval_0153",
+    "query": "Даны три точки на оси с координатами XA=−5, XB=2, XC=9. Проверьте теорему Шаля численно и объясните знаки AB, BC и AC.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "hard",
+    "chunks": ["ad4731a23dcbfc37c358", "f7ccdafd77f284464319"],
+    "ground_truth_answer": "AB=7, BC=7, AC=14, поэтому AB+BC=AC. Все три величины положительны."
+  },
+  {
+    "id": "eval_0156",
+    "query": "Точка M имеет цилиндрические координаты (2,π/4,3). Найдите декартовы координаты и проверьте восстановлением ρ из X_M,Y_M.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "hard",
+    "chunks": ["12a074c20f4a3f9e855d"],
+    "ground_truth_answer": "M=(2cos(pi/4),2sin(pi/4),3)=(sqrt2,sqrt2,3); sqrt(X^2+Y^2)=2."
+  },
+  {
+    "id": "eval_0159",
+    "query": "Для вектора a=(1,−2,2) найдите длину, направляющие косинусы и координаты его орта.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "hard",
+    "chunks": ["a542c4aff05b055509c8", "48dc64e320aa2997beeb", "46a7dc57836ba7555acd"],
+    "ground_truth_answer": "|a|=3; направляющие косинусы (1/3,-2/3,2/3); орт e_a=(1/3,-2/3,2/3)."
+  },
+  {
+    "id": "eval_0162",
+    "query": "Проверьте коллинеарность a=(2,−4,6) и b=(−1,2,−3) по пропорциональности координат и по векторному произведению.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "hard",
+    "chunks": ["d994cca0c7eb9035f86d", "fcefb83c3722d62e4eeb"],
+    "ground_truth_answer": "b=-(1/2)a, поэтому векторы коллинеарны; a×b=0."
+  },
+  {
+    "id": "eval_0165",
+    "query": "Для матрицы [[1,2],[2,4]] определите, является ли она невырожденной, и сделайте вывод о существовании обратной.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["f1bd1db4db041a43e64d"],
+    "ground_truth_answer": "det A=0, матрица вырожденна, обратной нет."
+  },
+  {
+    "id": "eval_0168",
+    "query": "Для A=diag(2,3) найдите характеристический многочлен и все собственные значения.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["0129d8f8462b8ef2686c", "fe56a770aa6d046ab429"],
+    "ground_truth_answer": "f(lambda)=(2-lambda)(3-lambda)=lambda^2-5lambda+6; собственные значения 2 и 3."
+  },
+  {
+    "id": "eval_0171",
+    "query": "Для A=[[1,2],[2,4]] определите ранг с опорой на критерий det A=0 и свойство базисного минора.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["c4ad26acb66109e3c9e5", "1122da3f0cec54b0bf7a", "e9ab4c6caaf7e392b5d6"],
+    "ground_truth_answer": "det A=0 и ранг равен 1, поскольку имеется ненулевой минор первого порядка и строки линейно зависимы."
+  },
+  {
+    "id": "eval_0174",
+    "query": "Для f(x)=x^3−3x^2+2x определите, делится ли f(x) на x, и объясните через f(0).",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["f41631ddba1dd417c7c2"],
+    "ground_truth_answer": "f(0)=0, следовательно, по свойству значения многочлена f делится на x."
+  },
+  {
+    "id": "eval_0177",
+    "query": "Для z=2(cos(π/3)+i sin(π/3)) найдите декартову форму.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["44e6d188dbe9d4885614"],
+    "ground_truth_answer": "z=1+i√3."
+  },
+  {
+    "id": "eval_0180",
+    "query": "Для f(x)=x^2+1 найдите f(1), f(i) и укажите корни над C.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["37dc243d802cd0481e7a", "3842af55ba8aa060be9e"],
+    "ground_truth_answer": "f(1)=2, f(i)=0; корни над C: i и -i."
+  },
+  {
+    "id": "eval_0183",
+    "query": "Пусть A=S^{-1}BS. Что говорит конспект о следах и определителях A и B?",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["989cbf0a7de40a488a54", "477c9254278f0980f91b", "325f833bd825d830b506"],
+    "ground_truth_answer": "Подобные матрицы имеют одинаковые след и определитель (и одинаковый характеристический многочлен)."
+  },
+  {
+    "id": "eval_0186",
+    "query": "Два ненулевых собственных вектора соответствуют различным собственным значениям. Что можно заключить об их линейной зависимости?",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["19d6decb26de3465a801"],
+    "ground_truth_answer": "Такие собственные векторы линейно независимы."
+  },
+  {
+    "id": "eval_0189",
+    "query": "Для A=[[2,1],[1,2]] найдите собственные значения и запишите канонический вид соответствующей квадратичной формы.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "hard",
+    "chunks": ["fa373d09938002c2b8d0"],
+    "ground_truth_answer": "Собственные значения 3 и 1; канонический вид — 3y_1^2+y_2^2 (с точностью до перестановки координат)."
+  },
+  {
+    "id": "eval_0192",
+    "query": "Для A=[[0,−1],[1,0]] проверьте A^TA=E и сделайте вывод об ортогональности соответствующего оператора.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["bb92b366ff065cce48c5"],
+    "ground_truth_answer": "A^T A=E, поэтому соответствующий оператор ортогонален."
+  },
+  {
+    "id": "eval_0195",
+    "query": "Пусть U — подпространство евклидова пространства V. Объясните, что представляет собой U^⊥ и как связаны U и U^⊥ с разложением вектора.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "hard",
+    "chunks": ["5c241dbf2fc7be214899", "3f3a9b967b69ba9d94cd"],
+    "ground_truth_answer": "U^perp={x: (x,u)=0 для всех u in U}; вектор пространства раскладывается на составляющие из U и U^perp."
+  },
+  {
+    "id": "eval_0198",
+    "query": "Пусть A^+ — псевдообратная матрица. Как получить нормальное псевдорешение AX=B?",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["44b40fc6142308047931"],
+    "ground_truth_answer": "Нормальное псевдорешение равно A^+B."
+  },
+  {
+    "id": "eval_0201",
+    "query": "Проверьте, унимодулярна ли полиномиальная матрица, если det A(λ)=1.",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["70a24c640a406c955b0b"],
+    "ground_truth_answer": "Да, det A(lambda)=1 — ненулевой скаляр, значит матрица унимодулярна."
+  },
+  {
+    "id": "eval_0204",
+    "query": "Если A имеет порядок 4, какой старший коэффициент имеет det(A−λE)?",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["5cc31d5d680c2eb8d249"],
+    "ground_truth_answer": "Старший коэффициент det(A-lambda E) при n=4 равен (-1)^4=1."
+  },
+  {
+    "id": "eval_0207",
+    "query": "Для действительной квадратичной формы с двумя положительными и одним отрицательным собственным значением может ли форма быть положительно определённой?",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "easy",
+    "chunks": ["86a5f56aaee3750cfe43"],
+    "ground_truth_answer": "Нет: для положительной определенности все собственные значения должны быть положительны, а одно из них отрицательно."
+  },
+  {
+    "id": "eval_0299",
+    "query": "Пусть действительная симметрическая матрица имеет собственные значения 1, 2 и −1. Какой канонический вид соответствующей квадратичной формы следует из теоремы об ортогональном преобразовании?",
+    "answerable": true,
+    "query_type": "hard_task",
+    "difficulty": "medium",
+    "chunks": ["86a5f56aaee3750cfe43", "f0f869b7b2e6a19d79af"],
+    "ground_truth_answer": "Канонический вид — y_1^2+2y_2^2-y_3^2 с точностью до перестановки координат, поскольку собственные значения равны 1,2,-1."
+  },
+  {
+    "id": "eval_0209",
+    "query": "Используя определение координаты точки на прямой и теорему о координатах направленного отрезка, выразите AB через XA и XB и объясните знак результата.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["a9bd1948c9b9ddacb01b", "80e6fd9a2f9d52b4531e"],
+    "ground_truth_answer": "AB=X_B-X_A. Знак определяется направлением: положителен при совпадении направления AB с осью и отрицателен при противоположном направлении."
+  },
+  {
+    "id": "eval_0212",
+    "query": "Свяжите определение ДПСК на плоскости, проекции точки и формулу расстояния, чтобы объяснить происхождение формулы |AB|.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["6dd6b52f09eaf8f41ddc", "2b389b06412f97a6de84"],
+    "ground_truth_answer": "Проекции A и B дают прямоугольный треугольник: |AB|^2=|AC|^2+|BC|^2, а длины проекций выражаются через разности координат, поэтому |AB|=sqrt((X_A-X_B)^2+(Y_A-Y_B)^2)."
+  },
+  {
+    "id": "eval_0215",
+    "query": "Используя определение координат вектора и теорему о координатах радиус-вектора, найдите координаты M1M2 через координаты M1 и M2.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["c94b92c90a6e78d2e24c", "3216f7a181b4076f25f4", "98a8a1bebd505096ad59"],
+    "ground_truth_answer": "M1M2 имеет координаты (x2-x1,y2-y1,z2-z1)."
+  },
+  {
+    "id": "eval_0218",
+    "query": "Используя длину векторного произведения и критерий коллинеарности через векторное произведение, объясните, что происходит с |a×b| при параллельных a и b.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["fcefb83c3722d62e4eeb", "dc92bb9902fa47338e36"],
+    "ground_truth_answer": "Если a и b параллельны, угол между ними 0 или pi, sin равен 0, поэтому |a×b|=0 и a×b — нулевой вектор."
+  },
+  {
+    "id": "eval_0221",
+    "query": "Используя теорему о делении многочленов с остатком и определение делимости, объясните, когда остаток при делении f на g равен нулю.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["3efff030b4bca22f8ec8", "f41631ddba1dd417c7c2"],
+    "ground_truth_answer": "Остаток при делении f на g равен 0 тогда и только тогда, когда f делится на g."
+  },
+  {
+    "id": "eval_0224",
+    "query": "Используя определение определителя через перестановки и теорему о числе перестановок, объясните, сколько слагаемых входит в формулу det A порядка n.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "hard",
+    "chunks": ["30fbdeb81ecbf66e671e", "a34bdf184c1364ec3551"],
+    "ground_truth_answer": "$n!$ слагаемых — по одному на каждую перестановку из $S_n$."
+  },
+  {
+    "id": "eval_0227",
+    "query": "Используя определение подобия матриц и лемму о характеристических многочленах, объясните, почему след и определитель подобных матриц совпадают.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "hard",
+    "chunks": ["989cbf0a7de40a488a54", "477c9254278f0980f91b", "325f833bd825d830b506"],
+    "ground_truth_answer": "Подобные матрицы имеют одинаковые характеристические многочлены; их следы и определители также равны."
+  },
+  {
+    "id": "eval_0230",
+    "query": "Используя определение характеристического многочлена и его свойства, найдите след матрицы порядка 3, если коэффициент при λ^2 равен 5.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["0e9077b052c4dde62502", "5cc31d5d680c2eb8d249"],
+    "ground_truth_answer": "При n=3 коэффициент при lambda^2 равен Sp A, поэтому след равен 5."
+  },
+  {
+    "id": "eval_0233",
+    "query": "Используя определение квадратичной формы и матрицу коэффициентов, запишите f(x,y)=3x^2+4xy+5y^2 в виде X^TAX и найдите A.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["fe7ec13cf40eb7a439ef", "68810695a1b36569e7ac"],
+    "ground_truth_answer": "X^TAX с A=[[3,2],[2,5]]."
+  },
+  {
+    "id": "eval_0236",
+    "query": "Используя критерий по собственным значениям и критерий Сильвестра, сравните два способа проверки положительной определённости формы diag(2,3).",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["86a5f56aaee3750cfe43", "8190ca5665710e3e08e4"],
+    "ground_truth_answer": "Оба критерия дают положительную определенность: собственные значения 2,3 положительны и угловые миноры 2,6 положительны."
+  },
+  {
+    "id": "eval_0239",
+    "query": "Используя определение ортогонального дополнения и теорему об ортогональном дополнении, объясните, почему U^⊥ является подпространством.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "medium",
+    "chunks": ["5c241dbf2fc7be214899", "3f3a9b967b69ba9d94cd"],
+    "ground_truth_answer": "U^perp состоит из векторов, ортогональных всем векторам U; это подпространство."
+  },
+  {
+    "id": "eval_0242",
+    "query": "Используя определение псевдообратной матрицы и теорему о нормальном псевдорешении, объясните, почему x=A^+B является нормальным псевдорешением.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "hard",
+    "chunks": ["32c2c2337aee5f433fb4", "44b40fc6142308047931"],
+    "ground_truth_answer": "Столбцы A^+ — нормальные псевдорешения систем AX=E_i; линейность приводит к тому, что A^+B является нормальным псевдорешением AX=B."
+  },
+  {
+    "id": "eval_0300",
+    "query": "Используя определение собственных значений, характеристический многочлен и лемму о подобных матрицах, объясните, почему собственные значения не зависят от выбора базиса линейного оператора.",
+    "answerable": true,
+    "query_type": "multichunk_task",
+    "difficulty": "hard",
+    "chunks": ["989cbf0a7de40a488a54", "325f833bd825d830b506"],
+    "ground_truth_answer": "Матрицы одного оператора в разных базисах подобны. По лемме характеристические многочлены подобных матриц совпадают, поэтому совпадают корни характеристического уравнения — собственные значения."
+  },
+  {
+    "id": "eval_0248",
+    "query": "Докажите теорему Шаля для случая, когда B лежит между A и C.",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "medium",
+    "chunks": ["ad4731a23dcbfc37c358"],
+    "ground_truth_answer": "**Теорема Шаля.** При любом расположении трех точек $A$, $B$ и $C$ на оси справедливо равенство $AB + BC = AC$.\n\n**Доказательство:**\n\n1. Пусть точка $B$ лежит между точками $A$ и $C$, тогда направленные отрезки $AB$, $BC$ и $AC$ сонаправлены. При этом $|AB| + |BC| = |AC|$.\n   - (a) Если направляющие оси совпадают с направлениями отрезков, то $|AB| = AB$, $|BC| = BC$, $|AC| = AC$. Следовательно, $AB + BC = AC$.\n   - (b) Если направляющие оси не совпадают с направлениями отрезков, то $|AB| = -AB$, $|BC| = -BC$, $|AC| = -AC$. Следовательно, $-AB + -BC = -AC \\Rightarrow AB + BC = AC$.\n\n2. Если точка $C$ лежит между точками $A$ и $B$, то, по доказанному выше, $AC + CB = AB \\Rightarrow AC = AB - CB = AB + BC$.\n\n3. Если точка $A$ лежит между точками $B$ и $C$, то $BA + AC = BC \\Rightarrow AC = -BA + BC = AB + BC$.\n\nТеорема остается справедливой, даже если некоторые точки совпадают."
+  },
+  {
+    "id": "eval_0251",
+    "query": "Докажите формулу расстояния между двумя точками на плоскости в ДПСК с помощью теоремы Пифагора.",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "medium",
+    "chunks": ["2b389b06412f97a6de84"],
+    "ground_truth_answer": "Пусть $A(X_A, Y_A)$ и $B(X_B, Y_B)$ — две различные точки на плоскости.\n\n**Теорема.** Длина направленного отрезка $AB$ равна:\n\n$$|AB| = \\sqrt{(X_A - X_B)^2 + (Y_A - Y_B)^2}.$$\n\n**Доказательство:** Построим проекции точек $A$ и $B$ на координатные оси. Обозначим через $C$ точку пересечения проекций.\n\n![Проекции точек](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Cartesian_coordinate_system_2D.svg/200px-Cartesian_coordinate_system_2D.svg.png)\n\nПо теореме Пифагора $|AB|^2 = |AC|^2 + |BC|^2$. Тогда $|AB| = \\sqrt{|A_x B_x|^2 + |A_y B_y|^2} = \\sqrt{(X_A - X_B)^2 + (Y_A - Y_B)^2}$.\n\nРассмотрим случай, когда отрезок $AB$ параллелен $Ox$ (или $AB$ параллелен $Oy$). Тогда $Y_A = Y_B$ и $(X_A - X_B)^2 + (Y_A - Y_B)^2 = |X_A - X_B| = |AB| = |A_x B_x|$."
+  },
+  {
+    "id": "eval_0254",
+    "query": "Докажите единственность разложения вектора по базису в пространстве.",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "hard",
+    "chunks": ["eeb044750d76733c8cf1"],
+    "ground_truth_answer": "**Теорема.**\n\n1. Любой вектор, параллельный прямой, может быть единственным образом разложен по базису этой прямой.\n2. Любой вектор, параллельный плоскости, может быть единственным образом разложен по базису на этой плоскости.\n3. Любой вектор в пространстве может быть единственным образом разложен по базису в пространстве.\n\n**Доказательство:**\n\nПокажем существование разложения для каждого из пунктов.\n\n1. Пусть $\\Delta$ — некоторая прямая, $\\vec{a}$ — базис на ней, $\\vec{b}$ — вектор, параллельный $\\Delta$. Тогда $\\vec{a} \\parallel \\vec{b} \\Rightarrow \\vec{a}$ и $\\vec{b}$ коллинеарны.\n\nПусть $\\vec{e}_a$, $\\vec{e}_b$ — единичные векторы, параллельные векторам $\\vec{a}$ и $\\vec{b}$ соответственно. Так как $\\vec{e}_a = \\frac{1}{|\\vec{a}|}\\vec{a}$, $\\vec{e}_b = \\frac{1}{|\\vec{b}|}\\vec{b}$ и $\\vec{a}$ и $\\vec{b}$ коллинеарны, то и $\\vec{e}_a$ и $\\vec{e}_b$ также коллинеарны. Следовательно, они либо противоположные, либо равные.\n\nЕсли они равные, то $\\vec{e}_a = \\vec{e}_b \\Rightarrow \\frac{1}{|\\vec{a}|}\\vec{a} = \\frac{1}{|\\vec{b}|}\\vec{b} \\Rightarrow \\vec{b} = \\frac{|\\vec{b}|}{|\\vec{a}|}\\vec{a} = l\\vec{a}$.\n\nЕсли они противоположные, то $\\vec{e}_a = -\\vec{e}_b \\Rightarrow \\frac{1}{|\\vec{a}|}\\vec{a} = -\\frac{1}{|\\vec{b}|}\\vec{b} \\Rightarrow \\vec{b} = -\\frac{|\\vec{b}|}{|\\vec{a}|}\\vec{a} = l\\vec{a}$ $\\Rightarrow$ вектор $\\vec{b}$ разложим по базису $\\vec{a}$.\n\n2. Пусть $\\Pi$ — некоторая плоскость, $\\vec{a}_1$ и $\\vec{a}_2$ — базис на плоскости, $\\vec{b} \\parallel \\Pi \\Rightarrow \\vec{a}_1, \\vec{a}_2, \\vec{b}$ — компланарны. Отложим векторы базиса от некоторой точки $O$ на плоскости $\\Pi$, то есть $\\vec{a}_1 = \\overrightarrow{OA_1}$, $\\vec{a}_2 = \\overrightarrow{OA_2}$, $\\vec{b} = \\overrightarrow{OB}$.\n\n![Разложение по базису на плоскости](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Vector_angle.svg/200px-Vector_angle.svg.png)\n\nПостроим прямую, проходящую через точку $B$, параллельную $OA_2$. Пусть $B_1$ — точка пересечения построенной прямой и прямой $OA_1$. Аналогично на $OA_2$ построим точку $B_2$.\n\nПо определению суммы векторов $\\vec{b} = \\overrightarrow{OB} = \\overrightarrow{OB_1} + \\overrightarrow{OB_2}$. Тогда $OB_1 \\parallel OA_1$, а ненулевой вектор $\\overrightarrow{OA_1}$ является на этой прямой базисом. Следовательно, по доказанному выше в пункте 1, $\\overrightarrow{OB_1} = l_1 \\cdot \\overrightarrow{OA_1} = l_1 \\cdot \\vec{a}_1$. По аналогичным рассуждениям получим $\\overrightarrow{OB_2} = l_2 \\cdot \\vec{a}_2 \\Rightarrow \\vec{b} = l_1 \\cdot \\vec{a}_1 + l_2 \\cdot \\vec{a}_2$.\n\n3. Доказательство данного пункта проводится по аналогичной схеме с пунктом 2.\n\nПокажем единственность: рассмотрим самый сложный вариант, в пространстве. На плоскости и прямой доказательства будут аналогичными.\n\nПусть $\\vec{a}_1, \\vec{a}_2, \\vec{a}_3$ — базис в пространстве, а $\\vec{b}$ — некоторый вектор пространства. И пусть существуют 2 различных разложения:\n\n$$\\begin{cases} \\vec{b} = l_1\\vec{a}_1 + l_2\\vec{a}_2 + l_3\\vec{a}_3, \\\\ \\vec{b} = \\beta_1\\vec{a}_1 + \\beta_2\\vec{a}_2 + \\beta_3\\vec{a}_3. \\end{cases}$$\n\nВычтем из первого второе:\n\n$$\\vec{0} = (l_1 - \\beta_1)\\vec{a}_1 + (l_2 - \\beta_2)\\vec{a}_2 + (l_3 - \\beta_3)\\vec{a}_3.$$\n\nПусть $l_i - \\beta_i \\neq 0 \\Rightarrow \\vec{a}_1 = -\\frac{l_2 - \\beta_2}{l_1 - \\beta_1}\\vec{a}_2 - \\frac{l_3 - \\beta_3}{l_1 - \\beta_1}\\vec{a}_3 \\Rightarrow \\vec{a}_1, \\vec{a}_2, \\vec{a}_3$ компланарные, что является противоречием с тем, что базис в пространстве — это 3 некомпланарных вектора $\\Rightarrow l_i - \\beta_i = 0 \\Rightarrow$ два разложения совпадают."
+  },
+  {
+    "id": "eval_0257",
+    "query": "Докажите линейность проекции вектора при умножении на число.",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "medium",
+    "chunks": ["66e9f37becd1088b5d24"],
+    "ground_truth_answer": "**Теорема.** Декартовы координаты вектора равны величинам проекции этого вектора на координатные оси.\n\n**Доказательство:** Пусть $\\vec{a}$ — некоторый вектор пространства с координатами $x, y, z$. Отложим $\\vec{a}$ от начала координат, то есть $\\vec{a} = \\overrightarrow{OM}$, а затем построим проекции точки $M$ на оси $Ox$, $Oy$, $Oz$. Тогда $\\overrightarrow{OM} = \\overrightarrow{OM_x} + \\overrightarrow{OM_y} + \\overrightarrow{OM_z}$. Так как $OM_x \\parallel \\vec{i} \\parallel Ox$ и, при этом, вектор $\\vec{i}$ ненулевой, он является базисом и $\\overrightarrow{OM_x}$ представим в виде: $\\overrightarrow{OM_x} = l \\cdot \\vec{i}$.\n\nИз определения произведения вектора на число, $|\\overrightarrow{OM_x}| = |l| \\cdot |\\vec{i}|$. Следовательно, $|l| = \\frac{|\\overrightarrow{OM_x}|}{|\\vec{i}|} = \\frac{|\\overrightarrow{OM_x}|}{1} = |\\overrightarrow{OM_x}|$, а по знаку $l = \\begin{cases} |OM_x|, & \\overrightarrow{OM_x} \\uparrow\\uparrow Ox, \\\\ -|OM_x|, & \\overrightarrow{OM_x} \\uparrow\\downarrow Ox. \\end{cases}$ $\\Rightarrow$ по определению проекции, $l = OM_x = \\text{Пр}_{Ox} \\cdot \\vec{a}$.\n\nАналогично $OM_y = \\text{Пр}_{Oy} \\cdot \\vec{a}$, $OM_z = \\text{Пр}_{Oz} \\cdot \\vec{a} \\Rightarrow \\vec{a} = \\text{Пр}_{Ox} \\cdot \\vec{i} + \\text{Пр}_{Oy} \\cdot \\vec{j} + \\text{Пр}_{Oz} \\cdot \\vec{k}$. А так как разложение по базису единственно, то $\\text{Пр}_{Ox} \\cdot \\vec{a} = x$, $\\text{Пр}_{Oy} \\cdot \\vec{a} = y$, $\\text{Пр}_{Oz} \\cdot \\vec{a} = z$."
+  },
+  {
+    "id": "eval_0260",
+    "query": "Докажите равенство [a,b]=−[b,a].",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "hard",
+    "chunks": ["d05d4b63df353513dc2f"],
+    "ground_truth_answer": "**Теорема.** Пусть векторы $\\vec{a}$ и $\\vec{b}$ в правой ДПСК имеют координаты $\\vec{a}(X_1, Y_1, Z_1)$ и $\\vec{b}(X_2, Y_2, Z_2)$, тогда вектор $[\\vec{a}, \\vec{b}]$ имеет координаты\n\n$$[\\vec{a}, \\vec{b}] = \\left( \\begin{vmatrix} Y_1 & Z_1 \\\\ Y_2 & Z_2 \\end{vmatrix}, -\\begin{vmatrix} X_1 & Z_1 \\\\ X_2 & Z_2 \\end{vmatrix}, \\begin{vmatrix} X_1 & Y_1 \\\\ X_2 & Y_2 \\end{vmatrix} \\right).$$\n\n**Доказательство:** Из определения декартовых координат вектора следует, что $\\vec{a} = X_1 \\cdot \\vec{i} + Y_1 \\cdot \\vec{j} + Z_1 \\cdot \\vec{k}$, $\\vec{b} = X_2 \\cdot \\vec{i} + Y_2 \\cdot \\vec{j} + Z_2 \\cdot \\vec{k}$. Тогда\n\n$$[\\vec{a}, \\vec{b}] = [X_1 \\cdot \\vec{i} + Y_1 \\cdot \\vec{j} + Z_1 \\cdot \\vec{k}, X_2 \\cdot \\vec{i} + Y_2 \\cdot \\vec{j} + Z_2 \\cdot \\vec{k}] = X_1 \\cdot X_2 \\cdot [\\vec{i}, \\vec{i}] + X_1 \\cdot Y_2 \\cdot [\\vec{i}, \\vec{j}] + \\ldots$$\n\n$[\\vec{i}, \\vec{i}] = \\vec{0}$, $[\\vec{j}, \\vec{j}] = \\vec{0}$, $[\\vec{k}, \\vec{k}] = \\vec{0}$, так как векторы параллельны сами себе, следовательно, применимо второе свойство. $[\\vec{i}, \\vec{j}] = \\vec{k}$, $[\\vec{i}, \\vec{k}] = -\\vec{j}$, $[\\vec{j}, \\vec{i}] = -\\vec{k}$, $[\\vec{j}, \\vec{k}] = \\vec{i}$, $[\\vec{k}, \\vec{i}] = \\vec{j}$, $[\\vec{k}, \\vec{j}] = -\\vec{i}$.\n\nПодставим и получим $X_1 \\cdot Y_2 \\cdot \\vec{k} + X_1 \\cdot Z_2 \\cdot (-\\vec{j}) + Y_1 \\cdot X_2 \\cdot (-\\vec{k}) + Y_1 \\cdot Z_2 \\cdot \\vec{i} + Z_1 \\cdot X_2 \\cdot \\vec{j} + Z_1 \\cdot Y_2 \\cdot (-\\vec{i}) = (Y_1 \\cdot Z_2 - Z_1 \\cdot Y_2) \\cdot \\vec{i} - (X_1 \\cdot Z_2 - Z_1 \\cdot X_2) \\cdot \\vec{j} + (X_1 \\cdot Y_2 - Y_1 \\cdot X_2) \\cdot \\vec{k} = \\begin{vmatrix} Y_1 & Z_1 \\\\ Y_2 & Z_2 \\end{vmatrix} \\cdot \\vec{i} - \\begin{vmatrix} X_1 & Z_1 \\\\ X_2 & Z_2 \\end{vmatrix} \\cdot \\vec{j} + \\begin{vmatrix} X_1 & Y_1 \\\\ X_2 & Y_2 \\end{vmatrix} \\cdot \\vec{k}$."
+  },
+  {
+    "id": "eval_0263",
+    "query": "Докажите критерий собственного значения линейного оператора через det(M_f−λE)=0.",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "hard",
+    "chunks": ["fe56a770aa6d046ab429"],
+    "ground_truth_answer": "Пусть $f$ — линейный оператор $n$-мерного векторного пространства $V$ над полем $P$.\n\n**Теорема.**\n\n1. Вектор $x \\in V$ является собственным вектором линейного оператора $f$, соответствующим собственному значению $\\lambda_0$ $\\iff$ его координатный столбец $X$ в некотором базисе является ненулевым решением уравнения $(M_f - \\lambda_0E)X = 0$, где $M_f$ — матрица оператора $f$ в том же базисе.\n\n2. Скаляр $\\lambda_0 \\in P$ является собственным значением линейного оператора $f$ $\\iff$ $\\det(M_f - \\lambda_0E) = 0$.\n\n**Доказательство:**\n\n1. Ненулевой вектор $x$ является собственным вектором линейного оператора $f$, соответствующим собственному значению $\\lambda_0$, если $f(x) = \\lambda_0x$. Два вектора равны $\\iff$ равны их координатные столбцы. Если $X$ — это координатный столбец вектора $x$, то $\\lambda_0x$ имеет координатный столбец $\\lambda_0X$, а $f(x)$ — $M_fX$. Тогда $\\lambda_0X = M_fX \\iff M_fX - \\lambda_0X = 0 \\iff M_fX - \\lambda_0EX = 0 \\iff (M_f - \\lambda_0E)X = 0$.\n\n2. Скаляр $\\lambda_0$ является собственным значением линейного оператора $f$ $\\iff$ существует собственный вектор, соответствующий этому значению. А значит существует ненулевое решение матричного уравнения $(M_f - \\lambda_0E)X = 0$, что возможно лишь в случае, когда $\\det(M_f - \\lambda_0E) = 0$."
+  },
+  {
+    "id": "eval_0266",
+    "query": "Докажите, что ортогональный оператор сохраняет длины и скалярные произведения.",
+    "answerable": true,
+    "query_type": "proof",
+    "difficulty": "hard",
+    "chunks": ["d3999e29cd740a8dbbe9"],
+    "ground_truth_answer": "**Теорема.** Линейный оператор является ортогональным $\\iff$ он ортонормированный базис отображает в ортонормированный.\n\n**Доказательство:** $\\Rightarrow$) Так как $f$ ортогональный оператор, он ортонормированный базис $B(b_1, \\ldots, b_n)$ отобразит в ортонормированную систему векторов. А так как ортогональный оператор сохраняет длины и скалярные произведения, то система векторов $f(B)$ состоит из попарно ортогональных ненулевых векторов, а, значит, является линейно независимой системой и содержит столько же векторов, сколько и базис. Следовательно, система сама является базисом.\n\n$\\Leftarrow$) Пусть оператор $f$ переводит ортонормированный базис $B(b_1, \\ldots, b_n)$ в ортонормированный базис $f(B) = (f(b_1), \\ldots, f(b_n))$, и пусть для произвольных векторов $x, y \\in V$ $X, Y$ — координатные столбцы в базисе $B$. Тогда $xy = X^TG_BY = X^TY$.\n\nЕсли $X = \\begin{pmatrix} \\alpha_1 \\\\ \\vdots \\\\ \\alpha_n \\end{pmatrix}$, то $x = \\alpha_1b_1 + \\ldots + \\alpha_nb_n \\Rightarrow f(x) = \\alpha_1f(b_1) + \\ldots + \\alpha_nf(b_n) \\Rightarrow$ вектор $f(x)$ в базисе $f(B)$ имеет координатный столбец равный $X$. Аналогично для $Y$. Следовательно, $f(x)f(y) = X^TG_{f(B)}Y = X^TY = xy$."
+  },
+  {
+    "id": "eval_0268",
+    "query": "Два ненулевых вектора перпендикулярны тогда и только тогда, когда их скалярное произведение равно нулю. Как отличить этот критерий от похожего утверждения для векторного произведения?",
+    "answerable": true,
+    "query_type": "tricky",
+    "difficulty": "medium",
+    "chunks": ["fb15d0b8fd2d2336accd", "50c9aada540db000b3a9"],
+    "ground_truth_answer": "Скалярное произведение равно нулю при перпендикулярности, а векторное произведение равно нулевому вектору при коллинеарности (для ненулевых a,b)."
+  },
+  {
+    "id": "eval_0271",
+    "query": "В характеристическом многочлене матрицы порядка n коэффициент при λ^{n−1} связан со следом. Как восстановить след, не перепутав этот коэффициент со свободным членом det A?",
+    "answerable": true,
+    "query_type": "tricky",
+    "difficulty": "medium",
+    "chunks": ["0129d8f8462b8ef2686c", "525399ac4b01c77655ba"],
+    "ground_truth_answer": "При порядке n коэффициент при lambda^{n-1} равен (-1)^{n-1}Sp A; свободный член равен det A."
+  },
+  {
+    "id": "eval_0274",
+    "query": "Псевдорешение и нормальное псевдорешение относятся к одной несовместной системе. Как отличить условие минимальности невязки от дополнительного условия принадлежности L0^⊥?",
+    "answerable": true,
+    "query_type": "tricky",
+    "difficulty": "hard",
+    "chunks": ["b0ccfd88a08562af6c9a", "32c2c2337aee5f433fb4"],
+    "ground_truth_answer": "Псевдорешение минимизирует длину невязки, а нормальное псевдорешение дополнительно является единственным псевдорешением, лежащим в L0^perp."
+  },
+  {
+    "id": "eval_0278",
+    "query": "Чему равна производная функции sin x в точке x=0?",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "easy",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  },
+  {
+    "id": "eval_0281",
+    "query": "Разложите функцию e^x в ряд Тейлора до членов третьего порядка.",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "medium",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  },
+  {
+    "id": "eval_0284",
+    "query": "Как вычисляется преобразование Фурье функции e^{−x^2}?",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "medium",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  },
+  {
+    "id": "eval_0287",
+    "query": "Кто впервые сформулировал Основную теорему алгебры и в каком году?",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "medium",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  },
+  {
+    "id": "eval_0290",
+    "query": "Какова производная многочлена x^5−3x+1?",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "easy",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  },
+  {
+    "id": "eval_0293",
+    "query": "Какова вероятность того, что случайно выбранное действительное число из [0,1] рационально?",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "medium",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  },
+  {
+    "id": "eval_0296",
+    "query": "Как связана энтропия Шеннона с вероятностями исходов?",
+    "answerable": false,
+    "query_type": "unanswerable",
+    "difficulty": "medium",
+    "chunks": [],
+    "ground_truth_answer": "В данном конспекте нет информации, необходимой для ответа на этот вопрос."
+  }

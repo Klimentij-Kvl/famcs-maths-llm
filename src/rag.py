@@ -114,6 +114,22 @@ def answer(question: str):
 
     return response, docs
 
+def eval_target(inputs: dict) -> dict:
+    query = inputs["query"]
+
+    response, docs = answer(query)
+
+    retrieved_chunk_ids = [
+        doc.metadata.get("chunk_id")
+        for doc in docs
+    ]
+
+    return {
+        "answer": response,
+        "documents": docs,
+        "retrieved_chunk_ids": retrieved_chunk_ids,
+    }
+
 def main():
     logging.basicConfig(
         filename=LOG_DIR / "rag.log",
