@@ -120,13 +120,21 @@ def eval_target(inputs: dict) -> dict:
     response, docs = answer(query)
 
     retrieved_chunk_ids = [
-        doc.metadata.get("chunk_id")
+        str(doc.metadata["chunk_id"])
         for doc in docs
+        if doc.metadata.get("chunk_id") is not None
     ]
+
+    context = {
+        "documents": [
+            doc.page_content
+            for doc in docs
+        ]
+    }
 
     return {
         "answer": response,
-        "documents": docs,
+        "context": context,
         "retrieved_chunk_ids": retrieved_chunk_ids,
     }
 
