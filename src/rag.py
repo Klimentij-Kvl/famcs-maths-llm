@@ -96,8 +96,8 @@ def format_docs(docs):
     )
 
 @traceable(name="math_rag")
-def answer(question: str):
-    docs = retriever.invoke(question)
+def answer(query: str):
+    docs = retriever.invoke(query)
 
     context = format_docs(docs)
 
@@ -109,7 +109,7 @@ def answer(question: str):
 
     response = chain.invoke({
         "context": context,
-        "question": question
+        "question": query
     })
 
     return response, docs
