@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
-from langchain_qdrant import QdrantVectorStore
+from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 
 from langsmith import traceable
 
@@ -13,6 +13,7 @@ from config import (
     QDRANT_URL,
     COLLECTION_NAME,
     EMBEDDING_MODEL,
+    SPARSE_EMBEDDING_MODEL,
     LOG_DIR,
     LLM_MODEL,
     TOP_K,
@@ -23,11 +24,14 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 embeddings = FastEmbLangChainAdapter(EMBEDDING_MODEL)
+sparse_embeddings = FastEmbedSparse(model_name=SPARSE_EMBEDDING_MODEL)
 
 vector_store = QdrantVectorStore.from_existing_collection(
     embedding=embeddings,
+    sparse_embedding=sparse_embeddings,
     collection_name=COLLECTION_NAME,
     url=QDRANT_URL,
+    retrieval_mode=RetrievalMode.HYBRID,
 )
 
 retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})
@@ -126,10 +130,8 @@ def eval_target(inputs: dict) -> dict:
     ]
 
     context = {
-        "documents": [
-            doc.page_content
-            for doc in docs
-        ]
+        doc.page_content
+        for doc in docs
     }
 
     return {

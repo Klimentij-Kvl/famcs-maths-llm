@@ -10,9 +10,10 @@ from json_notes_loader import load_documents
 from config import (
     LOG_DIR,
     EMBEDDING_MODEL,
+    SPARSE_EMBEDDING_MODEL,
     QDRANT_URL,
     KNOWLEDGE_FILE,
-    COLLECTION_NAME
+    COLLECTION_NAME,
 )
 
 from dotenv import load_dotenv
@@ -27,9 +28,9 @@ def build_index():
 
     logger.info(f"Loading embedding model {EMBEDDING_MODEL}")
     embeddings = FastEmbLangChainAdapter(EMBEDDING_MODEL)
+    sparse_embeddings = FastEmbedSparse(model_name=SPARSE_EMBEDDING_MODEL)
     logger.info("Embedding model loaded")
 
-    sparse_embeddings = FastEmbedSparse(model_name="Qdrant/bm25")
 
     logger.info(f"Connecting to Qdrant database on url {QDRANT_URL}")
     client = QdrantClient(QDRANT_URL)
@@ -43,8 +44,8 @@ def build_index():
     vector_store = QdrantVectorStore.from_documents(
         documents, 
         embedding=embeddings, 
-    #    sparse_embedding=sparse_embeddings,
-    #    retrieval_mode=RetrievalMode.HYBRID,
+        sparse_embedding=sparse_embeddings,
+        retrieval_mode=RetrievalMode.HYBRID,
         url=QDRANT_URL, 
         collection_name=COLLECTION_NAME,
     )
