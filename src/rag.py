@@ -6,7 +6,9 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_ollama import ChatOllama
 from langchain_qdrant import QdrantVectorStore, FastEmbedSparse, RetrievalMode
 
+from sentence_transformers import CrossEncoder
 from langsmith import traceable
+import torch
 
 from fastemb_langchain_adapter import FastEmbLangChainAdapter
 from config import (
@@ -14,10 +16,15 @@ from config import (
     COLLECTION_NAME,
     EMBEDDING_MODEL,
     SPARSE_EMBEDDING_MODEL,
+    RERANKER_MODEL,
     LOG_DIR,
     LLM_MODEL,
-    TOP_K,
+    RETRIEVAL_TOP_K,
+    RERANK_TOP_K,
 )
+
+DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
+#DEVICE = "cpu"
 
 load_dotenv()
 
@@ -34,7 +41,14 @@ vector_store = QdrantVectorStore.from_existing_collection(
     retrieval_mode=RetrievalMode.HYBRID,
 )
 
-retriever = vector_store.as_retriever(search_kwargs={"k": TOP_K})
+retriever = vector_store.as_retriever(search_kwargs={"k": RETRIEVAL_TOP_K})
+
+reranker = CrossEncoder(
+    RERANKER_MODEL,
+    trust_remote_code=True,
+    max_length=512,
+    device=DEVICE,
+)
 
 llm = ChatOllama(
     model=LLM_MODEL, 
@@ -99,9 +113,54 @@ def format_docs(docs):
         formatted
     )
 
+def format_reranker_doc(doc):
+    metadata = doc.metadata
+
+    has_proof = metadata.get(
+        "contains_proof",
+        metadata.get("contatins_proof")
+    )
+
+    return (
+        f"Type: {metadata.get('type', '')}\n"
+        f"Chapter: {metadata.get('chapter', '')}\n"
+        f"Section: {metadata.get('section', '')}\n"
+        f"Contains proof: {has_proof}\n\n"
+        f"Content:\n{doc.page_content}"
+    )
+
+
+def rerank_docs(query: str, docs: list):
+    if not docs:
+        return []
+
+    pairs = [
+        (query, format_reranker_doc(doc))
+        for doc in docs
+    ]
+
+    scores = reranker.predict(
+        pairs,
+        batch_size=16,
+        show_progress_bar=False,
+    )
+
+    ranked_docs = sorted(
+        zip(docs, scores),
+        key=lambda x: float(x[1]),
+        reverse=True,
+    )
+
+    return [
+        doc
+        for doc, score in ranked_docs[:RERANK_TOP_K]
+    ]
+
 @traceable(name="math_rag")
 def answer(query: str):
-    docs = retriever.invoke(query)
+    candidate_docs = retriever.invoke(query)
+
+    docs = rerank_docs(query, candidate_docs)
 
     context = format_docs(docs)
 

@@ -807,3 +807,169 @@ $$f(x) = p_1(x) \cdot \ldots \cdot p_k(x),$$
 Рассуждая аналогичным образом, проведём эту операцию ещё $(k-1)$ раз и получим равенство $a_1 \cdot a_2 \cdot \ldots \cdot a_k \cdot q_{k+1}(x) \cdot \ldots \cdot q_s(x) = 1$. Так как многочлены $q_i(x)$ неприводимы, то их степени не превосходят единицы, следовательно, последнее равенство возможно только при $k = s$ (так как у равных многочленов равные степени).
 
 Таким образом, второе разложение отличается от первого на константу $a_1 \cdot \ldots \cdot a_k$, то есть $f(x) = q_1(x) \cdot \ldots \cdot q_k(x)$, где $q_i(x) = a_i \cdot p_i(x)$.' metadata={'chunk_id': 'e15e3e8e110602253065', 'file': 'fil(1).md', 'chapter': 'Кольцо многочленов', 'chapter_num': 8, 'section': 'Неприводимые многочлены', 'section_num': '8.5', 'type': 'theorem', 'equations': ['f(x) = p_1(x) \\cdot \\ldots \\cdot p_k(x),'], 'images': [], 'contatins_proof': True, 'proof': '1. **Существование.**\n\nЕсли $f(x)$ неприводим, то разложение имеет вид $f(x) = f(x)$. Если же он приводим, то его можно представить в виде произведения многочленов меньшей степени. Если же они приводимы, то их так же можно представить в виде произведения многочленов меньшей степени. Этот процесс не может быть бесконечным, так как степень многочлена не может быть меньше 1. В результате получим разложение многочлена на неприводимые множители.\n\n2. **Единственность.**\n\nПусть $f(x)$ имеет ещё одно разложение на неприводимые многочлены, то есть $f(x) = q_1(x) \\cdot \\ldots \\cdot q_s(x)$. Тогда $p_1(x) \\cdot \\ldots \\cdot p_k(x) = q_1(x) \\cdot \\ldots \\cdot q_s(x)$, и пусть для определённости $s \\geq k$.\n\nИз равенства следует, что произведение $q_1(x) \\cdot \\ldots \\cdot q_s(x)$ делится на $p_1(x)$, следовательно, так как $p_1(x)$ – неприводимый многочлен, то $\\exists q_i(x)$, который делится на $p_1(x)$ (по свойству 3 неприводимых многочленов). Не нарушая общности, перенумеруем эти $q_i(x)$ так, чтобы это был многочлен $q_1(x)$. Тогда $\\exists \\varphi(x) : q_1(x) = \\varphi(x) \\cdot p_1(x)$, но $q_1(x)$ так же неприводим. Тогда либо $\\deg(p_1(x)) = 0$, либо $\\deg(\\varphi(x)) = 0$, то есть $\\exists a_1 \\in P : q_1(x) = a_1 \\cdot p_1(x)$. Подставив это представление в правую часть равенства, получим $p_1(x) \\cdot \\ldots \\cdot p_k(x) = a_1 \\cdot p_1(x) \\cdot q_2(x) \\cdot \\ldots \\cdot q_s(x)$. Сократим на $p_1(x)$ и получим $p_2(x) \\cdot \\ldots \\cdot p_k(x) = a_1 \\cdot q_2(x) \\cdot \\ldots \\cdot q_s(x)$.\n\nРассуждая аналогичным образом, проведём эту операцию ещё $(k-1)$ раз и получим равенство $a_1 \\cdot a_2 \\cdot \\ldots \\cdot a_k \\cdot q_{k+1}(x) \\cdot \\ldots \\cdot q_s(x) = 1$. Так как многочлены $q_i(x)$ неприводимы, то их степени не превосходят единицы, следовательно, последнее равенство возможно только при $k = s$ (так как у равных многочленов равные степени).\n\nТаким образом, второе разложение отличается от первого на константу $a_1 \\cdot \\ldots \\cdot a_k$, то есть $f(x) = q_1(x) \\cdot \\ldots \\cdot q_k(x)$, где $q_i(x) = a_i \\cdot p_i(x)$.', 'source': {'file': 'fil(1).md', 'start_line': 2214, 'end_line': 2234}, 'source_start_line': 2214, 'source_end_line': 2234, '_id': '481e1fec-f9b5-4e30-926b-5a5081a7ebcf', '_collection_name': 'math_notes'}
+2026-11-10 23:30:25,127 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-10 23:36:20,613 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-10 23:36:23,180 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Определение
+
+Пусть $A = (a_{ij}) \in P_{n,n}$ — квадратная матрица порядка $n$.
+
+- Матрица $X \in P_{n,n}$ называется **обратной** к матрице $A$, если $AX = XA = E_n$ (Обозначение: $A^{-1}$).' metadata={'chunk_id': 'af1a21e80fc842bce296', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2628, 'end_line': 2630}, 'source_start_line': 2628, 'source_end_line': 2630, '_id': '45ff7be2-dcb5-4dad-bd8d-ef60cacdbbb8', '_collection_name': 'math_notes'}
+2026-11-10 23:36:23,180 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Теорема
+
+**Теорема.** Квадратная матрица имеет обратную $\iff$ она невырожденная.
+
+**Доказательство:** $\Rightarrow$) Пусть матрица $A$ имеет обратную матрицу $A^{-1}$. Тогда $A \cdot A^{-1} = E$ и $\det(A \cdot A^{-1}) = \det A \cdot \det A^{-1} = \det E = 1$. То есть $\det A \neq 0$.
+
+$\Leftarrow$) Пусть $\det A \neq 0$. Построим матрицу $\frac{1}{\det A}\tilde{A}$. Тогда $A \cdot \frac{1}{\det A}\tilde{A} = \frac{1}{\det A}A \cdot \tilde{A} = \frac{1}{\det A}\det A \cdot E = E$. То есть матрица $\frac{1}{\det A}\tilde{A}$ обратная для матрицы $A$.' metadata={'chunk_id': 'f1bd1db4db041a43e64d', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'theorem', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': '$\\Leftarrow$) Пусть $\\det A \\neq 0$. Построим матрицу $\\frac{1}{\\det A}\\tilde{A}$. Тогда $A \\cdot \\frac{1}{\\det A}\\tilde{A} = \\frac{1}{\\det A}A \\cdot \\tilde{A} = \\frac{1}{\\det A}\\det A \\cdot E = E$. То есть матрица $\\frac{1}{\\det A}\\tilde{A}$ обратная для матрицы $A$.', 'source': {'file': 'fil(1).md', 'start_line': 2642, 'end_line': 2646}, 'source_start_line': 2642, 'source_end_line': 2646, '_id': 'fe43d565-bc59-4148-a9d9-2d261c71a882', '_collection_name': 'math_notes'}
+2026-11-10 23:36:23,180 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Свойства
+
+**Свойства обратных матриц:**
+
+1. $(A^{-1})^{-1} = A$.
+2. $(A^{-1})^T = (A^T)^{-1}$.
+3. $\det A^{-1} = (\det A)^{-1}$.
+4. $(AB)^{-1} = B^{-1}A^{-1}$.
+
+**Доказательство:** Проведем доказательство для четвертого случая. Для остальных случаев доказательство аналогично. $ABB^{-1}A^{-1} = A(BB^{-1})A^{-1} = AEA^{-1} = AA^{-1} = E \Rightarrow (AB)^{-1} = B^{-1}A^{-1}$.' metadata={'chunk_id': 'da1686cda3ffb023511d', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'properties', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': '', 'source': {'file': 'fil(1).md', 'start_line': 2648, 'end_line': 2655}, 'source_start_line': 2648, 'source_end_line': 2655, '_id': 'bc275f5c-cb95-4cc7-a557-c46a0e92d8a6', '_collection_name': 'math_notes'}
+2026-11-10 23:36:23,180 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Определение
+
+- Квадратная матрица называется **невырожденной**, если ее определитель отличен от нуля.' metadata={'chunk_id': 'ddb30bcd8249e91b5ca5', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2640, 'end_line': 2640}, 'source_start_line': 2640, 'source_end_line': 2640, '_id': '5436cd94-b927-4e00-8a1c-abd106f01698', '_collection_name': 'math_notes'}
+2026-11-10 23:36:23,180 [INFO] __main__: page_content='Глава 14: Евклидовы и унитарные пространства
+§ 14.8. Полярное разложение линейного оператора
+Тип: Теорема
+
+Обозначим через $C$ матрицу $SDS^T$, тогда получим $A^TA = C^2$, при этом $C$ — симметрическая матрица, так как $C^T = (SDS^T)^T = SD^TS^T = [\text{диагональ матрицы } D \text{ не изменяется при транспонировании}] = SDS^T = C$. А так как матрица $S$ ортогональная, то $C = SDS^T = SDS^{-1}$. Следовательно, матрицы $C$ и $D$ подобны и имеют одинаковые собственные значения равные $\sqrt{\lambda_i} > 0$.
+
+**Теорема.** Любая действительная невырожденная квадратная матрица представима в виде произведения ортогональной матрицы и симметрической матрицы с положительными собственными значениями.
+
+**Доказательство:** Пусть $A$ — произвольная действительная невырожденная матрица. Тогда существует симметрическая матрица $C$ с положительными собственными значениями такая, что $C^2 = A^TA$.
+
+Так как матрица $C$ невырожденная, существует обратная ей невырожденная матрица $C^{-1}$. Построим матрицу $U = AC^{-1} \Rightarrow A = UC$. Покажем, что матрица $U$ ортогональная: $U^TU = (AC^{-1})^TAC^{-1} = (C^{-1})^TA^TAC^{-1} = (C^{-1})^TC^2C^{-1} = (C^{-1})^TC = [\text{так как матрица } C \text{ симметрическая}] = (C^{-1})^TC^T = (CC^{-1})^T = E$.' metadata={'chunk_id': '7898b962715b288cf35c', 'file': 'fil(1).md', 'chapter': 'Евклидовы и унитарные пространства', 'chapter_num': 14, 'section': 'Полярное разложение линейного оператора', 'section_num': '14.8', 'type': 'theorem', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': 'Так как матрица $C$ невырожденная, существует обратная ей невырожденная матрица $C^{-1}$. Построим матрицу $U = AC^{-1} \\Rightarrow A = UC$. Покажем, что матрица $U$ ортогональная: $U^TU = (AC^{-1})^TAC^{-1} = (C^{-1})^TA^TAC^{-1} = (C^{-1})^TC^2C^{-1} = (C^{-1})^TC = [\\text{так как матрица } C \\text{ симметрическая}] = (C^{-1})^TC^T = (CC^{-1})^T = E$.', 'source': {'file': 'fil(1).md', 'start_line': 4858, 'end_line': 4864}, 'source_start_line': 4858, 'source_end_line': 4864, '_id': '44eb73d6-9453-4d0b-8fcd-c9c0d58fd4b3', '_collection_name': 'math_notes'}
+2026-11-11 09:49:32,666 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-11 09:52:31,315 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-11 09:59:20,098 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-11 10:03:43,045 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-11 10:04:11,318 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-11 10:04:11,782 [INFO] __main__: page_content='Глава 12: Полиномиальные матрицы
+§ 12.6. Критерий подобия матриц
+Тип: Теорема
+
+**Теорема (критерий подобия матриц).** Две квадратные матрицы над полем $P$ одного порядка подобны $\iff$ их характеристические матрицы эквивалентны.
+
+**Доказательство:** $\Rightarrow$) Пусть квадратные матрицы $A$ и $B$ одного порядка $n$ подобны, то есть существует матрица $S$ такая, что $A = S^{-1}BS$. Тогда $A - \lambda E = S^{-1}BS - \lambda S^{-1}ES = S^{-1}(B - \lambda E)S$. Так как $S$ — невырожденная унимодулярная матрица над полем $P$, то и матрица $S^{-1}$ также является полиномиальной унимодулярной матрицей. По теореме об унимодулярных матрицах, $(A - \lambda E) \sim (B - \lambda E)$.
+
+$\Leftarrow$) Пусть $(B - \lambda E) \sim (A - \lambda E)$. Тогда, по теореме об унимодулярных матрицах, существуют унимодулярные матрицы $U(\lambda), V(\lambda)$ такие, что $(B - \lambda E) = U(\lambda) \cdot (A - \lambda E) \cdot V(\lambda)$. Так как матрица $U(\lambda)$ унимодулярна, то, по свойству существования обратной во множестве полиномиальных матриц, существует полиномиальная матрица $U^{-1}(\lambda)$ такая, что $U^{-1}(\lambda) \cdot (B - \lambda E) = (A - \lambda E) \cdot V(\lambda)$.
+
+Разделим $U^{-1}(\lambda)$ и $V(\lambda)$ на регулярные $(A - \lambda E)$, $(B - \lambda E)$ слева и справа соответственно, то есть представим в виде:
+
+$$\begin{cases} U^{-1}(\lambda) = (A - \lambda E) \cdot U_1(\lambda) + U_2, \\ V(\lambda) = V_1(\lambda) \cdot (B - \lambda E) + V_2. \end{cases}$$' metadata={'chunk_id': '72e777723a1d12142484', 'file': 'fil(1).md', 'chapter': 'Полиномиальные матрицы', 'chapter_num': 12, 'section': 'Критерий подобия матриц', 'section_num': '12.6', 'type': 'theorem', 'equations': ['\\begin{cases} U^{-1}(\\lambda) = (A - \\lambda E) \\cdot U_1(\\lambda) + U_2, \\\\ V(\\lambda) = V_1(\\lambda) \\cdot (B - \\lambda E) + V_2. \\end{cases}'], 'images': [], 'contatins_proof': True, 'proof': '$\\Leftarrow$) Пусть $(B - \\lambda E) \\sim (A - \\lambda E)$. Тогда, по теореме об унимодулярных матрицах, существуют унимодулярные матрицы $U(\\lambda), V(\\lambda)$ такие, что $(B - \\lambda E) = U(\\lambda) \\cdot (A - \\lambda E) \\cdot V(\\lambda)$. Так как матрица $U(\\lambda)$ унимодулярна, то, по свойству существования обратной во множестве полиномиальных матриц, существует полиномиальная матрица $U^{-1}(\\lambda)$ такая, что $U^{-1}(\\lambda) \\cdot (B - \\lambda E) = (A - \\lambda E) \\cdot V(\\lambda)$.\n\nРазделим $U^{-1}(\\lambda)$ и $V(\\lambda)$ на регулярные $(A - \\lambda E)$, $(B - \\lambda E)$ слева и справа соответственно, то есть представим в виде:\n\n$$\\begin{cases} U^{-1}(\\lambda) = (A - \\lambda E) \\cdot U_1(\\lambda) + U_2, \\\\ V(\\lambda) = V_1(\\lambda) \\cdot (B - \\lambda E) + V_2. \\end{cases}$$', 'source': {'file': 'fil(1).md', 'start_line': 4006, 'end_line': 4014}, 'source_start_line': 4006, 'source_end_line': 4014, '_id': 'cfe8dded-8d5f-4345-9d57-e1ea9ec9d5c3', '_collection_name': 'math_notes'}
+2026-11-11 10:04:11,782 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.1. Матрицы. Основные виды матриц
+Тип: Определение
+
+- Матрица, имеющая блочное разбиение с квадратными блоками $A_{ii}$ на главной диагонали и нулевыми блоками вне главной диагонали, называется **блочнодиагональной** или **квазидиагональной**. Матрица называется **блочнотреугольной**, если ее диагональные блоки — квадратные, а блоки, расположенные по одну сторону от главной диагонали, нулевые. Причем, если нулевыми являются блоки ниже главной диагонали, то матрица называется **верхней блочнотреугольной**, а если нулевыми являются блоки выше главной диагонали, то матрица называется **нижней блочнотреугольной**.' metadata={'chunk_id': '67fe339c5da7a1311b23', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Матрицы. Основные виды матриц', 'section_num': '9.1', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2438, 'end_line': 2438}, 'source_start_line': 2438, 'source_end_line': 2438, '_id': '553abec8-fbac-436a-b747-edd4bdfc6ae0', '_collection_name': 'math_notes'}
+2026-11-11 10:04:11,782 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.1. Матрицы. Основные виды матриц
+Тип: Определение
+
+- Прямоугольная матрица, состоящая из одной строки, называется **матрицей-строкой** или **строкой**. Прямоугольная матрица, состоящая из одного столбца, называется **матрицей-столбцом** или **столбцом**.' metadata={'chunk_id': 'b871896b98dfeff0451a', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Матрицы. Основные виды матриц', 'section_num': '9.1', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2420, 'end_line': 2420}, 'source_start_line': 2420, 'source_end_line': 2420, '_id': 'e2ded8e4-e457-4796-af4a-ec4424470cff', '_collection_name': 'math_notes'}
+2026-11-11 10:04:11,782 [INFO] __main__: page_content='Глава 12: Полиномиальные матрицы
+§ 12.1. Эквивалентность полиномиальных матриц. Каноническая форма полиномиальной матрицы
+Тип: Определение
+
+Покажем, что она является канонической.
+
+Старшие коэффициенты ненулевых многочленов матрицы $A(\lambda)$ равны 1 и $\forall i$ $\tilde{C}_i(\lambda)$ делит $\tilde{C}_{i+1}(\lambda)$. Покажем, что $b_{11}(\lambda)$ делит $\tilde{C}_1(\lambda)$.
+
+Прибавим к первой строке вторую. Преобразование элементарное, поэтому эта матрица $\in S$. По доказанному выше, для любой матрицы из $S$, первый элемент которой $b_{11}$, все элементы первой строки делятся на $b_{11} \Rightarrow \tilde{C}_2(\lambda) \vdots b_{11} \Rightarrow \tilde{C}_2(\lambda)$ — каноническая матрица. А значит и матрица $K(\lambda)$ каноническая.
+
+- Каноническая матрица $K(\lambda)$, эквивалентная матрице $A(\lambda)$, называется **канонической формой** матрицы $A(\lambda)$.' metadata={'chunk_id': '125e5f6711225ebfdf21', 'file': 'fil(1).md', 'chapter': 'Полиномиальные матрицы', 'chapter_num': 12, 'section': 'Эквивалентность полиномиальных матриц. Каноническая форма полиномиальной матрицы', 'section_num': '12.1', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 3785, 'end_line': 3791}, 'source_start_line': 3785, 'source_end_line': 3791, '_id': '0221921e-9dad-4d82-989c-ed6a18016ada', '_collection_name': 'math_notes'}
+2026-11-11 10:04:11,782 [INFO] __main__: page_content='Глава 12: Полиномиальные матрицы
+§ 12.11. Нормальные формы Фробениуса матрицы
+Тип: Определение
+
+- Блочнодиагональная матрица $H$, подобная матрице $A$, называется **второй нормальной формой Фробениуса** (квазиестественной нормальной формой) матрицы $A$, если ее диагональные клетки являются сопровождающими матрицами для элементарных делителей матрицы $A - \lambda E$.
+
+Вторая нормальная форма Фробениуса определяется с точностью до порядка следования диагональных клеток.' metadata={'chunk_id': '73f436674849030310e1', 'file': 'fil(1).md', 'chapter': 'Полиномиальные матрицы', 'chapter_num': 12, 'section': 'Нормальные формы Фробениуса матрицы', 'section_num': '12.11', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 4340, 'end_line': 4342}, 'source_start_line': 4340, 'source_end_line': 4342, '_id': 'b86449ce-328c-4aeb-9378-1acfb7f1ad08', '_collection_name': 'math_notes'}
+2026-11-11 10:04:27,280 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-11 10:04:41,416 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-11 10:04:54,264 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Теорема
+
+**Теорема.** Квадратная матрица имеет обратную $\iff$ она невырожденная.
+
+**Доказательство:** $\Rightarrow$) Пусть матрица $A$ имеет обратную матрицу $A^{-1}$. Тогда $A \cdot A^{-1} = E$ и $\det(A \cdot A^{-1}) = \det A \cdot \det A^{-1} = \det E = 1$. То есть $\det A \neq 0$.
+
+$\Leftarrow$) Пусть $\det A \neq 0$. Построим матрицу $\frac{1}{\det A}\tilde{A}$. Тогда $A \cdot \frac{1}{\det A}\tilde{A} = \frac{1}{\det A}A \cdot \tilde{A} = \frac{1}{\det A}\det A \cdot E = E$. То есть матрица $\frac{1}{\det A}\tilde{A}$ обратная для матрицы $A$.' metadata={'chunk_id': 'f1bd1db4db041a43e64d', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'theorem', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': '$\\Leftarrow$) Пусть $\\det A \\neq 0$. Построим матрицу $\\frac{1}{\\det A}\\tilde{A}$. Тогда $A \\cdot \\frac{1}{\\det A}\\tilde{A} = \\frac{1}{\\det A}A \\cdot \\tilde{A} = \\frac{1}{\\det A}\\det A \\cdot E = E$. То есть матрица $\\frac{1}{\\det A}\\tilde{A}$ обратная для матрицы $A$.', 'source': {'file': 'fil(1).md', 'start_line': 2642, 'end_line': 2646}, 'source_start_line': 2642, 'source_end_line': 2646, '_id': 'fe43d565-bc59-4148-a9d9-2d261c71a882', '_collection_name': 'math_notes'}
+2026-11-11 10:04:54,264 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Определение
+
+- Квадратная матрица называется **невырожденной**, если ее определитель отличен от нуля.' metadata={'chunk_id': 'ddb30bcd8249e91b5ca5', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2640, 'end_line': 2640}, 'source_start_line': 2640, 'source_end_line': 2640, '_id': '5436cd94-b927-4e00-8a1c-abd106f01698', '_collection_name': 'math_notes'}
+2026-11-11 10:04:54,264 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.2. Линейные операции над матрицами. Умножение матриц. Транспонирование
+Тип: Определение
+
+- Если матрица $B$ симметрична относительно сложения для матрицы $A$, то она называется **противоположной** для матрицы $A$ (Обозначение: $-A$).' metadata={'chunk_id': '909bc8b815523534d787', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Линейные операции над матрицами. Умножение матриц. Транспонирование', 'section_num': '9.2', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2455, 'end_line': 2455}, 'source_start_line': 2455, 'source_end_line': 2455, '_id': 'b1d090ec-58af-4601-be73-ed2dc454c8f8', '_collection_name': 'math_notes'}
+2026-11-11 10:04:54,264 [INFO] __main__: page_content='Глава 14: Евклидовы и унитарные пространства
+§ 14.8. Полярное разложение линейного оператора
+Тип: Теорема
+
+Обозначим через $C$ матрицу $SDS^T$, тогда получим $A^TA = C^2$, при этом $C$ — симметрическая матрица, так как $C^T = (SDS^T)^T = SD^TS^T = [\text{диагональ матрицы } D \text{ не изменяется при транспонировании}] = SDS^T = C$. А так как матрица $S$ ортогональная, то $C = SDS^T = SDS^{-1}$. Следовательно, матрицы $C$ и $D$ подобны и имеют одинаковые собственные значения равные $\sqrt{\lambda_i} > 0$.
+
+**Теорема.** Любая действительная невырожденная квадратная матрица представима в виде произведения ортогональной матрицы и симметрической матрицы с положительными собственными значениями.
+
+**Доказательство:** Пусть $A$ — произвольная действительная невырожденная матрица. Тогда существует симметрическая матрица $C$ с положительными собственными значениями такая, что $C^2 = A^TA$.
+
+Так как матрица $C$ невырожденная, существует обратная ей невырожденная матрица $C^{-1}$. Построим матрицу $U = AC^{-1} \Rightarrow A = UC$. Покажем, что матрица $U$ ортогональная: $U^TU = (AC^{-1})^TAC^{-1} = (C^{-1})^TA^TAC^{-1} = (C^{-1})^TC^2C^{-1} = (C^{-1})^TC = [\text{так как матрица } C \text{ симметрическая}] = (C^{-1})^TC^T = (CC^{-1})^T = E$.' metadata={'chunk_id': '7898b962715b288cf35c', 'file': 'fil(1).md', 'chapter': 'Евклидовы и унитарные пространства', 'chapter_num': 14, 'section': 'Полярное разложение линейного оператора', 'section_num': '14.8', 'type': 'theorem', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': 'Так как матрица $C$ невырожденная, существует обратная ей невырожденная матрица $C^{-1}$. Построим матрицу $U = AC^{-1} \\Rightarrow A = UC$. Покажем, что матрица $U$ ортогональная: $U^TU = (AC^{-1})^TAC^{-1} = (C^{-1})^TA^TAC^{-1} = (C^{-1})^TC^2C^{-1} = (C^{-1})^TC = [\\text{так как матрица } C \\text{ симметрическая}] = (C^{-1})^TC^T = (CC^{-1})^T = E$.', 'source': {'file': 'fil(1).md', 'start_line': 4858, 'end_line': 4864}, 'source_start_line': 4858, 'source_end_line': 4864, '_id': '44eb73d6-9453-4d0b-8fcd-c9c0d58fd4b3', '_collection_name': 'math_notes'}
+2026-11-11 10:04:54,264 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.1. Матрицы. Основные виды матриц
+Тип: Определение
+
+- Квадратная матрица называется **диагональной**, если все ее элементы, не стоящие на главной диагонали, равны нулю. Причем, если равны нулю элементы ниже главной диагонали, то матрица называется **верхней треугольной**, а если равны нулю элементы выше главной диагонали, то матрица называется **нижней треугольной**.' metadata={'chunk_id': '1867a3c97418f80e7905', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Матрицы. Основные виды матриц', 'section_num': '9.1', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2428, 'end_line': 2428}, 'source_start_line': 2428, 'source_end_line': 2428, '_id': '2fa43ffd-75d8-46e1-87ca-e2f69053b6ca', '_collection_name': 'math_notes'}
+2026-11-11 10:07:46,744 [INFO] httpx: HTTP Request: POST http://localhost:6333/collections/math_notes/points/query "HTTP/1.1 200 OK"
+2026-11-11 10:07:48,134 [INFO] httpx: HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-11-11 10:08:02,597 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Теорема
+
+**Теорема.** Квадратная матрица имеет обратную $\iff$ она невырожденная.
+
+**Доказательство:** $\Rightarrow$) Пусть матрица $A$ имеет обратную матрицу $A^{-1}$. Тогда $A \cdot A^{-1} = E$ и $\det(A \cdot A^{-1}) = \det A \cdot \det A^{-1} = \det E = 1$. То есть $\det A \neq 0$.
+
+$\Leftarrow$) Пусть $\det A \neq 0$. Построим матрицу $\frac{1}{\det A}\tilde{A}$. Тогда $A \cdot \frac{1}{\det A}\tilde{A} = \frac{1}{\det A}A \cdot \tilde{A} = \frac{1}{\det A}\det A \cdot E = E$. То есть матрица $\frac{1}{\det A}\tilde{A}$ обратная для матрицы $A$.' metadata={'chunk_id': 'f1bd1db4db041a43e64d', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'theorem', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': '$\\Leftarrow$) Пусть $\\det A \\neq 0$. Построим матрицу $\\frac{1}{\\det A}\\tilde{A}$. Тогда $A \\cdot \\frac{1}{\\det A}\\tilde{A} = \\frac{1}{\\det A}A \\cdot \\tilde{A} = \\frac{1}{\\det A}\\det A \\cdot E = E$. То есть матрица $\\frac{1}{\\det A}\\tilde{A}$ обратная для матрицы $A$.', 'source': {'file': 'fil(1).md', 'start_line': 2642, 'end_line': 2646}, 'source_start_line': 2642, 'source_end_line': 2646, '_id': 'fe43d565-bc59-4148-a9d9-2d261c71a882', '_collection_name': 'math_notes'}
+2026-11-11 10:08:02,597 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.7. Обратная матрица
+Тип: Определение
+
+- Квадратная матрица называется **невырожденной**, если ее определитель отличен от нуля.' metadata={'chunk_id': 'ddb30bcd8249e91b5ca5', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Обратная матрица', 'section_num': '9.7', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2640, 'end_line': 2640}, 'source_start_line': 2640, 'source_end_line': 2640, '_id': '5436cd94-b927-4e00-8a1c-abd106f01698', '_collection_name': 'math_notes'}
+2026-11-11 10:08:02,597 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.2. Линейные операции над матрицами. Умножение матриц. Транспонирование
+Тип: Определение
+
+- Если матрица $B$ симметрична относительно сложения для матрицы $A$, то она называется **противоположной** для матрицы $A$ (Обозначение: $-A$).' metadata={'chunk_id': '909bc8b815523534d787', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Линейные операции над матрицами. Умножение матриц. Транспонирование', 'section_num': '9.2', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2455, 'end_line': 2455}, 'source_start_line': 2455, 'source_end_line': 2455, '_id': 'b1d090ec-58af-4601-be73-ed2dc454c8f8', '_collection_name': 'math_notes'}
+2026-11-11 10:08:02,597 [INFO] __main__: page_content='Глава 14: Евклидовы и унитарные пространства
+§ 14.8. Полярное разложение линейного оператора
+Тип: Теорема
+
+Обозначим через $C$ матрицу $SDS^T$, тогда получим $A^TA = C^2$, при этом $C$ — симметрическая матрица, так как $C^T = (SDS^T)^T = SD^TS^T = [\text{диагональ матрицы } D \text{ не изменяется при транспонировании}] = SDS^T = C$. А так как матрица $S$ ортогональная, то $C = SDS^T = SDS^{-1}$. Следовательно, матрицы $C$ и $D$ подобны и имеют одинаковые собственные значения равные $\sqrt{\lambda_i} > 0$.
+
+**Теорема.** Любая действительная невырожденная квадратная матрица представима в виде произведения ортогональной матрицы и симметрической матрицы с положительными собственными значениями.
+
+**Доказательство:** Пусть $A$ — произвольная действительная невырожденная матрица. Тогда существует симметрическая матрица $C$ с положительными собственными значениями такая, что $C^2 = A^TA$.
+
+Так как матрица $C$ невырожденная, существует обратная ей невырожденная матрица $C^{-1}$. Построим матрицу $U = AC^{-1} \Rightarrow A = UC$. Покажем, что матрица $U$ ортогональная: $U^TU = (AC^{-1})^TAC^{-1} = (C^{-1})^TA^TAC^{-1} = (C^{-1})^TC^2C^{-1} = (C^{-1})^TC = [\text{так как матрица } C \text{ симметрическая}] = (C^{-1})^TC^T = (CC^{-1})^T = E$.' metadata={'chunk_id': '7898b962715b288cf35c', 'file': 'fil(1).md', 'chapter': 'Евклидовы и унитарные пространства', 'chapter_num': 14, 'section': 'Полярное разложение линейного оператора', 'section_num': '14.8', 'type': 'theorem', 'equations': [], 'images': [], 'contatins_proof': True, 'proof': 'Так как матрица $C$ невырожденная, существует обратная ей невырожденная матрица $C^{-1}$. Построим матрицу $U = AC^{-1} \\Rightarrow A = UC$. Покажем, что матрица $U$ ортогональная: $U^TU = (AC^{-1})^TAC^{-1} = (C^{-1})^TA^TAC^{-1} = (C^{-1})^TC^2C^{-1} = (C^{-1})^TC = [\\text{так как матрица } C \\text{ симметрическая}] = (C^{-1})^TC^T = (CC^{-1})^T = E$.', 'source': {'file': 'fil(1).md', 'start_line': 4858, 'end_line': 4864}, 'source_start_line': 4858, 'source_end_line': 4864, '_id': '44eb73d6-9453-4d0b-8fcd-c9c0d58fd4b3', '_collection_name': 'math_notes'}
+2026-11-11 10:08:02,597 [INFO] __main__: page_content='Глава 9: Матрицы и определители
+§ 9.1. Матрицы. Основные виды матриц
+Тип: Определение
+
+- Квадратная матрица называется **диагональной**, если все ее элементы, не стоящие на главной диагонали, равны нулю. Причем, если равны нулю элементы ниже главной диагонали, то матрица называется **верхней треугольной**, а если равны нулю элементы выше главной диагонали, то матрица называется **нижней треугольной**.' metadata={'chunk_id': '1867a3c97418f80e7905', 'file': 'fil(1).md', 'chapter': 'Матрицы и определители', 'chapter_num': 9, 'section': 'Матрицы. Основные виды матриц', 'section_num': '9.1', 'type': 'definition', 'equations': [], 'images': [], 'contatins_proof': False, 'source': {'file': 'fil(1).md', 'start_line': 2428, 'end_line': 2428}, 'source_start_line': 2428, 'source_end_line': 2428, '_id': '2fa43ffd-75d8-46e1-87ca-e2f69053b6ca', '_collection_name': 'math_notes'}

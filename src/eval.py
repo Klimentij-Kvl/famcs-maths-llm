@@ -1,5 +1,4 @@
 from langsmith import evaluate
-from langchain_ollama import ChatOllama
 from langchain_deepseek import ChatDeepSeek
 from openevals.llm import create_llm_as_judge
 from openevals.prompts import (
@@ -10,14 +9,17 @@ from openevals.prompts import (
 )
 
 from dotenv import load_dotenv
+import gc
 
 from rag import eval_target
 from config import (
-    TOP_K, 
+    RERANK_TOP_K, 
+    RETRIEVAL_TOP_K,
     LLM_MODEL, 
     EMBEDDING_MODEL,
     SPARSE_EMBEDDING_MODEL,
     JUDGE_MODEL,
+    RERANKER_MODEL,
 )
 
 DATASET_NAME = "llm-math-100"
@@ -164,9 +166,12 @@ results = evaluate(
         "Embedding model": EMBEDDING_MODEL,
         "Sparse embedding model": SPARSE_EMBEDDING_MODEL,
         "Judge Model": JUDGE_MODEL,
-        "Reranker": "NO",
-        "top K": TOP_K,
+        "Reranker Model": RERANKER_MODEL,
+        "Reranker": "YES",
+        "Candidates top K": RETRIEVAL_TOP_K,
+        "top K": RERANK_TOP_K,
     }
 )
 
 print(results)
+gc.collect()

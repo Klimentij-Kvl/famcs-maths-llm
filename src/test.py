@@ -1,68 +1,43 @@
-from langsmith import evaluate
-from langchain_ollama import ChatOllama
-from openevals.llm import create_llm_as_judge
-from openevals.prompts import (
-    CORRECTNESS_PROMPT,
-    RAG_HELPFULNESS_PROMPT,
-    RAG_GROUNDEDNESS_PROMPT,
-    RAG_RETRIEVAL_RELEVANCE_PROMPT,
+import torch
+from sentence_transformers import CrossEncoder
+
+model = CrossEncoder(
+    "Alibaba-NLP/gte-multilingual-reranker-base",
+    trust_remote_code=True,
+    max_length=512,
+    device="cpu",
+    model_kwargs={
+        "dtype": torch.float32
+    },
 )
 
-from rag import eval_target
-from config import (
-    TOP_K, 
-    LLM_MODEL, 
-    EMBEDDING_MODEL,
-    JUDGE_MODEL,
-)
+# Получаем настоящий Embedding слой GTE
+embedding = model.model.new.embeddings.word_embeddings
 
-DATASET_NAME = "llm-math-small"
+print("Embedding shape:", embedding.weight.shape)
+print("Embedding dtype:", embedding.weight.dtype)
 
-judge_model = ChatOllama(
-    model=JUDGE_MODEL,
-    temperature=0,
-)
+# Перемещаем только Embedding на GPU
+embedding = embedding.to("cuda")
 
-correctness_judge = create_llm_as_judge(
-    prompt=CORRECTNESS_PROMPT,
-    judge=judge_model,
-    feedback_key="correctness",
-)
+print("Embedding moved to GPU")
 
-helpfulness_judge = create_llm_as_judge(
-    prompt=RAG_HELPFULNESS_PROMPT,
-    judge=judge_model,
-    feedback_key="helpfulness"
-)
-groundedness_judge = create_llm_as_judge(
-    prompt=RAG_GROUNDEDNESS_PROMPT,
-    judge=judge_model,
-    feedback_key="groundedness",
-)
-retrieval_relevance_judge = create_llm_as_judge(
-    prompt=RAG_RETRIEVAL_RELEVANCE_PROMPT,
-    judge=judge_model,
-    feedback_key="retrieval_relevance",
-)
+# Проверяем индексацию
+for seq_len in (32, 512):
 
-print(correctness_judge(
-    inputs="What is 2 + 2?",
-    outputs="The answer is 4.",
-    reference_outputs="4",
-))
+    print(f"\nTesting sequence length: {seq_len}")
 
-print(helpfulness_judge(
-    inputs={"question": "What is 2 + 2?"},
-    outputs={"answer": "The answer is 4."},
-))
+    input_ids = torch.randint(
+        low=0,
+        high=embedding.num_embeddings,
+        size=(3, seq_len),
+        device="cuda",
+        dtype=torch.long,
+    )
 
-print(groundedness_judge(
-    context={"documents": ["2 + 2 = 4"]},
-    outputs={"answer": "The answer is 4."},
-))
+    output = embedding(input_ids)
 
-print(retrieval_relevance_judge(
-    inputs={"question": "What is 2 + 2?"},
-    context={"documents": ["2 + 2 = 4"]},
-    outputs=''
-))
+    torch.cuda.synchronize()
+
+    print("Output shape:", output.shape)
+    print("SUCCESS")
